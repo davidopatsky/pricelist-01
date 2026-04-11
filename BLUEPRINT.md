@@ -256,16 +256,23 @@ GitHub repo: **`davidopatsky/pricelist-01`** (private).
 | `temp/pricelist.xlsx` | původní upload uživatele z předchozí konverzace; sandbox |
 | `.DS_Store`, `__pycache__/`, `~$*.xlsx`, `.~lock.*#` | OS/editor junk |
 
-### Legacy / kandidáti na úklid (zatím v repu, nejsou potřeba)
+### Legacy (přesunuto do `archive/`)
 
-| cesta | proč legacy | doporučení |
+Všechny staré artefakty jsou v `archive/` — žádný skript se jich nedotýká, ale jsou zachovány pro referenci. Detail viz `archive/README.md`.
+
+| `archive/<file>` | původ | éra |
 |---|---|---|
-| `meta.json` | v2 config s **starými 6 kategoriemi** (pergola/screen/glazing/awning/accessories/extras) a starými field jmény (`commerce.cost_percent`). Žádný současný skript ho nečte. | smazat |
-| `export/pricelist.xlsx` | duplicitní xlsx s celými cenovými maticemi z dřívějšího experimentu (v3 éra). 208 KB. | smazat |
-| `export/salesqueze-export/` | starý export skript pro SalesQueeze, čte neexistující `item.json` (v3 schema), podle blueprintu **out of scope, postaví se znova od nuly později**. 548 KB. | smazat nebo nechat pro historii |
-| `viewer.html` | gitignored, ale fyzicky na disku. Stará verze, nečte v6. | možno smazat z disku |
+| `meta-v2.json` | root `meta.json` | v2 — 6 starých kategorií, staré field jména |
+| `pricelist-v3-with-matrices.xlsx` | `export/pricelist.xlsx` | v3 — experimentální xlsx s celými cenovými maticemi |
+| `salesqueze-export-v3/` | `export/salesqueze-export/` | v3 — starý SalesQueeze export skript, neběží |
 
-**Pokud delete nepřipadá v úvahu** (uživatel říká "nic nemazat"): nech být. Skripty se jich nedotýkají, jen zaberou místo.
+**Co tady NENÍ** (zůstává jen lokálně, gitignored, nepřesouvá se):
+
+| cesta | důvod |
+|---|---|
+| `viewer.html` | gitignored. Starý HTML viewer (v3), nečte v6 schema. Pokud ho už nepotřebuješ, můžeš smazat z disku. |
+| `temp/pricelist.xlsx` | původní upload, sandbox |
+| `.DS_Store`, `__pycache__/` apod. | OS junk |
 
 ## Schema version history
 
