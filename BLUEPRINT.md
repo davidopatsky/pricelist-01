@@ -27,9 +27,9 @@
 
 ## `pricelist.xlsx` — canonical edit surface
 
-- **15 sloupců**, fixní pořadí
+- **16 sloupců**, fixní pořadí
 - **freeze panes**: `A2` (header zamrzlý)
-- **text format `@`** pinned na: `sku`, `category`, `name`, `description`, `price_formula`, `currency`, `unit`, `discount`, `delivery_weeks`, `color_summary`, `raynet_description` (zabraňuje Numbers/Excel auto-konverzím SKU jako `2024-01` → datum)
+- **text format `@`** pinned na: `sku`, `category`, `name`, `name_en`, `description`, `price_formula`, `currency`, `unit`, `discount`, `delivery_weeks`, `color_summary`, `raynet_description` (zabraňuje Numbers/Excel auto-konverzím SKU jako `2024-01` → datum)
 - **numeric format `#,##0`** na: `cost`, `cost_percent`, `raynet_cost`
 - **wrap text** na: `description`, `color_summary`, `raynet_description`
 - **auto-width** sloupců, capped na 50 znaků
@@ -43,6 +43,7 @@
     "sku": "alux-bioclimatic",
     "category": "pergola",
     "name": "ALUX Bioclimatic",
+    "name_en": "ALUX Bioclimatic",
     "description": "Bioklimatická pergola s otočnými lamelami…",
     "standard_price": "matrix",
     "price_formula": null,
@@ -59,25 +60,26 @@
 ]
 ```
 
-## Schema — 15 polí
+## Schema — 16 polí
 
 | # | klíč | typ | povinné | příklad | poznámka |
 |---|---|---|---|---|---|
 | 1 | `sku` | string | ✓ | `alux-bioclimatic` | join key, unique, beze změny napříč systémy |
 | 2 | `category` | enum | ✓ | `pergola` | jedna z: `pergola`, `vypln`, `prislusenstvi`, `sluzba` |
 | 3 | `name` | string | ✓ | `ALUX Bioclimatic` | krátký název CZ |
-| 4 | `description` | string | – | `Bioklimatická pergola…` | jedna věta CZ |
-| 5 | `standard_price` | number \| null | – | `8500` / `1` / `null` | fixní cena. Pokud je `1`, funguje jako placeholder — viz **Pricing convention** níže. |
-| 6 | `price_formula` | string \| null | – | `"matrix"` / `"4% from price"` / `null` | flag/vzorec když cena není fixní. `"matrix"` = "vyhledej v `prices.json`". Jinak human-readable formula. |
-| 7 | `currency` | string | ✓ | `CZK` | ISO kód |
-| 8 | `unit` | string | ✓ | `ks` / `m²` / `hod` / `m` | jednotka prodeje |
-| 9 | `cost` | number \| null | – | `4250` | nákupní cena |
-| 10 | `cost_percent` | number \| null | – | `58` | marže nákladu jako % z prodejní |
-| 11 | `discount` | string | – | `"0%"` | obchodní sleva (text kvůli `%`) |
-| 12 | `delivery_weeks` | string | – | `"4-6"` | dodací lhůta jako text (rozsah) |
-| 13 | `color_summary` | string | – | `RAL 7016 + RAL 9006` | textové shrnutí barevných variant |
-| 14 | `raynet_description` | string \| null | – | `<p>HTML popis…</p>` | HTML popis pro sync do Raynet CRM |
-| 15 | `raynet_cost` | number \| null | – | `1200` | náklad pro Raynet (override pokud se liší od `cost`) |
+| 4 | `name_en` | string \| null | – | `ALUX Bioclimatic` | anglický název (volitelné) |
+| 5 | `description` | string | – | `Bioklimatická pergola…` | jedna věta CZ |
+| 6 | `standard_price` | number \| null | – | `8500` / `1` / `null` | fixní cena. Pokud je `1`, funguje jako placeholder — viz **Pricing convention** níže. |
+| 7 | `price_formula` | string \| null | – | `"matrix"` / `"4% from price"` / `null` | flag/vzorec když cena není fixní. `"matrix"` = "vyhledej v `prices.json`". Jinak human-readable formula. |
+| 8 | `currency` | string | ✓ | `CZK` | ISO kód |
+| 9 | `unit` | string | ✓ | `ks` / `m²` / `hod` / `m` | jednotka prodeje |
+| 10 | `cost` | number \| null | – | `4250` | nákupní cena |
+| 11 | `cost_percent` | number \| null | – | `58` | marže nákladu jako % z prodejní |
+| 12 | `discount` | string | – | `"0%"` | obchodní sleva (text kvůli `%`) |
+| 13 | `delivery_weeks` | string | – | `"4-6"` | dodací lhůta jako text (rozsah) |
+| 14 | `color_summary` | string | – | `RAL 7016 + RAL 9006` | textové shrnutí barevných variant |
+| 15 | `raynet_description` | string \| null | – | `<p>HTML popis…</p>` | HTML popis pro sync do Raynet CRM |
+| 16 | `raynet_cost` | number \| null | – | `1200` | náklad pro Raynet (override pokud se liší od `cost`) |
 
 ## Pricing convention
 

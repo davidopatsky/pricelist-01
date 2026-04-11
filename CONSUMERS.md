@@ -14,13 +14,14 @@ Repo: **`davidopatsky/pricelist-01`** (GitHub, **private** — fetch vyžaduje t
 https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/pricelist.json
 ```
 
-JSON array, každý objekt má 15 polí:
+JSON array, každý objekt má 16 polí:
 
 ```json
 {
   "sku": "alux-bioclimatic",
   "category": "pergola",
   "name": "ALUX Bioclimatic",
+  "name_en": "ALUX Bioclimatic",
   "description": "Bioklimatická pergola...",
   "standard_price": 1,
   "price_formula": "matrix",
@@ -35,6 +36,8 @@ JSON array, každý objekt má 15 polí:
   "raynet_cost": null
 }
 ```
+
+`name_en` je volitelné — pokud je `null`, fallback na `name`.
 
 `category` je jeden z: `pergola` / `vypln` / `prislusenstvi` / `sluzba`. SKU je join key.
 

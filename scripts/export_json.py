@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 XLSX = ROOT / 'pricelist.xlsx'
 OUT = ROOT / 'pricelist.json'
 
-# Blueprint schema — 15 fields, fixed order (v6.1: dropped product_line, added raynet_*)
+# Blueprint schema — 16 fields, fixed order (v6.2: added name_en)
 #
 # PRICING CONVENTION:
 # `standard_price` and `price_formula` are read together by consumers.
@@ -38,7 +38,8 @@ OUT = ROOT / 'pricelist.json'
 FIELDS = [
     ('sku',                 'text',  True),   # required
     ('category',            'enum',  True),   # required
-    ('name',                'text',  True),   # required
+    ('name',                'text',  True),   # required (CZ)
+    ('name_en',             'text',  False),  # English name (optional)
     ('description',         'text',  False),
     ('standard_price',      'mixed', False),  # number | "matrix" | null
     ('price_formula',       'text',  False),
@@ -95,16 +96,25 @@ def read_xlsx():
     wb = load_workbook(XLSX, data_only=True)
     ws = wb.active
 
-    # Header row expected at row 1
+    # Header row expected at row 1.
+    # ALIASES normalize legacy/typo header variants → canonical FIELDS keys.
+    HEADER_ALIASES = {
+        'name-en':           'name_en',
+        'name_cs':           'name',
+        'nazev':             'name',
+        'nazev-cz':          'name',
+    }
     header = [str(c.value).strip() if c.value else None for c in ws[1]]
     header_map = {}
     for i, name in enumerate(header):
-        if name:
-            header_map[name] = i
+        if not name:
+            continue
+        canonical = HEADER_ALIASES.get(name, name)
+        header_map[canonical] = i
 
-    missing_headers = [f for f, _, _ in FIELDS if f not in header_map]
+    missing_headers = [f for f, _, req in FIELDS if req and f not in header_map]
     if missing_headers:
-        raise SystemExit(f'Missing columns in xlsx header: {missing_headers}')
+        raise SystemExit(f'Missing required columns in xlsx header: {missing_headers}')
 
     items = []
     errors = []
@@ -117,7 +127,11 @@ def read_xlsx():
         entry = {}
         row_errors = []
         for field, kind, required in FIELDS:
-            raw = row[header_map[field]] if header_map[field] < len(row) else None
+            idx = header_map.get(field)
+            if idx is None or idx >= len(row):
+                raw = None
+            else:
+                raw = row[idx]
             val = normalize_value(raw, kind)
             entry[field] = val
             if required and val in (None, ''):

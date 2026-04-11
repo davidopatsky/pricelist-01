@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / 'pricelist.json'
 OUT = ROOT / 'pricelist.xlsx'
 
-# 15-field schema in fixed order (v6.1)
+# 16-field schema in fixed order (v6.2: added name_en)
 #
 # PRICING CONVENTION (see BLUEPRINT.md):
 # `standard_price = 1` is a magic placeholder; the real meaning is encoded in
@@ -34,6 +34,7 @@ COLUMNS = [
     ('sku',                'text'),
     ('category',           'text'),
     ('name',               'text'),
+    ('name_en',            'text'),
     ('description',        'wrap'),
     ('standard_price',     'mixed'),
     ('price_formula',      'text'),
