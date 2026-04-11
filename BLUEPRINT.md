@@ -202,6 +202,7 @@ git commit -m "update pricelist"
 
 ```
 pricelist.xlsx
+viewer.html
 .DS_Store
 __pycache__/
 *.pyc
@@ -213,3 +214,121 @@ __pycache__/
 ```
 
 (`~$*.xlsx` a `.~lock.*#` jsou Excel/LibreOffice lock files vytvářené při otevření souboru.)
+
+---
+
+# Projektový kontext (recovery doc)
+
+> Tahle sekce je samostatná briefing dokumentace pro novou AI session nebo nového člověka, který otvírá repo poprvé. Pokud spadne chat, čti odsud.
+
+## Cíl projektu
+
+Centralizovaný **pricelist + product database** pro firmu ALUX (pergoly, výplně, příslušenství, služby). Jediný zdroj pravdy pro:
+- Web konfigurátor pergol
+- Quoting tool
+- Sync do Raynet CRM (přes HTML pole `raynet_description`)
+- Případně další apps, které čtou raw JSON přes GitHub raw URL
+
+GitHub repo: **`davidopatsky/pricelist-01`** (private).
+
+## Inventář souborů (k 2026-04-11)
+
+### Canonical (in git)
+
+| cesta | účel |
+|---|---|
+| `pricelist.json` | derivovaný flat array, **single source pro apps** |
+| `BLUEPRINT.md` | tento soubor |
+| `README.md` | krátký workflow guide |
+| `.gitignore` | excludes xlsx/viewer/macOS junk |
+| `scripts/init_xlsx.py` | bootstrap `pricelist.xlsx` z `pricelist.json` |
+| `scripts/export_json.py` | `pricelist.xlsx → pricelist.json`, jediný směr |
+| `products/<cat>/<sku>/knowledge.md` | prose CZ + EN/DE sekce v frontmatteru/sekcích |
+| `products/<cat>/<sku>/metadata.json` | strukturovaná tech data (axes, lamela counts, …) — jen pro produkty co to potřebují |
+| `products/<cat>/<sku>/prices.json` | cenové matice (out of scope skriptů — netknuté) |
+
+### Local-only (gitignored)
+
+| cesta | důvod |
+|---|---|
+| `pricelist.xlsx` | canonical edit surface, edituje se v Numbers/Excel; nikdy se necommituje |
+| `viewer.html` | starý HTML viewer z předchozí iterace (v3), nečte v6 schema, mimo workflow |
+| `temp/pricelist.xlsx` | původní upload uživatele z předchozí konverzace; sandbox |
+| `.DS_Store`, `__pycache__/`, `~$*.xlsx`, `.~lock.*#` | OS/editor junk |
+
+### Legacy / kandidáti na úklid (zatím v repu, nejsou potřeba)
+
+| cesta | proč legacy | doporučení |
+|---|---|---|
+| `meta.json` | v2 config s **starými 6 kategoriemi** (pergola/screen/glazing/awning/accessories/extras) a starými field jmény (`commerce.cost_percent`). Žádný současný skript ho nečte. | smazat |
+| `export/pricelist.xlsx` | duplicitní xlsx s celými cenovými maticemi z dřívějšího experimentu (v3 éra). 208 KB. | smazat |
+| `export/salesqueze-export/` | starý export skript pro SalesQueeze, čte neexistující `item.json` (v3 schema), podle blueprintu **out of scope, postaví se znova od nuly později**. 548 KB. | smazat nebo nechat pro historii |
+| `viewer.html` | gitignored, ale fyzicky na disku. Stará verze, nečte v6. | možno smazat z disku |
+
+**Pokud delete nepřipadá v úvahu** (uživatel říká "nic nemazat"): nech být. Skripty se jich nedotýkají, jen zaberou místo.
+
+## Schema version history
+
+| verze | datum | tvar | proč skončila |
+|---|---|---|---|
+| v1 | původní | 4 root folders: `products/`, `pricing/`, `accessories/`, `pricing-accessories/` s deeply nested JSON | rigidní info/pricing split, nested language objects, většina null |
+| v2 | early refactor | flat `pergola/<sku>/item.json` | flatten dropped některá pole (display_name, axes) |
+| v3 | category folders | `pergola/<sku>/{item.json, prices.json}` v rootu | uživatel chtěl "products" parent folder |
+| v4 | products parent | `products/<cat>/<sku>/{item.json, prices.json}` | uživatel chtěl xlsx round-trip + Raynet-shape |
+| v5 (paused) | Raynet-shape | rename `sku → code`, přidány `product_line` a další | uživatel řekl "don't remove sku" + plán znovu |
+| **v6.0** | blueprint | 4 nové kategorie (`pergola`, `vypln`, `prislusenstvi`, `sluzba`), per-item `knowledge.md` + `metadata.json` + `prices.json`, root `pricelist.json` (14 polí), one-way `xlsx → json` workflow | uživatel přidal Raynet sloupce |
+| **v6.1** *(current)* | + Raynet | drop `product_line`, add `raynet_description` + `raynet_cost`, total **15 polí** | — |
+
+## Klíčová rozhodnutí (decisions log)
+
+1. **JSON je canonical at rest, XLSX je canonical for editing.** Apps čtou JSON přes raw GitHub URL. Editor edituje XLSX v Numbers/Excel. `xlsx → json` je jednosměrný export přes `scripts/export_json.py`. **Žádný auto-watcher, žádný roundtrip.**
+2. **`pricelist.xlsx` v `.gitignore`.** Jen `pricelist.json` jde do gitu. XLSX je local-only artifact.
+3. **SKU je join key.** SKU = název složky `products/<cat>/<sku>/` = `pricelist.json[*].sku`. Žádné mapování, žádné aliasy.
+4. **`standard_price = 1` je magic placeholder, ne 1 CZK.** Real meaning je v `price_formula`. Detail v sekci "Pricing convention" výše. Důvod proč `1` a ne `"matrix"` přímo: Numbers/Excel auto-konvertují string v jinak číselném sloupci.
+5. **`pricing.json` matrices jsou out of scope všech skriptů.** Editují se ručně. `init_xlsx.py` ani `export_json.py` se jich nedotknou.
+6. **Klíče anglicky, hodnoty česky.** Jediná výjimka: `display_name_cs` v `metadata.json` (kvůli prezentační vrstvě).
+7. **Per-product `metadata.json` je volitelná.** Vytváří se jen pro produkty co mají strukturovaná tech data (osy, lamela counts, kompatibility…). Jednoduché položky jako `montaz` ji nemají.
+8. **`knowledge.md` má frontmatter s `sku`.** Krom toho zachovává multilingvní data v sekcích `### Description (EN)` a `### Beschreibung (DE)` — i když `pricelist.json` má jen jednu jazykovou variantu.
+9. **Raynet sync.** `raynet_description` (HTML, multi-line) a `raynet_cost` jsou specifické pro sync do Raynet CRM. Když jsou null, položka se do Raynetu neposílá nebo se vezmou defaulty.
+10. **`product_line` byl dropnut ve v6.1.** Je odvoditelný z prefixu SKU (`alux-*` → ALUX, `strada-*` → Strada, `simple-*` → Simple, `somfy_*` → Somfy). Pokud ho budou apps potřebovat, dopočítají si ho samy.
+
+## Jak obnovit kontext (recovery)
+
+**Pokud spadne chat a otevřeš nový session:**
+
+1. Přečti tenhle blueprint celý. Začni od horní části (Strom složek).
+2. Spusť `python3 scripts/export_json.py --dry-run` — pokud řekne "No changes. N items.", repo je v synchronu.
+3. `git log --oneline -5` — uvidíš poslední commits.
+4. `cat pricelist.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(len(d), 'items')"` — kolik je teď položek.
+5. `find products -type d -mindepth 2 -maxdepth 2 | sort` — strom všech SKU folderů.
+
+**Pokud uživatel řekne "edituj cenu položky X":**
+- Uprav `pricelist.xlsx` v Numbers nebo přímo v `pricelist.json` (oba jsou OK, ale json edit musí být následován bootstrap přes `init_xlsx.py` aby se přepsal xlsx zpět na disk)
+- `python3 scripts/export_json.py` (pokud editoval xlsx) NEBO `python3 scripts/init_xlsx.py` (pokud editoval json)
+- `git add pricelist.json && git commit -m "..." && git push`
+
+**Pokud uživatel řekne "přidej produkt":**
+- Přidej řádek do xlsx (nebo do json, viz výše)
+- Vytvoř `products/<cat>/<sku>/knowledge.md` (skeleton se sekcemi Popis, Specifikace)
+- (optional) `metadata.json` a `prices.json` pokud je to maticový produkt
+- Export + commit + push
+
+**Pokud uživatel řekne "smaž produkt":**
+- Vymaž řádek z xlsx
+- `python3 scripts/export_json.py` přepíše json
+- Smaž `products/<cat>/<sku>/` celý folder
+- Commit + push
+
+## Open TODO / known issues
+
+- Žádné aktivní bugy ke 2026-04-11.
+- `viewer.html` je stale a mimo workflow — pokud ho někdy chceš znovu, musí se rebuildnout aby četl `pricelist.json` (ne starý `item.json`).
+- `export/salesqueze-export/` neběží — blueprint říká "postaví se znova od nuly později".
+- Žádná validace `cost_percent ∈ [0, 100]`, žádná validace SKU formátu (kebab-case). Můžeme přidat do `export_json.py` až bude potřeba.
+
+## Backup pointers (na disku, mimo repo)
+
+- `/tmp/pricelist-alux-backup-20260411-154757/` — v1 stav (původní 4 folders)
+- `/tmp/pricelist-alux-v6-backup-20260411-233022/` — v5 stav před v6 migrací (products/scripts/meta.json/viewer.html/pricelist.xlsx/README.md)
+
+Pokud `/tmp` zmizí (reboot), backupy se ztratí. Pro permanentní backup je git history.
