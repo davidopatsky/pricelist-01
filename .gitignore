@@ -1,5 +1,6 @@
 pricelist.xlsx
 viewer.html
+export/
 .DS_Store
 __pycache__/
 *.pyc
