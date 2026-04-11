@@ -1,0 +1,17 @@
+{
+  "sku": "alux-zaskleni-bezramove",
+  "display_name_cs": "ALUX Zasklení Bezrámové - ESG 10 mm, RAL 7016 axalta jmn. str., bez přesahů křídel! sestavený",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "výška",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

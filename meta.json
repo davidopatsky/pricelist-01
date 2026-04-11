@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "exported_at": "2026-04-11",
+  "currency": "CZK",
+  "vat_included": false,
+  "installation_rates": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "languages": [
+    "cs",
+    "en",
+    "de",
+    "pl",
+    "hu"
+  ],
+  "layout": "products-by-category",
+  "root": "products",
+  "categories": [
+    "pergola",
+    "screen",
+    "glazing",
+    "awning",
+    "accessories",
+    "extras"
+  ],
+  "pricing_formulas": {
+    "base_price": "matrix.prices[verticalIndex][horizontalIndex]",
+    "internal_cost": "round(base_price * commerce.cost_percent / 100)",
+    "with_installation": "round(base_price * (1 + installation_rate / 100))",
+    "discount_applied": false,
+    "rounding": "Math.round to nearest integer CZK"
+  },
+  "counts": {
+    "pergola": 10,
+    "screen": 1,
+    "glazing": 2,
+    "awning": 1,
+    "accessories": 5,
+    "extras": 3
+  },
+  "total_products": 14,
+  "total_accessories": 5,
+  "total_extras": 3
+}

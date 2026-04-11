@@ -1,0 +1,17 @@
+{
+  "sku": "alux-zaskleni-ramove",
+  "display_name_cs": "ALUX Zasklení Rámové - sklo CONNEX 3.3.1., RAL 7016 axalta jmn. str., sestavený",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "výška",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

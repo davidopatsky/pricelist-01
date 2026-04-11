@@ -1,0 +1,17 @@
+{
+  "sku": "alux-trapez",
+  "display_name_cs": "ALUX Trapez - trapézový plech, konstrukce RAL 7016, trapéz dle vzorníku",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

@@ -1,0 +1,17 @@
+{
+  "sku": "simple-ancona",
+  "display_name_cs": "Simple Ancona - rám 120 x 120 + markýza, bez odvodnění a okapového žlabu. Konstrukce RAL 7016",
+  "axes": {
+    "horizontal": {
+      "label": "Šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "Hloubka/výsuv markýzy",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

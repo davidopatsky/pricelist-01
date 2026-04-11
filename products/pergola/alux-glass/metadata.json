@@ -1,0 +1,17 @@
+{
+  "sku": "alux-glass",
+  "display_name_cs": "ALUX Glass - Sklo VSG 44.1, konstrukce RAL 7016, čiré sklo v ceně, mléčné příplatkové!",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

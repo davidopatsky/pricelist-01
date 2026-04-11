@@ -1,0 +1,9 @@
+pricelist.xlsx
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*~
+~$*.xlsx
+.~lock.*#

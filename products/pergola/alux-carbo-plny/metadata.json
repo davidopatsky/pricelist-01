@@ -1,0 +1,17 @@
+{
+  "sku": "alux-carbo-plny",
+  "display_name_cs": "ALUX carbo 6mm - plný polykarbonát 6mm, konstrukce RAL 7016, polykarbonát plný 6mm barevné varianty v ceně",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}
