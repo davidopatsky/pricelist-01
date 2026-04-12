@@ -1,7 +1,5 @@
 ---
 sku: alux-ram
-name_en: "ALUX rám bez střechy"
-order: 7
 ---
 
 # ALUX rám bez střechy

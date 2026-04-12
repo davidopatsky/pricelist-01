@@ -1,7 +1,5 @@
 ---
 sku: strada-glass
-name_en: "Strada glass"
-order: 11
 ---
 
 # Strada glass

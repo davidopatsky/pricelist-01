@@ -1,7 +1,5 @@
 ---
 sku: alux-screen
-name_en: "ALUX Screen"
-order: 8
 ---
 
 # ALUX screen

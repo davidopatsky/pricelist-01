@@ -1,7 +1,5 @@
 ---
 sku: strada-carbo-dutinkovy
-name_en: "Strada carbo multiwall polycarbonate 16 mm"
-order: 9
 ---
 
 # Strada carbo 16mm

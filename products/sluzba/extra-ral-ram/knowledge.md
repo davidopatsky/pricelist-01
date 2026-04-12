@@ -1,6 +1,5 @@
 ---
 sku: extra-ral-ram
-name_en: "additional fee for extra RAL frame color"
 ---
 
 # Příplatek za lakování rámu

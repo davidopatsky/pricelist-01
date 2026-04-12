@@ -1,7 +1,5 @@
 ---
 sku: alux-zaskleni-bezramove
-name_en: "ALUX Frameless glass"
-order: 14
 ---
 
 # ALUX Zasklení Bezrámové

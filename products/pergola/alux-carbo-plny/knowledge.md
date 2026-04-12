@@ -1,7 +1,5 @@
 ---
 sku: alux-carbo-plny
-name_en: "ALUX Carbo full polycarbonate 6 mm"
-order: 3
 ---
 
 # ALUX Carbo plný polykarbonát

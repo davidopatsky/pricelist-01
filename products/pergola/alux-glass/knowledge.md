@@ -1,7 +1,5 @@
 ---
 sku: alux-glass
-name_en: "ALUX Glass"
-order: 6
 ---
 
 # ALUX Glass

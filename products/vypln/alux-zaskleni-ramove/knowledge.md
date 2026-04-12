@@ -1,7 +1,5 @@
 ---
 sku: alux-zaskleni-ramove
-name_en: "ALUX Glass with frame"
-order: 13
 ---
 
 # ALUX Zasklení Rámové

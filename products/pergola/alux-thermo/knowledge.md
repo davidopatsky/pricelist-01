@@ -1,7 +1,5 @@
 ---
 sku: alux-thermo
-name_en: "ALUX Thermo"
-order: 2
 ---
 
 # ALUX Thermo

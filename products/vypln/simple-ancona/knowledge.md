@@ -1,7 +1,5 @@
 ---
 sku: simple-ancona
-name_en: "Simple Ancona"
-order: 12
 ---
 
 # Simple Ancona

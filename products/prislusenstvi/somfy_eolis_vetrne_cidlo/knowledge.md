@@ -1,6 +1,5 @@
 ---
 sku: somfy_eolis_vetrne_cidlo
-name_en: "Somfy wind sensor"
 ---
 
 # Somfy Eolis Wirefree větrné čidlo

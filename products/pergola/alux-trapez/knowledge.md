@@ -1,7 +1,5 @@
 ---
 sku: alux-trapez
-name_en: "ALUX Trapez"
-order: 5
 ---
 
 # ALUX Trapez

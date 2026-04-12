@@ -1,6 +1,5 @@
 ---
 sku: somfy_patio_16
-name_en: "Somfy remote 16 channel with display"
 ---
 
 # ovladač Somfy Patio 16 IO s displayem

@@ -1,7 +1,5 @@
 ---
 sku: strada-carbo-plny
-name_en: "Strada carbo full polycarbonate 6 mm"
-order: 10
 ---
 
 # Strada carbo 6mm

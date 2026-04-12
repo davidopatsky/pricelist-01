@@ -1,7 +1,5 @@
 ---
 sku: alux-bioclimatic
-name_en: "ALUX Bioclimatic"
-order: 1
 ---
 
 # ALUX Bioclimatic

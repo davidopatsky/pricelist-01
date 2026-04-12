@@ -1,7 +1,5 @@
 ---
 sku: alux-carbo-dutinkovy
-name_en: "ALUX Carbo multiwall polycarbonate 16 mm"
-order: 4
 ---
 
 # ALUX Carbo dutinkový polykarbonát
