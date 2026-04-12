@@ -14,7 +14,7 @@ Repo: **`davidopatsky/pricelist-01`** (GitHub, **private** — fetch vyžaduje t
 https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/pricelist.json
 ```
 
-JSON array, každý objekt má 16 polí:
+JSON array, každý objekt má N polí (aktuálně 16, může přibývat — apps by měly číst po klíčích, ne po indexech):
 
 ```json
 {

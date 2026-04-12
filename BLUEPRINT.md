@@ -27,7 +27,7 @@
 
 ## `pricelist.xlsx` — canonical edit surface
 
-- **16 sloupců**, fixní pořadí
+- **sloupce se auto-detekují z xlsx headeru** (přidání/přesunutí/přejmenování sloupce nerozbije žádný skript)
 - **freeze panes**: `A2` (header zamrzlý)
 - **text format `@`** pinned na: `sku`, `category`, `name`, `name_en`, `description`, `price_formula`, `currency`, `unit`, `discount`, `delivery_weeks`, `color_summary`, `raynet_description` (zabraňuje Numbers/Excel auto-konverzím SKU jako `2024-01` → datum)
 - **numeric format `#,##0`** na: `cost`, `cost_percent`, `raynet_cost`
@@ -60,7 +60,7 @@
 ]
 ```
 
-## Schema — 16 polí
+## Schema (aktuální pole)
 
 | # | klíč | typ | povinné | příklad | poznámka |
 |---|---|---|---|---|---|
@@ -285,8 +285,9 @@ Všechny staré artefakty jsou v `archive/` — žádný skript se jich nedotýk
 | v3 | category folders | `pergola/<sku>/{item.json, prices.json}` v rootu | uživatel chtěl "products" parent folder |
 | v4 | products parent | `products/<cat>/<sku>/{item.json, prices.json}` | uživatel chtěl xlsx round-trip + Raynet-shape |
 | v5 (paused) | Raynet-shape | rename `sku → code`, přidány `product_line` a další | uživatel řekl "don't remove sku" + plán znovu |
-| **v6.0** | blueprint | 4 nové kategorie (`pergola`, `vypln`, `prislusenstvi`, `sluzba`), per-item `knowledge.md` + `metadata.json` + `prices.json`, root `pricelist.json` (14 polí), one-way `xlsx → json` workflow | uživatel přidal Raynet sloupce |
-| **v6.1** *(current)* | + Raynet | drop `product_line`, add `raynet_description` + `raynet_cost`, total **15 polí** | — |
+| **v6.0** | blueprint | 4 nové kategorie (`pergola`, `vypln`, `prislusenstvi`, `sluzba`), per-item `knowledge.md` + `metadata.json` + `prices.json`, root `pricelist.json`, one-way `xlsx → json` workflow | uživatel přidal Raynet sloupce |
+| **v6.1** | + Raynet | drop `product_line`, add `raynet_description` + `raynet_cost` | uživatel přidal `name_en` |
+| **v6.2** *(current)* | + name_en, schema-agnostic skripty | add `name_en`; skripty auto-detekují sloupce z xlsx/json headeru — přidání sloupce nerozbije nic | — |
 
 ## Klíčová rozhodnutí (decisions log)
 

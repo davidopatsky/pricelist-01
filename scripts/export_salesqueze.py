@@ -19,21 +19,21 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / 'export' / 'salesqueze'
 PRODUCTS = ROOT / 'products'
 
-# Products to export (matrix-priced only)
-SKUS = [
-    'alux-bioclimatic',
-    'alux-carbo-dutinkovy',
-    'alux-carbo-plny',
-    'alux-glass',
-    'alux-ram',
-    'alux-thermo',
-    'alux-trapez',
-    'alux-screen',
-    'alux-zaskleni-bezramove',
-    'alux-zaskleni-ramove',
-]
-
 CATEGORIES = ['pergola', 'vypln', 'prislusenstvi', 'sluzba']
+
+def discover_matrix_skus():
+    """Auto-discover all SKUs that have a prices.json file on disk."""
+    skus = []
+    for cat in CATEGORIES:
+        cat_dir = PRODUCTS / cat
+        if not cat_dir.exists():
+            continue
+        for sku_dir in sorted(cat_dir.iterdir()):
+            if not sku_dir.is_dir():
+                continue
+            if (sku_dir / 'prices.json').exists():
+                skus.append(sku_dir.name)
+    return skus
 
 HEADER_FONT = Font(name='Arial', size=10, bold=True)
 HEADER_FILL = PatternFill('solid', start_color='F3F4F6')
@@ -107,11 +107,15 @@ def export_sku(sku):
 
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    skus = discover_matrix_skus()
+    if not skus:
+        print('No products with prices.json found.')
+        return
     written = 0
-    for sku in SKUS:
+    for sku in skus:
         if export_sku(sku):
             written += 1
-    print(f'\nDone. {written}/{len(SKUS)} files in export/salesqueze/')
+    print(f'\nDone. {written}/{len(skus)} files in export/salesqueze/')
 
 if __name__ == '__main__':
     main()

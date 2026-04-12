@@ -1,14 +1,26 @@
 #!/usr/bin/env python3
 """Export pricelist.xlsx → pricelist.json (one-way, manual).
 
-Reads pricelist.xlsx at the project root, validates against the 14-field
-blueprint schema, and overwrites pricelist.json. Never reads or writes
-any per-product files (products/**/knowledge.md, metadata.json, prices.json
-are all out of scope for this script).
+Schema-agnostic: reads ALL columns from the xlsx header row and passes
+them through to pricelist.json. Adding, removing, or reordering columns
+in the xlsx does NOT require changes to this script.
+
+Only 3 things are validated:
+  1. `sku` column must exist (required, unique per row)
+  2. `category` column must exist (required, must be one of ALLOWED_CATEGORIES)
+  3. `currency` column must exist (required)
+
+Everything else is passed through as-is. Column order in the JSON output
+matches the xlsx header order.
+
+PRICING CONVENTION (see BLUEPRINT.md):
+  standard_price=1 is a magic placeholder, not 1 CZK.
+  Consumers must read standard_price + price_formula together.
+  This script preserves both verbatim — no normalization.
 
 Run:
     python3 scripts/export_json.py
-    python3 scripts/export_json.py --dry-run    # show what would change, don't write
+    python3 scripts/export_json.py --dry-run
 """
 import json
 import sys
@@ -19,76 +31,45 @@ ROOT = Path(__file__).resolve().parent.parent
 XLSX = ROOT / 'pricelist.xlsx'
 OUT = ROOT / 'pricelist.json'
 
-# Blueprint schema — 16 fields, fixed order (v6.2: added name_en)
-#
-# PRICING CONVENTION:
-# `standard_price` and `price_formula` are read together by consumers.
-# `standard_price = 1` is a MAGIC PLACEHOLDER, not a real 1 CZK price.
-#
-#   standard_price | price_formula | meaning
-#   --------------|---------------|----------------------------------------
-#   <number != 1> | null          | fixed price — use as-is
-#   1             | "matrix"      | matrix — look up in products/<cat>/<sku>/prices.json
-#   1             | "<text>"      | formula — apply rule (e.g. "4% from price")
-#   1             | null          | placeholder — price not yet defined
-#   null          | null          | no price
-#
-# This script preserves both fields verbatim — it does NOT compute or normalize them.
-# See BLUEPRINT.md → "Pricing convention" for details.
-FIELDS = [
-    ('sku',                 'text',  True),   # required
-    ('category',            'enum',  True),   # required
-    ('name',                'text',  True),   # required (CZ)
-    ('name_en',             'text',  False),  # English name (optional)
-    ('description',         'text',  False),
-    ('standard_price',      'mixed', False),  # number | "matrix" | null
-    ('price_formula',       'text',  False),
-    ('currency',            'text',  True),   # required
-    ('unit',                'text',  True),   # required
-    ('cost',                'num',   False),
-    ('cost_percent',        'num',   False),
-    ('discount',            'text',  False),
-    ('delivery_weeks',      'text',  False),
-    ('color_summary',       'text',  False),
-    ('raynet_description',  'text',  False),  # HTML for Raynet sync
-    ('raynet_cost',         'num',   False),
-]
+# Required columns — script will crash with a clear error if these are missing.
+REQUIRED = {'sku', 'category', 'currency'}
 
 ALLOWED_CATEGORIES = {'pergola', 'vypln', 'prislusenstvi', 'sluzba'}
+
+# Header aliases: common typos / legacy names → canonical key.
+# Canonical keys are whatever pricelist.json currently uses.
+HEADER_ALIASES = {
+    'name-en':     'name_en',
+    'name_cs':     'name',
+    'nazev':       'name',
+    'nazev-cz':    'name',
+}
+
+# Columns whose values should be treated as numbers when possible.
+# Everything else is kept as text (string | null).
+NUMERIC_COLUMNS = {'standard_price', 'cost', 'cost_percent', 'raynet_cost'}
 
 def parse_args():
     return '--dry-run' in sys.argv[1:]
 
-def normalize_value(raw, kind):
+def normalize_value(raw, is_numeric):
+    """Convert a raw cell value to a clean Python value."""
     if raw is None:
         return None
-    if kind == 'num':
-        if isinstance(raw, (int, float)):
-            return raw
-        try:
-            s = str(raw).strip()
-            if s == '':
-                return None
-            n = float(s)
-            return int(n) if n.is_integer() else n
-        except ValueError:
-            return None
-    if kind == 'mixed':
-        if isinstance(raw, (int, float)):
-            return raw
-        s = str(raw).strip()
-        if s == '':
-            return None
-        if s.lower() == 'matrix':
-            return 'matrix'
+    if isinstance(raw, (int, float)):
+        if is_numeric:
+            return int(raw) if float(raw).is_integer() else raw
+        return raw  # preserve numbers even in text columns
+    s = str(raw).strip()
+    if s == '':
+        return None
+    if is_numeric:
         try:
             n = float(s)
             return int(n) if n.is_integer() else n
         except ValueError:
-            return s  # keep as string (edge case)
-    # text / enum
-    s = '' if raw is None else str(raw).strip()
-    return s if s != '' else None
+            return s  # keep as string (e.g. "matrix" in standard_price)
+    return s
 
 def read_xlsx():
     if not XLSX.exists():
@@ -96,25 +77,19 @@ def read_xlsx():
     wb = load_workbook(XLSX, data_only=True)
     ws = wb.active
 
-    # Header row expected at row 1.
-    # ALIASES normalize legacy/typo header variants → canonical FIELDS keys.
-    HEADER_ALIASES = {
-        'name-en':           'name_en',
-        'name_cs':           'name',
-        'nazev':             'name',
-        'nazev-cz':          'name',
-    }
-    header = [str(c.value).strip() if c.value else None for c in ws[1]]
-    header_map = {}
-    for i, name in enumerate(header):
-        if not name:
+    # Read header row, apply aliases
+    raw_headers = [str(c.value).strip() if c.value else None for c in ws[1]]
+    columns = []  # list of (canonical_name, col_index)
+    for i, h in enumerate(raw_headers):
+        if not h:
             continue
-        canonical = HEADER_ALIASES.get(name, name)
-        header_map[canonical] = i
+        canonical = HEADER_ALIASES.get(h, h)
+        columns.append((canonical, i))
 
-    missing_headers = [f for f, _, req in FIELDS if req and f not in header_map]
-    if missing_headers:
-        raise SystemExit(f'Missing required columns in xlsx header: {missing_headers}')
+    found_keys = {name for name, _ in columns}
+    missing = REQUIRED - found_keys
+    if missing:
+        raise SystemExit(f'Missing required columns in xlsx header: {sorted(missing)}')
 
     items = []
     errors = []
@@ -122,32 +97,30 @@ def read_xlsx():
 
     for r_idx, row in enumerate(ws.iter_rows(min_row=2, values_only=True), 2):
         if all(v is None or str(v).strip() == '' for v in row):
-            continue  # skip blank rows
+            continue
 
         entry = {}
-        row_errors = []
-        for field, kind, required in FIELDS:
-            idx = header_map.get(field)
-            if idx is None or idx >= len(row):
-                raw = None
-            else:
-                raw = row[idx]
-            val = normalize_value(raw, kind)
-            entry[field] = val
-            if required and val in (None, ''):
-                row_errors.append(f'row {r_idx}: {field} is required')
+        for name, idx in columns:
+            raw = row[idx] if idx < len(row) else None
+            entry[name] = normalize_value(raw, name in NUMERIC_COLUMNS)
 
         sku = entry.get('sku')
-        if sku:
-            if sku in seen_skus:
-                row_errors.append(f'row {r_idx}: duplicate sku "{sku}"')
-            seen_skus.add(sku)
+        if not sku:
+            errors.append(f'row {r_idx}: sku is empty')
+            continue
+        if sku in seen_skus:
+            errors.append(f'row {r_idx}: duplicate sku "{sku}"')
+        seen_skus.add(sku)
 
         cat = entry.get('category')
-        if cat and cat not in ALLOWED_CATEGORIES:
-            row_errors.append(f'row {r_idx}: category "{cat}" not in {sorted(ALLOWED_CATEGORIES)}')
+        if not cat:
+            errors.append(f'row {r_idx}: category is empty')
+        elif cat not in ALLOWED_CATEGORIES:
+            errors.append(f'row {r_idx}: category "{cat}" not in {sorted(ALLOWED_CATEGORIES)}')
 
-        errors.extend(row_errors)
+        if not entry.get('currency'):
+            errors.append(f'row {r_idx}: currency is empty')
+
         items.append(entry)
 
     return items, errors
@@ -162,7 +135,6 @@ def main():
             print(f'  {e}')
         sys.exit(1)
 
-    # Compare to existing pricelist.json if present
     old = []
     if OUT.exists():
         old = json.loads(OUT.read_text())
@@ -182,17 +154,31 @@ def main():
         if i['sku'] in old_by and i != old_by[i['sku']]:
             changed += 1
 
-    print(f'Changes:')
+    # Detect new/removed columns
+    old_keys = set()
+    for o in old:
+        old_keys.update(o.keys())
+    new_keys = set()
+    for i in items:
+        new_keys.update(i.keys())
+    added_cols = new_keys - old_keys
+    removed_cols = old_keys - new_keys
+
+    print('Changes:')
     print(f'  {len(added)} added: {added if added else "—"}')
     print(f'  {len(removed)} removed: {removed if removed else "—"}')
     print(f'  {changed} modified')
+    if added_cols:
+        print(f'  NEW COLUMNS: {sorted(added_cols)}')
+    if removed_cols:
+        print(f'  REMOVED COLUMNS: {sorted(removed_cols)}')
 
     if dry:
         print('(dry run — pricelist.json NOT written)')
         return
 
     OUT.write_text(new_json)
-    print(f'Wrote {OUT} ({len(items)} items)')
+    print(f'Wrote {OUT} ({len(items)} items, {len(new_keys)} fields)')
 
 if __name__ == '__main__':
     main()

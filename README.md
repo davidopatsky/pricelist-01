@@ -87,7 +87,7 @@ Detail viz `BLUEPRINT.md` → sekce **Pricing convention**.
 
 ## Počty
 
-- 14 polí v `pricelist.json`
+- sloupce v `pricelist.json` se auto-detekují z xlsx (přidání sloupce nerozbije žádný skript)
 - 22 položek celkem:
   - 10 pergol
   - 4 výplně (1 screen + 2 zasklení + 1 markýza)
