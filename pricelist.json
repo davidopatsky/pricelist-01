@@ -32,7 +32,7 @@
     "discount": "0-22%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný v ceně.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
@@ -50,13 +50,13 @@
     "discount": "0-22%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm barevné varianty v ceně. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
     "sku": "alux-glass",
     "category": "pergola",
-    "name": "ALUX Glass",
+    "name": "ALUX Glass VSG 44.2",
     "name_en": "ALUX Glass",
     "description": "ALUX rovný rám - Sklo / plný polykarbonát 6mm, konstrukce RAL 7016, polykarbonát plný 6mm barevné varianty, Sklo VSG 44.",
     "standard_price": 1,
@@ -68,7 +68,7 @@
     "discount": "0-22%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva skla: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
@@ -104,7 +104,7 @@
     "discount": "0-22%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Panely 7016/7016 nebo 9006/7016. Ostatní dle dostupnosti, ověřit na výrobě.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva PUR panelu: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
@@ -122,13 +122,13 @@
     "discount": "0-22%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Trapéz dle vzorníku.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva trapézového plechu</b></p>\n<p><b>: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
     "sku": "strada-carbo-dutinkovy",
     "category": "pergola",
-    "name": "Strada carbo 16mm",
+    "name": "Strada carbo dutinkový polykarbonát 16mm",
     "name_en": null,
     "description": "Strada Carbo - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát dutinkový 16 mm 5X, čirý, antracit, mléčný",
     "standard_price": 1,
@@ -140,13 +140,13 @@
     "discount": "0-10%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
     "sku": "strada-carbo-plny",
     "category": "pergola",
-    "name": "Strada carbo 6mm",
+    "name": "Strada carbo plný polykarbonát 6mm",
     "name_en": null,
     "description": "ŠIKMÁ carbo 6mm - pouze na pozednici plný polykarbonát 6 mm čirý, mléčný, antracit, ostatní",
     "standard_price": 1,
@@ -158,13 +158,13 @@
     "discount": "0-15%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
     "sku": "strada-glass",
     "category": "pergola",
-    "name": "Strada glass",
+    "name": "Strada glass VSG 44.2",
     "name_en": null,
     "description": "ŠIKMÁ STRADA GLASS - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016",
     "standard_price": 1,
@@ -176,7 +176,7 @@
     "discount": "0-20%",
     "delivery_weeks": "7-8",
     "color_summary": "Konstrukce RAL 7016. Skleněná střecha VSG 44.2.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva skla: </b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
   {
@@ -212,7 +212,7 @@
     "discount": "0-20%",
     "delivery_weeks": "7-8",
     "color_summary": "Kastlík 120 × 120 mm, RAL 7016 Axalta jemná struktura.",
-    "raynet_description": null,
+    "raynet_description": "<p><b>Typ motoru:</b>\n<br>\nSomfy IO\n<br>\n<br>\n<b>Barva látky:</b>\n<br>\nSERGE 600 -</p>",
     "raynet_cost": null
   },
   {
@@ -254,7 +254,7 @@
   {
     "sku": "vypln-pur-panel",
     "category": "vypln",
-    "name": "PUR Panel boční výplň 7016/7016",
+    "name": "PUR Panel boční výplň barva:",
     "name_en": null,
     "description": null,
     "standard_price": 2500,
@@ -272,7 +272,7 @@
   {
     "sku": "vypln-slunolam-fix",
     "category": "vypln",
-    "name": "Boční fixní slunolam RAL 7016",
+    "name": "Boční fixní slunolam barva:",
     "name_en": null,
     "description": null,
     "standard_price": 3500,
@@ -325,7 +325,7 @@
   },
   {
     "sku": "somfy-eolis-vetrne-cidlo",
-    "category": "prislusenstvi",
+    "category": "elektro",
     "name": "Somfy Eolis Wirefree větrné čidlo",
     "name_en": null,
     "description": "Větrné čidlo. Detekuje silný vítr a automaticky uzavře/zatáhne markýzu. Povinný doplněk pro Simple Ancona.",
@@ -491,11 +491,11 @@
     "name": "Příplatek za lakování lamel",
     "name_en": null,
     "description": null,
-    "standard_price": 1,
+    "standard_price": 1200,
     "price_formula": "1300 czk  per m2 of pergola",
     "currency": "CZK",
-    "unit": "ks",
-    "cost": 1,
+    "unit": "m2",
+    "cost": 1200,
     "cost_percent": null,
     "discount": null,
     "delivery_weeks": null,
@@ -531,7 +531,7 @@
     "price_formula": null,
     "currency": "CZK",
     "unit": "m2",
-    "cost": 450,
+    "cost": 490,
     "cost_percent": null,
     "discount": null,
     "delivery_weeks": null,
@@ -676,6 +676,24 @@
     "currency": "CZK",
     "unit": "ks",
     "cost": 2990,
+    "cost_percent": null,
+    "discount": null,
+    "delivery_weeks": null,
+    "color_summary": null,
+    "raynet_description": null,
+    "raynet_cost": null
+  },
+  {
+    "sku": "somfy-ondeis-destove-cidlo",
+    "category": "elektro",
+    "name": "Somfy Ondeis deštové čidlo",
+    "name_en": null,
+    "description": null,
+    "standard_price": 9939,
+    "price_formula": null,
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 0,
     "cost_percent": null,
     "discount": null,
     "delivery_weeks": null,
