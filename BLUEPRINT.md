@@ -21,6 +21,10 @@
     │   └── <sku>/ …
     ├── prislusenstvi/
     │   └── <sku>/ …
+    ├── elektro/
+    │   └── <sku>/ …
+    ├── priplatky/
+    │   └── <sku>/ …
     └── sluzba/
         └── <sku>/ …
 ```
@@ -65,7 +69,7 @@
 | # | klíč | typ | povinné | příklad | poznámka |
 |---|---|---|---|---|---|
 | 1 | `sku` | string | ✓ | `alux-bioclimatic` | join key, unique, beze změny napříč systémy |
-| 2 | `category` | enum | ✓ | `pergola` | jedna z: `pergola`, `vypln`, `prislusenstvi`, `sluzba` |
+| 2 | `category` | enum | ✓ | `pergola` | jedna z: `pergola`, `vypln`, `prislusenstvi`, `elektro`, `priplatky`, `sluzba` |
 | 3 | `name` | string | ✓ | `ALUX Bioclimatic` | krátký název CZ |
 | 4 | `name_en` | string \| null | – | `ALUX Bioclimatic` | anglický název (volitelné) |
 | 5 | `description` | string | – | `Bioklimatická pergola…` | jedna věta CZ |
@@ -103,8 +107,10 @@ Proč `1` a ne `null` nebo `"matrix"` přímo v `standard_price`? Numbers/Excel 
 |---|---|---|
 | `pergola` | hlavní produkty | bioclimatic, carbo, glass, ram, thermo, … |
 | `vypln` | výplně do pergoly / okolo | screeny, zasklení, markýzy |
-| `prislusenstvi` | dokupované doplňky | stojny, ovladače, čidla, motory |
-| `sluzba` | nezbožní položky | montáž, doprava, příplatky |
+| `prislusenstvi` | mechanické doplňky / kotvení | stojny, čidla, hilti / fischer kotvy, roznášecí body |
+| `elektro` | elektro doplňky | LED osvětlení, ovladače Somfy, kamery, pohybová čidla, zásuvky |
+| `priplatky` | příplatky k existujícím produktům | extra RAL barva, mléčné sklo |
+| `sluzba` | nezbožní položky | montáž, doprava, betonáž patek |
 
 ## Per-product folder — `products/<category>/<sku>/`
 

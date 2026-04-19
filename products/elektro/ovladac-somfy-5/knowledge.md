@@ -1,5 +1,5 @@
 ---
-sku: somfy_situo_5
+sku: ovladac-somfy-5
 ---
 
 # ovladač Somfy Situo 5 IO

@@ -1,5 +1,5 @@
 ---
-sku: somfy_eolis_vetrne_cidlo
+sku: somfy-eolis-vetrne-cidlo
 ---
 
 # Somfy Eolis Wirefree větrné čidlo

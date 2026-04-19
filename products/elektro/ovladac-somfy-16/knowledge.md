@@ -1,5 +1,5 @@
 ---
-sku: somfy_patio_16
+sku: ovladac-somfy-16
 ---
 
 # ovladač Somfy Patio 16 IO s displayem
