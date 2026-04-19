@@ -34,7 +34,7 @@ OUT = ROOT / 'pricelist.json'
 # Required columns — script will crash with a clear error if these are missing.
 REQUIRED = {'sku', 'category', 'currency'}
 
-ALLOWED_CATEGORIES = {'pergola', 'vypln', 'prislusenstvi', 'sluzba', 'elektro', 'priplatky'}
+ALLOWED_CATEGORIES = {'pergola', 'vypln', 'prislusenstvi', 'sluzba', 'elektro', 'priplatky', 'profily'}
 
 # Header aliases: common typos / legacy names → canonical key.
 # Canonical keys are whatever pricelist.json currently uses.

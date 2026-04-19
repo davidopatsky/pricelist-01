@@ -39,7 +39,7 @@ JSON array, každý objekt má N polí (aktuálně 16, může přibývat — app
 
 `name_en` je volitelné — pokud je `null`, fallback na `name`.
 
-`category` je jeden z: `pergola` / `vypln` / `prislusenstvi` / `elektro` / `priplatky` / `sluzba`. SKU je join key.
+`category` je jeden z: `pergola` / `vypln` / `prislusenstvi` / `elektro` / `priplatky` / `profily` / `sluzba`. SKU je join key.
 
 ## 2. ⚠️ Pricing convention — POVINNÉ ČÍST
 
