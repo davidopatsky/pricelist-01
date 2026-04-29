@@ -802,7 +802,7 @@
     "currency": "CZK",
     "unit": "ks",
     "cost": 1,
-    "cost_percent": null,
+    "cost_percent": 60,
     "discount": "0-25%",
     "delivery_weeks": "7-8",
     "color_summary": null,

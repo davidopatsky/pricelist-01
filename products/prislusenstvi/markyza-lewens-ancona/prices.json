@@ -5,9 +5,30 @@
   "fx_note": "Source prices in EUR converted × 25 = CZK",
   "options_axis": "vertical",
   "options_axis_note": "Option arrays parallel to vertical_values (per šířka)",
+  "transport_by_width": {
+    "note": "Jednorázový transportní poplatek podle šířky markýzy. Připočítává se k matici i doplňkům.",
+    "axis": "vertical",
+    "tiers": [
+      {
+        "width_up_to_cm": 350,
+        "fee_czk": 1375,
+        "note": "≤ 3 500 mm — 55 EUR"
+      },
+      {
+        "width_up_to_cm": 550,
+        "fee_czk": 1700,
+        "note": "3 501–5 500 mm — 68 EUR"
+      },
+      {
+        "width_up_to_cm": null,
+        "fee_czk": 3875,
+        "note": "> 5 500 mm — 155 EUR"
+      }
+    ]
+  },
   "variants": [
     {
-      "label": "Ancona nad střechu - exteriérová",
+      "label": "Ancona pod střechu - interiérová",
       "horizontal_values": [
         150,
         200,
@@ -169,11 +190,23 @@
           8000,
           8000,
           null
+        ],
+        "motor_io_upgrade": [
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875
         ]
       }
     },
     {
-      "label": "Ancona pod střechu - interiérová",
+      "label": "Ancona nad střechu - exteriérová",
       "horizontal_values": [
         150,
         200,
@@ -288,6 +321,17 @@
           8000,
           8000,
           8000
+        ],
+        "motor_io_upgrade": [
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875,
+          2875
         ]
       }
     }
