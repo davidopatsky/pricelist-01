@@ -28,7 +28,8 @@ V cenové matici platí: **vodorovně = výsuv (cm)**, **svisle = šířka (cm)*
 
 ### Ancona nad střechu — exteriérová
 
-_(popis dodá uživatel)_
+- Maximální **šířka 6 500 mm** (650 cm)
+- Maximální **výsuv 4 500 mm** (450 cm)
 
 ## Specifikace
 
