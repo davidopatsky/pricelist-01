@@ -21,14 +21,9 @@ V cenové matici platí: **vodorovně = výsuv (cm)**, **svisle = šířka (cm)*
 
 ### Ancona pod střechu — interiérová (spodní)
 
-- Maximální **šířka 6 500 mm** (650 cm)
-- Maximální **výsuv 4 500 mm** (450 cm)
 - Volitelně **horní kryt (Top cover)** — není povinný; cena dle velikosti z ceníku.
 
 ### Ancona nad střechu — exteriérová
-
-- Maximální **šířka 6 000 mm** (600 cm)
-- Maximální **výsuv 4 500 mm** (450 cm)
 
 ## Specifikace
 
