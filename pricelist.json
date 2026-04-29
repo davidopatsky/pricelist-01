@@ -796,7 +796,7 @@
     "category": "prislusenstvi",
     "name": "Markýza Ancona Lewens",
     "name_en": null,
-    "description": null,
+    "description": "Ke všemu připočítat jednorázové transportní poplatky:\n- šířka do 3 500 mm: 55 EUR (1 375 Kč)\n- šířka do 5 500 mm: 68 EUR (1 700 Kč)\n- šířka nad 5 500 mm: 155 EUR (3 875 Kč)\n\nV tabulce najdeme rozměr — vodorovně je výsuv (cm), svisle je šířka (cm).\n\nStandardní RAL jsou ve vzorníku (uložený ve složce). Ostatní RAL: příplatek 320 EUR (8 000 Kč), max sleva 25 %.\n\nMotor WT bez příplatku. Motor IO: + 115 EUR (2 875 Kč), max sleva 25 %.",
     "standard_price": 1,
     "price_formula": "matrix",
     "currency": "CZK",
