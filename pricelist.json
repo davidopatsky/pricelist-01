@@ -12,7 +12,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Lamely RAL 9006 / RAL 7016 Axalta jemná struktura. Jiné barvy rámu na dotaz, jiné barvy lamel individuálně.",
     "raynet_description": "<p><b>MOTOR: </b>SOMFY IO</p>\n<p><b>BARVA RÁMU: </b>RAL 7016 jmn. str.</p>\n<p><b>BARVA LAMEL: </b>RAL 9006 jmn. str.</p>\n<p>\n<br>\n</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
@@ -30,7 +30,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný v ceně.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>",
     "raynet_cost": null
@@ -48,7 +48,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm barevné varianty v ceně. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
@@ -66,7 +66,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
@@ -84,7 +84,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-15%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016.",
     "raynet_description": null,
     "raynet_cost": null
@@ -102,7 +102,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Panely 7016/7016 nebo 9006/7016. Ostatní dle dostupnosti, ověřit na výrobě.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva PUR panelu: </b>7016 / 7016</p>",
     "raynet_cost": null
@@ -120,7 +120,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-22%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Trapéz dle vzorníku.",
     "raynet_description": "<p><b>Barva rámu: </b></p>\n<p>RAL 7016</p>\n<p><b>Barva trapézového plechu:</b></p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
@@ -138,7 +138,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-10%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>\n<p><b>TERMÍN DODÁNÍ: </b>7 - 8 týdnů</p>",
     "raynet_cost": null
@@ -156,7 +156,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-15%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>\n<p><b>TERMÍN DODÁNÍ: </b>7 - 8 týdnů</p>",
     "raynet_cost": null
@@ -174,7 +174,7 @@
     "cost": 1,
     "cost_percent": 58,
     "discount": "0-20%",
-    "delivery_weeks": "7-8",
+    "delivery_weeks": "6-7",
     "color_summary": "Konstrukce RAL 7016. Skleněná střecha VSG 44.2.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>\n<p><b>TERMÍN DODÁNÍ: </b>7 - 8 týdnů</p>",
     "raynet_cost": null
