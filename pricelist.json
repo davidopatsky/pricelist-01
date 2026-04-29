@@ -798,7 +798,7 @@
     "name_en": null,
     "description": null,
     "standard_price": 1,
-    "price_formula": null,
+    "price_formula": "matrix",
     "currency": "CZK",
     "unit": "ks",
     "cost": 1,
