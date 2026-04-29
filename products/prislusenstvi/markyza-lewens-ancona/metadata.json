@@ -1,0 +1,17 @@
+{
+  "sku": "markyza-lewens-ancona",
+  "display_name_cs": "Markýza Ancona Lewens - exteriérová / interiérová",
+  "axes": {
+    "horizontal": {
+      "label": "výsuv",
+      "unit": "cm"
+    },
+    "vertical": {
+      "label": "šířka",
+      "unit": "cm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}
