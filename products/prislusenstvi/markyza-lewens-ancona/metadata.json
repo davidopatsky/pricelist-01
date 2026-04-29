@@ -3,11 +3,11 @@
   "display_name_cs": "Markýza Ancona Lewens - exteriérová / interiérová",
   "axes": {
     "horizontal": {
-      "label": "výsuv",
+      "label": "výsuv (cm)",
       "unit": "cm"
     },
     "vertical": {
-      "label": "šířka",
+      "label": "šířka (cm)",
       "unit": "cm"
     }
   },
