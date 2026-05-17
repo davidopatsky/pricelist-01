@@ -20,10 +20,6 @@ Naklápěcí lamelový slunolam pro stínění. Lamely z extrudovaného hliníku
 
 Práškové lakování konstrukce v barvách kolekce SELT — v ceně.
 
-Seznam dostupných RAL je nahraný v adresáři obchodníka.
-
-Nejsou to práškové barvy AXALTA, takže tam bude mírný rozdíl — je potřeba toto info dát zákazníkovi. Také jsou podle barev někdy odlišné struktury.
-
 ## Specifikace
 
 - Cena: matrix podle šířky × výšky (mm).
