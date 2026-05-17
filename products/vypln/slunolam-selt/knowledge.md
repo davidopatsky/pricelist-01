@@ -4,7 +4,7 @@ sku: slunolam-selt
 
 # Slunolam SELT
 
-> Slunolam SELT — hliníkový naklápěcí lamelový systém (brise-soleil), ruční pohon. Práškování v barvách kolekce SELT v ceně.
+> Slunolam SELT — hliníkový naklápěcí lamelový systém, ruční pohon. Práškování v barvách kolekce SELT v ceně.
 
 ## Popis
 
@@ -26,9 +26,5 @@ Nejsou to práškové barvy AXALTA, takže tam bude mírný rozdíl — je potř
 
 ## Specifikace
 
-- Cena: matrix podle šířky × výšky (mm).
-- **Dopravné 35 EUR (875 Kč) je už zahrnuté v každé buňce matice** — nepočítá se zvlášť.
 - Náklad = 70 % z matice (`cost_percent = 70`).
-- Měna: ceny přepočteny z EUR × 25.
-- Termín dodání: **7–8 týdnů**.
 - Pohon: pouze ruční (motor v nabídce není).
