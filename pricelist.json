@@ -814,7 +814,7 @@
     "category": "vypln",
     "name": "Slunolam SELT",
     "name_en": null,
-    "description": "Seznam dostupných RAL je nahraný v adresáři obchodníka.\n\nNejsou to práškové barvy AXALTA, takže tam bude mírný rozdíl — je potřeba toto info dát zákazníkovi. Také jsou podle barev někdy odlišné struktury.",
+    "description": null,
     "standard_price": 1,
     "price_formula": "matrix",
     "currency": "CZK",
