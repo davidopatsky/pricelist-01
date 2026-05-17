@@ -1,0 +1,17 @@
+{
+  "sku": "slunolam-selt",
+  "display_name_cs": "Slunolam SELT - hliníkové naklápěcí lamely, ruční pohon",
+  "axes": {
+    "horizontal": {
+      "label": "šířka (mm)",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "výška (mm)",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}
