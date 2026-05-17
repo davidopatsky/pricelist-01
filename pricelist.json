@@ -822,7 +822,7 @@
     "cost": 1,
     "cost_percent": 70,
     "discount": null,
-    "delivery_weeks": null,
+    "delivery_weeks": "7-8",
     "color_summary": null,
     "raynet_description": null,
     "raynet_cost": null
