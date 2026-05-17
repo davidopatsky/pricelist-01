@@ -1,6 +1,6 @@
 {
-  "sku": "slunolam-selt",
-  "display_name_cs": "Slunolam SELT - hliníkové naklápěcí lamely, ruční pohon",
+  "sku": "alux-blind",
+  "display_name_cs": "ALUX Blind boční slunolam otočný - hliníkové naklápěcí lamely, ruční pohon",
   "axes": {
     "horizontal": {
       "label": "šířka (mm)",

@@ -1,10 +1,10 @@
 ---
-sku: slunolam-selt
+sku: alux-blind
 ---
 
-# Slunolam SELT
+# ALUX Blind boční slunolam otočný
 
-> Slunolam SELT — hliníkový naklápěcí lamelový systém, ruční pohon. Práškování v barvách kolekce SELT v ceně.
+> ALUX Blind boční slunolam otočný — hliníkový naklápěcí lamelový systém, ruční pohon. Práškování v barvách kolekce SELT v ceně.
 
 ## Popis
 
