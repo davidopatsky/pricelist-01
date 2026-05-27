@@ -562,7 +562,7 @@
     "category": "sluzba",
     "name": "Montáž",
     "name_en": null,
-    "description": "Procentuální ceny za montáže produktů, které jsou určovány procentuelně.",
+    "description": "Sazebník procentuálních cen za montáž produktů, jejichž cena montáže se určuje procentem z prodejní ceny montovaného produktu.",
     "standard_price": 1,
     "price_formula": "percent-tariff (viz prices.json)",
     "currency": "CZK",
