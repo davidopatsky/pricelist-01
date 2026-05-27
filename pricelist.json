@@ -826,5 +826,23 @@
     "color_summary": null,
     "raynet_description": null,
     "raynet_cost": null
+  },
+  {
+    "sku": "montaz-procenta",
+    "category": "sluzba",
+    "name": "Montáže %",
+    "name_en": null,
+    "description": "Procentuální ceny za montáže produktů, které jsou určovány procentuelně.",
+    "standard_price": 1,
+    "price_formula": "percent-tariff (viz prices.json)",
+    "currency": "CZK",
+    "unit": "%",
+    "cost": 1,
+    "cost_percent": null,
+    "discount": null,
+    "delivery_weeks": null,
+    "color_summary": null,
+    "raynet_description": null,
+    "raynet_cost": null
   }
 ]

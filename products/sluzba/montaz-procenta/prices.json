@@ -1,0 +1,76 @@
+{
+  "sku": "montaz-procenta",
+  "type": "percent-tariff",
+  "currency": "CZK",
+  "note": "Procentuální sazby za montáž. Cena montáže = procento × cena montovaného produktu.",
+  "sections": [
+    {
+      "id": "pergoly",
+      "label": "Pergoly",
+      "applies_to_category": "pergola",
+      "rate_type": "tiered_by_price",
+      "tier_note": "Procento se určuje podle prodejní ceny pergoly (CZK). Hladina = horní hranice pásma.",
+      "tiers": [
+        {
+          "price_up_to_czk": 100000,
+          "percent": 15
+        },
+        {
+          "price_up_to_czk": 150000,
+          "percent": 15
+        },
+        {
+          "price_up_to_czk": 200000,
+          "percent": 15
+        },
+        {
+          "price_up_to_czk": 250000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 300000,
+          "percent": 13
+        },
+        {
+          "price_up_to_czk": 400000,
+          "percent": 12
+        },
+        {
+          "price_up_to_czk": null,
+          "percent": 12,
+          "note": "500 000 a více"
+        }
+      ]
+    },
+    {
+      "id": "zaskleni",
+      "label": "Zasklení",
+      "applies_to_skus": [
+        "alux-zaskleni-bezramove",
+        "alux-zaskleni-ramove"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 13
+    },
+    {
+      "id": "markyza-ancona",
+      "label": "Markýza Ancona",
+      "applies_to_skus": [
+        "markyza-lewens-ancona"
+      ],
+      "rate_type": "flat_percent",
+      "percent": null,
+      "note": "% doplní uživatel"
+    },
+    {
+      "id": "slunolam",
+      "label": "Slunolam",
+      "applies_to_skus": [
+        "alux-blind"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 15,
+      "note": "Platnost pro vypln-slunolam-fix k potvrzení uživatelem."
+    }
+  ]
+}
