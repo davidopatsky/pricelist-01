@@ -1,5 +1,5 @@
 {
-  "sku": "montaz-procenta",
+  "sku": "montaz",
   "type": "percent-tariff",
   "currency": "CZK",
   "note": "Procentuální sazby za montáž. Cena montáže = procento × cena montovaného produktu.",
@@ -59,18 +59,17 @@
         "markyza-lewens-ancona"
       ],
       "rate_type": "flat_percent",
-      "percent": null,
-      "note": "% doplní uživatel"
+      "percent": 15
     },
     {
       "id": "slunolam",
       "label": "Slunolam",
       "applies_to_skus": [
-        "alux-blind"
+        "alux-blind",
+        "vypln-slunolam-fix"
       ],
       "rate_type": "flat_percent",
-      "percent": 15,
-      "note": "Platnost pro vypln-slunolam-fix k potvrzení uživatelem."
+      "percent": 15
     }
   ]
 }
