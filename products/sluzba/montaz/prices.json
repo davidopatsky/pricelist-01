@@ -3,6 +3,12 @@
   "type": "percent-tariff",
   "currency": "CZK",
   "note": "Procentuální sazby za montáž. Cena montáže = procento × cena montovaného produktu.",
+  "installation_rates": [
+    11,
+    12,
+    13,
+    14
+  ],
   "sections": [
     {
       "id": "pergoly",
@@ -13,31 +19,31 @@
       "tiers": [
         {
           "price_up_to_czk": 100000,
-          "percent": 15
-        },
-        {
-          "price_up_to_czk": 150000,
-          "percent": 15
-        },
-        {
-          "price_up_to_czk": 200000,
-          "percent": 15
-        },
-        {
-          "price_up_to_czk": 250000,
           "percent": 14
         },
         {
-          "price_up_to_czk": 300000,
+          "price_up_to_czk": 150000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 200000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 250000,
           "percent": 13
         },
         {
-          "price_up_to_czk": 400000,
+          "price_up_to_czk": 300000,
           "percent": 12
         },
         {
+          "price_up_to_czk": 400000,
+          "percent": 11
+        },
+        {
           "price_up_to_czk": null,
-          "percent": 12,
+          "percent": 11,
           "note": "500 000 a více"
         }
       ]
@@ -50,7 +56,7 @@
         "alux-zaskleni-ramove"
       ],
       "rate_type": "flat_percent",
-      "percent": 13
+      "percent": 12
     },
     {
       "id": "markyza-ancona",
@@ -59,7 +65,7 @@
         "markyza-lewens-ancona"
       ],
       "rate_type": "flat_percent",
-      "percent": 15
+      "percent": 14
     },
     {
       "id": "slunolam",
@@ -69,7 +75,7 @@
         "vypln-slunolam-fix"
       ],
       "rate_type": "flat_percent",
-      "percent": 15
+      "percent": 14
     }
   ]
 }
