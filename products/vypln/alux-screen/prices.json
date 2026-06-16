@@ -1,6 +1,15 @@
 {
   "sku": "alux-screen",
   "type": "matrix",
+  "surcharges": [
+    {
+      "id": "atypicka_barva",
+      "label": "Atypická barva (mimo standardní VENYS RAL)",
+      "type": "one_time",
+      "fee_czk": 6000,
+      "note": "Standardní barvy bez příplatku: RAL 9006, 8014, 9016, 7016, 7016S"
+    }
+  ],
   "horizontal_values": [
     800,
     900,
