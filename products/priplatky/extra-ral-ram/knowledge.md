@@ -4,10 +4,15 @@ sku: extra-ral-ram
 
 # Příplatek za lakování rámu
 
+> Atypická RAL barva konstrukce (rámu) pergoly. Aplikuje se napříč všemi ALUX pergolami.
+
 ## Popis
 
-_(zatím bez popisu)_
+Příplatek za nestandardní RAL barvu rámu pergoly. Standardní barva je RAL 7016 Axalta jemná struktura (v ceně pergoly).
 
-## Barvy a povrchy
+**Cena: 4 % z prodejní ceny pergoly.**
 
-_(zatím nevyplněno)_
+## Specifikace
+
+- Jednotka: ks
+- Výpočet: 4 % × cena pergoly (CZK)
