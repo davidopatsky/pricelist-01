@@ -2,7 +2,7 @@
   "sku": "montaz",
   "type": "percent-tariff",
   "currency": "CZK",
-  "note": "Procentuální sazby za montáž. Cena montáže = procento × cena montovaného produktu.",
+  "note": "Sazby za montáž. Procentuální sekce: cena montáže = procento × cena montovaného produktu. Sekce s rate_type \"flat_fee\": pevná částka fee_czk.",
   "installation_rates": [
     11,
     12,
@@ -76,6 +76,15 @@
       ],
       "rate_type": "flat_percent",
       "percent": 14
+    },
+    {
+      "id": "lamely-venys",
+      "label": "Lamely VENYS",
+      "applies_to_skus": [
+        "lamely-venys"
+      ],
+      "rate_type": "flat_fee",
+      "fee_czk": 2500
     }
   ]
 }
