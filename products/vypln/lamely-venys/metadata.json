@@ -1,6 +1,6 @@
 {
   "sku": "lamely-venys",
-  "display_name_cs": "Lamely VENYS - hliníkové lamely horizontální / vertikální, RAL základní / příplatkové",
+  "display_name_cs": "Lamely VENYS - hliníkové lamely s nástřikem, horizontální / vertikální, základní RAL / příplatkové RAL",
   "axes": {
     "horizontal": {
       "label": "šířka (mm)",

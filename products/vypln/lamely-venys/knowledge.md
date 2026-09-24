@@ -4,7 +4,7 @@ sku: lamely-venys
 
 # Lamely VENYS
 
-> Hliníkové lamely VENYS — horizontální nebo vertikální provedení, bez nástřiku nebo s nástřikem RAL.
+> Hliníkové lamely VENYS s nástřikem RAL — horizontální nebo vertikální provedení, základní RAL nebo příplatkové RAL.
 
 ## Popis
 
