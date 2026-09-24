@@ -1,0 +1,17 @@
+{
+  "sku": "lamely-venys",
+  "display_name_cs": "Lamely VENYS - hliníkové lamely horizontální / vertikální, RAL ano / ne",
+  "axes": {
+    "horizontal": {
+      "label": "šířka (mm)",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "výška (mm)",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}
