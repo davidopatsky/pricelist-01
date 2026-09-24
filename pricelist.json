@@ -832,7 +832,7 @@
     "category": "vypln",
     "name": "Lamely VENYS",
     "name_en": null,
-    "description": null,
+    "description": "Lamely VENYS - hliníkové lamely horizontální / vertikální, základní barvy RAL 7016 AXALTA struktura, RAL 8017 hnědá, RAL 9016 bílá",
     "standard_price": 1,
     "price_formula": "matrix",
     "currency": "CZK",
@@ -841,7 +841,7 @@
     "cost_percent": 50,
     "discount": "0-20%",
     "delivery_weeks": "4-5",
-    "color_summary": null,
+    "color_summary": "Základní barvy: RAL 7016 AXALTA struktura, RAL 8017 hnědá, RAL 9016 bílá. Ostatní RAL příplatkové.",
     "raynet_description": null,
     "raynet_cost": null
   }

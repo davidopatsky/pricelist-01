@@ -10,16 +10,8 @@ sku: lamely-venys
 
 Cena podle rozměru šířka × výška (mm). Čtyři varianty:
 
-- **Horizontální - RAL ne / RAL ano** — šířka = délka lamely, výška = výška pokrytí.
-- **Vertikální - RAL ne / RAL ano** — výška = délka lamely, šířka = šířka pokrytí.
-
-## Barvy a povrchy
-
-Základní barvy (varianta RAL ne):
-
-- RAL 7016 AXALTA, struktura
-- RAL 8017 hnědá
-- RAL 9016 bílá
+- **Horizontální - RAL Základní / RAL Příplatkové** — šířka = délka lamely, výška = výška pokrytí.
+- **Vertikální - RAL Základní / RAL Příplatkové** — výška = délka lamely, šířka = šířka pokrytí.
 
 ## Specifikace
 

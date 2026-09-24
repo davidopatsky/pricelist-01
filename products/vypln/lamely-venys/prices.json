@@ -5,7 +5,7 @@
   "fx_note": "Nákupní ceny EUR × 25 = CZK; prodejní cena = nákup × 2 (náklad 50 % z prodejní ceny, při slevě 20 % zbývá marže 30 %).",
   "variants": [
     {
-      "label": "Horizontální - RAL ne",
+      "label": "Horizontální - RAL Základní",
       "horizontal_values": [
         1000,
         1250,
@@ -267,7 +267,7 @@
       }
     },
     {
-      "label": "Horizontální - RAL ano",
+      "label": "Horizontální - RAL Příplatkové",
       "horizontal_values": [
         1000,
         1250,
@@ -529,7 +529,7 @@
       }
     },
     {
-      "label": "Vertikální - RAL ne",
+      "label": "Vertikální - RAL Základní",
       "horizontal_values": [
         584,
         680,
@@ -987,7 +987,7 @@
       }
     },
     {
-      "label": "Vertikální - RAL ano",
+      "label": "Vertikální - RAL Příplatkové",
       "horizontal_values": [
         584,
         680,
