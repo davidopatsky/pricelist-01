@@ -844,5 +844,23 @@
     "color_summary": "Vše s nástřikem. Základní RAL: RAL 7016 AXALTA struktura, RAL 8017 hnědá, RAL 9016 bílá. Ostatní odstíny = příplatkové RAL.",
     "raynet_description": null,
     "raynet_cost": null
+  },
+  {
+    "sku": "pur-panel-stena",
+    "category": "vypln",
+    "name": "PUR Panel stěna",
+    "name_en": null,
+    "description": "Barvy RAL 7016 / 7016, RAL 9006 / 7016, ostatní ověřit dostupnost individuálně",
+    "standard_price": 1,
+    "price_formula": "matrix",
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1,
+    "cost_percent": 80,
+    "discount": "0%",
+    "delivery_weeks": null,
+    "color_summary": "Panely RAL 7016 / 7016 nebo RAL 9006 / 7016. Ostatní ověřit dostupnost individuálně.",
+    "raynet_description": null,
+    "raynet_cost": null
   }
 ]

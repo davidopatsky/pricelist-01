@@ -85,6 +85,15 @@
       ],
       "rate_type": "flat_fee",
       "fee_czk": 2500
+    },
+    {
+      "id": "pur-panel-stena",
+      "label": "PUR Panel stěna",
+      "applies_to_skus": [
+        "pur-panel-stena"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 14
     }
   ]
 }
