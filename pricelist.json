@@ -840,7 +840,7 @@
     "cost": 1,
     "cost_percent": 50,
     "discount": "0-20%",
-    "delivery_weeks": null,
+    "delivery_weeks": "4-5",
     "color_summary": null,
     "raynet_description": null,
     "raynet_cost": null
