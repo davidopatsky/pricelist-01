@@ -154,11 +154,25 @@ async function priceFor(sku, width_mm, depth_mm) {
 }
 ```
 
-## 6. Caching
+## 6. Záložka „Kusové položky“ (interaktivní ceník)
+
+Samostatná záložka **na konci navigace** se všemi položkami s pevnou cenou za jednotku (stojny, kotvení, elektro, profily, služby, příplatky…).
+
+**Které položky:** z `pricelist.json` všechny, kde `price_formula !== "matrix"` a `standard_price !== 1` (1 = zástupná hodnota, cena se počítá z matice nebo vzorce — např. `montaz`, `extra-ral-ram`).
+
+```js
+const kusove = items.filter(i => i.price_formula !== 'matrix' && i.standard_price !== 1);
+```
+
+**Sloupce:** SKU (`sku`), Název (`name`), Prodejní cena (`standard_price`), Náklad (`cost`).
+
+Cena je za `unit` (ks, m2, bm, km) — u jednotek jiných než `ks` doporučeno zobrazit jednotku u ceny (např. „30 Kč/km“), jinak je cena zavádějící.
+
+## 7. Caching
 
 GitHub raw URL CDN cache TTL ~5 min. **Necachuj per-request** — fetchni `pricelist.json` jednou při startu, cachuj v paměti, refresh každých pár minut nebo po webhooku.
 
-## 7. Pinning na verzi (volitelné)
+## 8. Pinning na verzi (volitelné)
 
 Místo `main` můžeš pinnout commit hash:
 
@@ -166,7 +180,7 @@ Místo `main` můžeš pinnout commit hash:
 https://raw.githubusercontent.com/davidopatsky/pricelist-01/<commit-sha>/pricelist.json
 ```
 
-## 8. Když se něco rozbije
+## 9. Když se něco rozbije
 
 - Plný schema spec: `BLUEPRINT.md` v rootu repa
 - Workflow + history: `BLUEPRINT.md` → sekce "Projektový kontext"
