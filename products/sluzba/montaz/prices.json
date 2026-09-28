@@ -94,6 +94,15 @@
       ],
       "rate_type": "flat_percent",
       "percent": 14
+    },
+    {
+      "id": "markyza-latin-40",
+      "label": "Markýza Latin 40",
+      "applies_to_skus": [
+        "markyza-latin-40"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 14
     }
   ]
 }

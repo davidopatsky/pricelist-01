@@ -875,8 +875,8 @@
     "unit": "ks",
     "cost": 1,
     "cost_percent": 50,
-    "discount": null,
-    "delivery_weeks": null,
+    "discount": "0-25%",
+    "delivery_weeks": "7",
     "color_summary": "Konstrukce bílá RAL 9010 (skupina 1) nebo antracit jemná struktura mat RAL 7016 (skupina 2). Látky dle vzorníku Bohemiaflex CS.",
     "raynet_description": null,
     "raynet_cost": null
