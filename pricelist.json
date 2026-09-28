@@ -862,5 +862,23 @@
     "color_summary": "Panely RAL 7016 / 7016 nebo RAL 9006 / 7016. Ostatní ověřit dostupnost individuálně.",
     "raynet_description": null,
     "raynet_cost": null
+  },
+  {
+    "sku": "markyza-latin-40",
+    "category": "prislusenstvi",
+    "name": "Markýza Latin 40",
+    "name_en": null,
+    "description": "Terasová markýza Latin 40, ovládání mechanicky lanovým převodem pomocí kladek.\n\nBarvy konstrukce: skupina 1 – bílá (RAL 9010), skupina 2 – antracitová jemná struktura mat (RAL 7016).\nPotah: markýzová látka, odstíny dle vzorníků Bohemiaflex CS.\nKotvící materiál není v ceně výrobku.\n\nTechnické informace:\n- Dodává se vždy v rozloženém stavu, sestavuje se na místě montáže.\n- Při rozteči vodících kolejnic nad 4 000 mm je nutné přidat dodatečnou vodící kolejnici.\n- Max. sklon 15° do rozměru 4 000 × 4 000 mm, 10° do 7 000 × 7 000 mm.\n- Přesah profilu látky přes kolejnici min. 200 mm, max. 1 000 mm.\n- Standardní rozpětí profilů s potahem 400–525 mm (dle vyložení a druhu potahu).\n- Nelze montovat mezi zdmi, pouze na krokve.\n- Ovládání se určuje vždy při čelním pohledu na výrobek.\n- Při montáži ve sklonu po směru vyložení je první vodící látka prověšená, ostatní napnuté.",
+    "standard_price": 1,
+    "price_formula": "matrix",
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1,
+    "cost_percent": 50,
+    "discount": null,
+    "delivery_weeks": null,
+    "color_summary": "Konstrukce bílá RAL 9010 (skupina 1) nebo antracit jemná struktura mat RAL 7016 (skupina 2). Látky dle vzorníku Bohemiaflex CS.",
+    "raynet_description": null,
+    "raynet_cost": null
   }
 ]
