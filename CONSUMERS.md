@@ -104,10 +104,10 @@ Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `
 | Klíč | Typ | Význam |
 |---|---|---|
 | `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; 2 jen spolu s `pricky`) |
-| `pricky` | bool, nepovinné (výchozí `false`) | + příčky mezi krokvemi (výztuha) |
+| `pricky` | bool, nepovinné (výchozí `false`) | + výztuha |
 | `sirka_od` / `sirka_do` | mm, včetně, nepovinné | šířka = vodorovná osa matice |
 | `hloubka_od` / `hloubka_do` | mm, včetně, nepovinné | hloubka = svislá osa matice |
-| `popisek` | text, nepovinné | vlastní text do legendy; jinak se složí sám, např. „3× stojna + příčky mezi krokvemi“ |
+| `popisek` | text, nepovinné | vlastní text do legendy; jinak se složí sám, např. „3× stojna + výztuha“ |
 
 Chybějící mez = bez omezení.
 

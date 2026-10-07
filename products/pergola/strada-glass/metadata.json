@@ -18,17 +18,20 @@
     {
       "stojny": 4,
       "pricky": true,
-      "hloubka_od": 4100
+      "hloubka_od": 4100,
+      "popisek": "4× stojna + výztuha"
     },
     {
       "stojny": 3,
       "pricky": true,
-      "sirka_od": 4600
+      "sirka_od": 4600,
+      "popisek": "3× stojna + výztuha"
     },
     {
       "stojny": 3,
       "pricky": true,
-      "hloubka_od": 3600
+      "hloubka_od": 3600,
+      "popisek": "3× stojna + výztuha"
     },
     {
       "stojny": 3,
@@ -37,12 +40,14 @@
     {
       "stojny": 2,
       "pricky": true,
-      "sirka_od": 3100
+      "sirka_od": 3100,
+      "popisek": "2× stojna + výztuha"
     },
     {
       "stojny": 2,
       "pricky": true,
-      "hloubka_od": 3100
+      "hloubka_od": 3100,
+      "popisek": "2× stojna + výztuha"
     }
   ]
 }

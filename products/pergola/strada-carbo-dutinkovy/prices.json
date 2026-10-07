@@ -1,7 +1,7 @@
 {
   "sku": "strada-carbo-dutinkovy",
   "type": "matrix",
-  "note": "Cena výztuhy (příčky mezi krokvemi) je v zónách s \"pricky\": true (metadata.json → support_zones) už započtena v cenách matice: náklad +3 500 Kč, prodejní +6 034 Kč. Nepřičítat znovu.",
+  "note": "Cena výztuhy je v zónách s \"pricky\": true (metadata.json → support_zones) už započtena v cenách matice: náklad +3 500 Kč, prodejní +6 034 Kč. Nepřičítat znovu.",
   "horizontal_values": [
     2000,
     2100,
