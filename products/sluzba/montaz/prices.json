@@ -69,22 +69,22 @@
     },
     {
       "id": "slunolam",
-      "label": "Slunolam",
+      "label": "Slunolam otočný (ALUX Blind SELT + VENYS)",
       "applies_to_skus": [
         "alux-blind",
-        "vypln-slunolam-fix"
-      ],
-      "rate_type": "flat_percent",
-      "percent": 14
-    },
-    {
-      "id": "lamely-venys",
-      "label": "Lamely VENYS",
-      "applies_to_skus": [
         "lamely-venys"
       ],
       "rate_type": "flat_fee",
       "fee_czk": 2500
+    },
+    {
+      "id": "slunolam-fix",
+      "label": "Slunolam fixní ZETA",
+      "applies_to_skus": [
+        "vypln-slunolam-fix"
+      ],
+      "rate_type": "flat_fee",
+      "fee_czk": 3500
     },
     {
       "id": "pur-panel-stena",
