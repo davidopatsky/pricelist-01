@@ -95,6 +95,25 @@ https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/products/<categ
 }
 ```
 
+**Zóny stojen** (Strady — klíč `zones` v `prices.json`, zdroj pro barevné zóny a popisky v matici):
+```json
+"zones": {
+  "reinforcement": { "cost_czk": 3500, "price_czk": 6034, "included_in_prices": true },
+  "rules": [
+    { "label": "2× stojna", "max_width_mm": 4000, "max_depth_mm": 3000, "posts": 2, "reinforcement": false },
+    { "label": "2× stojna + výztuha", "max_width_mm": 5000, "max_depth_mm": 4000, "posts": 2, "reinforcement": true },
+    ...
+  ]
+}
+```
+
+Buňka (W = šířka, H = hloubka) patří do **prvního** pravidla, kde `W ≤ max_width_mm` a `H ≤ max_depth_mm` (`null` = bez omezení). Buňka bez pravidla = mimo zóny. Cena výztuhy je v matici už započtená — nepřičítat znovu.
+
+```js
+const zoneOf = (zones, w, h) => zones.rules.find(r =>
+  (r.max_width_mm == null || w <= r.max_width_mm) && (r.max_depth_mm == null || h <= r.max_depth_mm)) ?? null;
+```
+
 ### `metadata.json` (volitelné, jen pro produkty se strukturovanými daty)
 
 Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
