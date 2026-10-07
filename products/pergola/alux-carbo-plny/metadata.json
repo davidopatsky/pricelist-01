@@ -13,5 +13,11 @@
   },
   "horizontal_footer": null,
   "accessories_included": [],
-  "accessories_compatible": []
+  "accessories_compatible": [],
+  "support_zones": [
+    {
+      "stojny": 3,
+      "sirka_od": 6100
+    }
+  ]
 }

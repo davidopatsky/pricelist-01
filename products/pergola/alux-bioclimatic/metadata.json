@@ -49,5 +49,11 @@
   "accessories_compatible": [
     "stojna-120-3000",
     "stojna-120-3500"
+  ],
+  "support_zones": [
+    {
+      "stojny": 3,
+      "sirka_od": 6100
+    }
   ]
 }

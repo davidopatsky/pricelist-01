@@ -95,28 +95,30 @@ https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/products/<categ
 }
 ```
 
-**Zóny stojen** (Strady — klíč `zones` v `prices.json`, zdroj pro barevné zóny a popisky v matici):
-```json
-"zones": {
-  "reinforcement": { "cost_czk": 3500, "price_czk": 6034, "included_in_prices": true },
-  "rules": [
-    { "label": "2× stojna", "max_width_mm": 4000, "max_depth_mm": 3000, "posts": 2, "reinforcement": false },
-    { "label": "2× stojna + výztuha", "max_width_mm": 5000, "max_depth_mm": 4000, "posts": 2, "reinforcement": true },
-    ...
-  ]
-}
-```
-
-Buňka (W = šířka, H = hloubka) patří do **prvního** pravidla, kde `W ≤ max_width_mm` a `H ≤ max_depth_mm` (`null` = bez omezení). Buňka bez pravidla = mimo zóny. Cena výztuhy je v matici už započtená — nepřičítat znovu.
-
-```js
-const zoneOf = (zones, w, h) => zones.rules.find(r =>
-  (r.max_width_mm == null || w <= r.max_width_mm) && (r.max_depth_mm == null || h <= r.max_depth_mm)) ?? null;
-```
-
 ### `metadata.json` (volitelné, jen pro produkty se strukturovanými daty)
 
-Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
+Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`, u pergol `support_zones`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
+
+**`support_zones`** (pergoly) — zóny stojen pro zvýraznění v matici. Pole pravidel, vyhodnocují se **shora dolů, platí první, které sedí**. Když nesedí žádné → 2 stojny (bez zvýraznění).
+
+| Klíč | Typ | Význam |
+|---|---|---|
+| `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; 2 jen spolu s `pricky`) |
+| `pricky` | bool, nepovinné (výchozí `false`) | + příčky mezi krokvemi (výztuha) |
+| `sirka_od` / `sirka_do` | mm, včetně, nepovinné | šířka = vodorovná osa matice |
+| `hloubka_od` / `hloubka_do` | mm, včetně, nepovinné | hloubka = svislá osa matice |
+| `popisek` | text, nepovinné | vlastní text do legendy; jinak se složí sám, např. „3× stojna + příčky mezi krokvemi“ |
+
+Chybějící mez = bez omezení.
+
+```json
+"support_zones": [
+  { "stojny": 3, "pricky": true, "hloubka_od": 4500 },
+  { "stojny": 3, "sirka_od": 5100 }
+]
+```
+
+U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
 
 ### `knowledge.md` (vždy)
 

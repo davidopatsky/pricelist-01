@@ -13,5 +13,35 @@
   },
   "horizontal_footer": null,
   "accessories_included": [],
-  "accessories_compatible": []
+  "accessories_compatible": [],
+  "support_zones": [
+    {
+      "stojny": 3,
+      "pricky": true,
+      "sirka_od": 6100
+    },
+    {
+      "stojny": 3,
+      "pricky": true,
+      "hloubka_od": 4600
+    },
+    {
+      "stojny": 3,
+      "sirka_od": 5100
+    },
+    {
+      "stojny": 3,
+      "hloubka_od": 4100
+    },
+    {
+      "stojny": 2,
+      "pricky": true,
+      "sirka_od": 4100
+    },
+    {
+      "stojny": 2,
+      "pricky": true,
+      "hloubka_od": 3100
+    }
+  ]
 }

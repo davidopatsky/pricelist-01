@@ -1,44 +1,7 @@
 {
   "sku": "strada-carbo-plny",
   "type": "matrix",
-  "zones": {
-    "note": "Zóny stojen. W = šířka (horizontal_values), H = hloubka (vertical_values), mm. Pravidla se vyhodnocují shora dolů, platí první, které sedí; null = bez omezení. Cena výztuhy je v zónách s výztuhou už započtena v cenách matice — nepřičítat znovu.",
-    "reinforcement": {
-      "cost_czk": 3500,
-      "price_czk": 6034,
-      "included_in_prices": true
-    },
-    "rules": [
-      {
-        "label": "2× stojna",
-        "max_width_mm": 3000,
-        "max_depth_mm": 3000,
-        "posts": 2,
-        "reinforcement": false
-      },
-      {
-        "label": "2× stojna + výztuha",
-        "max_width_mm": 4000,
-        "max_depth_mm": 4000,
-        "posts": 2,
-        "reinforcement": true
-      },
-      {
-        "label": "3× stojna",
-        "max_width_mm": 5000,
-        "max_depth_mm": 4500,
-        "posts": 3,
-        "reinforcement": false
-      },
-      {
-        "label": "3× stojna + výztuha",
-        "max_width_mm": null,
-        "max_depth_mm": null,
-        "posts": 3,
-        "reinforcement": true
-      }
-    ]
-  },
+  "note": "Cena výztuhy (příčky mezi krokvemi) je v zónách s \"pricky\": true (metadata.json → support_zones) už započtena v cenách matice: náklad +3 500 Kč, prodejní +6 034 Kč. Nepřičítat znovu.",
   "horizontal_values": [
     2000,
     2100,
