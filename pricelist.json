@@ -970,5 +970,23 @@
     "color_summary": null,
     "raynet_description": null,
     "raynet_cost": null
+  },
+  {
+    "sku": "extra-ral-screen",
+    "category": "priplatky",
+    "name": "Příplatek za lakování screenu na jinou RAL",
+    "name_en": null,
+    "description": null,
+    "standard_price": 3000,
+    "price_formula": null,
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1500,
+    "cost_percent": null,
+    "discount": null,
+    "delivery_weeks": null,
+    "color_summary": null,
+    "raynet_description": null,
+    "raynet_cost": null
   }
 ]

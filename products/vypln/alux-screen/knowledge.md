@@ -22,7 +22,7 @@ Standardní barvy screenů (VENYS) — bez příplatku:
 - **Antracit** — RAL 7016
 - **Antracit struktura** — RAL 7016S
 
-Atypická barva (mimo seznam): jednorázový příplatek **3 000 Kč**.
+Příplatkové lakování na jinou RAL (mimo seznam): jednorázově **3 000 Kč**.
 
 ## Specifikace
 
