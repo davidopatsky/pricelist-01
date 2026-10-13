@@ -12,7 +12,7 @@ Společné pro obě varianty:
 
 - **ZIP vedení** — látka vedená v ZIP vodících lištách.
 - **Rozměry** — max. šířka 600 cm (jednoduchá), 1 200 cm (dvojitá), max. výsuv 500 cm. Vyrábí se na centimetry v libovolné mezi-šířce.
-- **Dvojitá markýza** (šířka nad 600 cm) — dvě markýzy vedle sebe na společném držáku: 2 kazety, 2 motory, 4 vodící lišty.
+- **Možnost dvojité (zdvojené) markýzy** — šířka 700–1 200 cm: dvě markýzy vedle sebe na dvojitém držáku na krokvi, v ceně 2 kazety, 2 motory, 4 vodící lišty.
 - **RAL barvy** — standardní RAL dle vzorníku (uložený ve složce produktu). Atypická RAL: příplatek **320 EUR (8 000 Kč)**, u dvojité **640 EUR (16 000 Kč)**, max sleva 25 %.
 - **Motor** — WT bez příplatku (zahrnut v ceně matice). IO motor: **+ 115 EUR (2 875 Kč)**, max sleva 25 %.
 - **Transport (jednorázově dle šířky)** — připočítává se ke všemu:
