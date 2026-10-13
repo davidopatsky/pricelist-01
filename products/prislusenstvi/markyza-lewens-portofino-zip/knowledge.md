@@ -35,7 +35,6 @@ V cenové matici platí: **vodorovně = výsuv (cm)**, **svisle = šířka (cm)*
 
 ## Specifikace
 
-- Termín dodání: **8–9 týdnů**
 - Max sleva: **25 %**
 - Dvě podverze (interiérová, exteriérová) — každá má vlastní matici cen.
 - Cena: matrix podle šířky × výsuvu + volitelné doplňky + transport (per-šířka).
