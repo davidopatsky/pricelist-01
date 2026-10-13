@@ -87,10 +87,10 @@
       "fee_czk": 3500
     },
     {
-      "id": "pur-panel-stena",
-      "label": "PUR Panel stěna",
+      "id": "vypln-pur-panel",
+      "label": "PUR Panel boční výplň",
       "applies_to_skus": [
-        "pur-panel-stena"
+        "vypln-pur-panel"
       ],
       "rate_type": "flat_percent",
       "percent": 14

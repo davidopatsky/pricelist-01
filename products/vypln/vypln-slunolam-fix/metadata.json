@@ -1,6 +1,6 @@
 {
-  "sku": "pur-panel-stena",
-  "display_name_cs": "PUR Panel stěna",
+  "sku": "vypln-slunolam-fix",
+  "display_name_cs": "Boční fixní slunolam ZETA",
   "axes": {
     "horizontal": {
       "label": "šířka (mm)",
