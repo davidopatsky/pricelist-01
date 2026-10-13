@@ -994,7 +994,7 @@
     "category": "prislusenstvi",
     "name": "Markýza Portofino ZIP Lewens",
     "name_en": null,
-    "description": "Zipová varianta – látka vedená v ZIP vodících lištách. Max. šířka 600 cm (jednoduchá), 1 200 cm (dvojitá = 2 markýzy vedle sebe na společném držáku, 2 kazety, 2 motory, 4 vodící lišty). Max. výsuv 500 cm.\n\nKe všemu připočítat jednorázové transportní poplatky:\n- šířka do 3 500 mm: 55 EUR (1 375 Kč)\n- šířka do 5 500 mm: 68 EUR (1 700 Kč)\n- šířka nad 5 500 mm: 155 EUR (3 875 Kč)\n\nV tabulce najdeme rozměr — vodorovně je výsuv (cm), svisle je šířka (cm).\n\nStandardní RAL jsou ve vzorníku (uložený ve složce). Ostatní RAL: příplatek 320 EUR (8 000 Kč), u dvojité 640 EUR (16 000 Kč), max sleva 25 %.\n\nMotor WT bez příplatku. Motor IO: + 115 EUR (2 875 Kč), max sleva 25 %.\n\nPod střechu (interiérová): volitelně LED pásek v kazetě nebo LED profil – cena dle šířky z ceníku.",
+    "description": "Zipová varianta – látka vedená v ZIP vodících lištách. Max. šířka 600 cm (jednoduchá), 1 200 cm (dvojitá = 2 markýzy vedle sebe na společném držáku, 2 kazety, 2 motory, 4 vodící lišty). Max. výsuv 500 cm.\n\nKe všemu připočítat jednorázové transportní poplatky:\n- šířka do 3 500 mm: 55 EUR (1 375 Kč)\n- šířka do 5 500 mm: 68 EUR (1 700 Kč)\n- šířka nad 5 500 mm: 155 EUR (3 875 Kč)\n\nV tabulce najdeme rozměr — vodorovně je výsuv (cm), svisle je šířka (cm).\n\nStandardní RAL jsou ve vzorníku (uložený ve složce). Ostatní RAL: příplatek 320 EUR (8 000 Kč), u dvojité 640 EUR (16 000 Kč), max sleva 25 %.\n\nMotor WT bez příplatku. Motor IO: + 115 EUR (2 875 Kč), max sleva 25 %.",
     "standard_price": 1,
     "price_formula": "matrix",
     "currency": "CZK",
