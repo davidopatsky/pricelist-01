@@ -13,5 +13,35 @@
   },
   "horizontal_footer": null,
   "accessories_included": [],
-  "accessories_compatible": []
+  "accessories_compatible": [],
+  "double_unit": {
+    "label": "Dvojitá markýza",
+    "axis": "vertical",
+    "from": 700,
+    "unit": "cm",
+    "description": "Dvě markýzy vedle sebe na dvojitém držáku na krokvi. V ceně 2 kazety, 2 motory, 4 vodící lišty.",
+    "mounting_points": {
+      "label": "počet držáků (pod střechu) / patek (nad střechu)",
+      "single": [
+        4,
+        6,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8
+      ],
+      "double": [
+        8,
+        12,
+        12,
+        12,
+        16,
+        16,
+        16,
+        16
+      ]
+    }
+  }
 }

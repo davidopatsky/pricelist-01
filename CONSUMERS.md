@@ -97,7 +97,7 @@ https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/products/<categ
 
 ### `metadata.json` (volitelné, jen pro produkty se strukturovanými daty)
 
-Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`, u pergol `support_zones`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
+Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`, u pergol `support_zones`, u markýz s dvojitým provedením `double_unit`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
 
 **`support_zones`** (pergoly) — zóny stojen pro zvýraznění v matici. Pole pravidel, vyhodnocují se **shora dolů, platí první, které sedí**. Když nesedí žádné → 2 stojny (bez zvýraznění).
 
@@ -119,6 +119,24 @@ Chybějící mez = bez omezení.
 ```
 
 U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
+
+**`double_unit`** (markýzy, nyní Portofino ZIP) — od které šířky je markýza dvojitá (dvě markýzy vedle sebe). Slouží ke zvýraznění řádků v matici a k zobrazení počtu úchytů.
+
+```json
+"double_unit": {
+  "label": "Dvojitá markýza",
+  "axis": "vertical",
+  "from": 700,
+  "unit": "cm",
+  "description": "Dvě markýzy vedle sebe na dvojitém držáku na krokvi. V ceně 2 kazety, 2 motory, 4 vodící lišty.",
+  "mounting_points": { "label": "počet držáků (pod střechu) / patek (nad střechu)",
+                        "single": [4, 6, 6, 6, 8, 8, 8, 8], "double": [8, 12, 12, 12, 16, 16, 16, 16] }
+}
+```
+
+- `axis` = osa matice, na které je šířka (u markýz `"vertical"` — svislá osa). Hodnota na té ose `>= from` (včetně) = dvojitá markýza; řádky zvýraznit a v legendě použít `label`.
+- `mounting_points.single` / `.double` jsou paralelní s druhou osou (u markýz `horizontal_values` = výsuv): pod matici vypsat řádek „počet držáků“ — pro jednoduchou a dvojitou zvlášť.
+- Ceny dvojité markýzy (i dvojnásobný příplatek za RAL) jsou už v matici / `options` — nic nepřepočítávat.
 
 ### `knowledge.md` (vždy)
 
