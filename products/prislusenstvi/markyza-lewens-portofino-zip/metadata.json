@@ -1,0 +1,17 @@
+{
+  "sku": "markyza-lewens-portofino-zip",
+  "display_name_cs": "Markýza Portofino ZIP Lewens - exteriérová / interiérová, ZIP vedení látky",
+  "axes": {
+    "horizontal": {
+      "label": "výsuv (cm)",
+      "unit": "cm"
+    },
+    "vertical": {
+      "label": "šířka (cm)",
+      "unit": "cm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

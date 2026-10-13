@@ -103,6 +103,15 @@
       ],
       "rate_type": "flat_percent",
       "percent": 14
+    },
+    {
+      "id": "markyza-portofino-zip",
+      "label": "Markýza Portofino ZIP",
+      "applies_to_skus": [
+        "markyza-lewens-portofino-zip"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 14
     }
   ]
 }
