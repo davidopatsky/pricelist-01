@@ -546,7 +546,7 @@
     "name_en": "Louvre color surcharge",
     "description": null,
     "standard_price": 1200,
-    "price_formula": "1300 czk  per m2 of pergola",
+    "price_formula": null,
     "currency": "CZK",
     "unit": "m2",
     "cost": 1200,
