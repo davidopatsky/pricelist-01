@@ -1,6 +1,6 @@
 {
   "sku": "strada-carbo-dutinkovy",
-  "display_name_cs": "Strada Carbo 16 mm - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát dutinkový 16 mm 5X, čirý, antracit, mléčný",
+  "display_name_cs": "Strada Carbo 16 mm - šikmá pergola, montáž pouze na pozednici, rám RAL 7016 Axalta jemná struktura, dutinkový polykarbonát 16 mm 5X čirý, antracit nebo mléčný",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -64,8 +64,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

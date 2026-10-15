@@ -2,14 +2,14 @@
 sku: strada-glass
 ---
 
-# Strada Glass
+# Strada Glass VSG 44.2
 
-> Strada Glass - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016, pozor na rozměrové limity!
+> Strada Glass - šikmá pergola, montáž pouze na pozednici, skleněná střecha VSG 44.2, rám RAL 7016 Axalta jemná struktura
 
 ## Popis
 
-ŠIKMÁ STRADA GLASS - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016
+Strada Glass – šikmá pergola, montáž pouze na pozednici, střecha z vrstveného bezpečnostního skla VSG 44.2, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Skleněná střecha VSG 44.2.
+Rám RAL 7016 Axalta jemná struktura. Skleněná střecha VSG 44.2.

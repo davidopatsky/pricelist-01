@@ -1,6 +1,6 @@
 {
   "sku": "alux-carbo-plny",
-  "display_name_cs": "ALUX Carbo 6 mm - plný polykarbonát 6 mm, konstrukce RAL 7016, polykarbonát plný 6 mm barevné varianty v ceně",
+  "display_name_cs": "ALUX Carbo 6 mm - rovný rám, plný polykarbonát 6 mm s UV ochranou proti stárnutí, rám RAL 7016 Axalta jemná struktura, barevné varianty v ceně",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -31,8 +31,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

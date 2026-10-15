@@ -2,14 +2,14 @@
 sku: strada-carbo-plny
 ---
 
-# Strada Carbo 6 mm
+# Strada Carbo plný polykarbonát 6 mm
 
-> Strada Carbo 6 mm - pouze na pozednici, čirý, mléčný, antracit, vše v ceně
+> Strada Carbo 6 mm - šikmá pergola, montáž pouze na pozednici, rám RAL 7016 Axalta jemná struktura, plný polykarbonát 6 mm čirý, mléčný, antracit nebo jiné barvy, vše v ceně
 
 ## Popis
 
-ŠIKMÁ Carbo 6 mm - pouze na pozednici plný polykarbonát 6 mm čirý, mléčný, antracit, ostatní
+Strada Carbo – šikmá pergola, montáž pouze na pozednici, rám RAL 7016 Axalta jemná struktura, plný polykarbonát 6 mm čirý, mléčný, antracit nebo jiné barvy, vše v ceně.
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.
+Rám RAL 7016 Axalta jemná struktura. Polykarbonát plný 6 mm čirý, mléčný, antracit nebo jiné barvy, vše v ceně.

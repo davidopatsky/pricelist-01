@@ -7,8 +7,8 @@ lang: en
 
 ## Description
 
-ALUX flat frame – Carbo roof of 6 mm solid polycarbonate, frame RAL 7016, polycarbonate color variants included.
+ALUX flat frame – Carbo roof of 6 mm solid polycarbonate with UV protection against aging, frame RAL 7016 Axalta structure, polycarbonate color variants included in the price.
 
 ## Colors and finishes
 
-Frame RAL 7016. 6 mm solid polycarbonate, color variants included in the price.
+Frame RAL 7016 Axalta structure. 6 mm solid polycarbonate, color variants included in the price.

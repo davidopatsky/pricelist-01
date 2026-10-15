@@ -4,12 +4,12 @@ sku: simple-ancona
 
 # Simple Ancona
 
-> Simple Ancona - rám 120 x 120 + markýza, bez odvodnění a okapového žlabu. Konstrukce RAL 7016
+> Simple Ancona - rovný rám 120 × 120 mm s markýzou, bez okapu a odvodu vody, rám RAL 7016 Axalta jemná struktura
 
 ## Popis
 
-SIMPLE ANCONA - rám 120 x 120 + markýza, bez odvodnění a okapového žlabu. Konstrukce RAL 7016
+Simple Ancona – rovný rám 120 × 120 mm s markýzou, bez okapu a odvodu vody, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Látky dle vzorníku Lewens.
+Rám RAL 7016 Axalta jemná struktura. Látky dle vzorníku Lewens.

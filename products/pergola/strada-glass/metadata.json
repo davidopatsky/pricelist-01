@@ -1,6 +1,6 @@
 {
   "sku": "strada-glass",
-  "display_name_cs": "Strada Glass - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016, pozor na rozměrové limity!",
+  "display_name_cs": "Strada Glass - šikmá pergola, montáž pouze na pozednici, skleněná střecha VSG 44.2, rám RAL 7016 Axalta jemná struktura",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -66,8 +66,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

@@ -7,11 +7,11 @@ lang: en
 
 ## Description
 
-ALUX Bioclimatic – bioclimatic pergola with adjustable louvres. Frame RAL 7016, louvres RAL 9006 / 7016 Axalta fine texture.
+ALUX Bioclimatic – bioclimatic pergola with adjustable louvres, flat frame, frame RAL 7016 and louvres RAL 9006 / RAL 7016, all Axalta structure.
 
 ## Colors and finishes
 
-Frame RAL 7016. Louvres RAL 9006 / RAL 7016 Axalta fine texture. Other frame colors on request, other louvre colors individually.
+Frame RAL 7016 Axalta structure. Louvres RAL 9006 or RAL 7016 Axalta structure. Other frame colors on request, other louvre colors individually.
 
 ## Specification
 

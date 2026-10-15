@@ -1,6 +1,6 @@
 {
   "sku": "alux-glass",
-  "display_name_cs": "ALUX Glass - Sklo VSG 44.1, konstrukce RAL 7016, čiré sklo v ceně, mléčné příplatkové!",
+  "display_name_cs": "ALUX Glass - rovný rám, sklo VSG 44.2, rám RAL 7016 Axalta jemná struktura, čiré sklo v ceně, mléčné příplatkové",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -31,8 +31,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

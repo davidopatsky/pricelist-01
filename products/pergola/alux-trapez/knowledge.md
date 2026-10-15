@@ -4,12 +4,12 @@ sku: alux-trapez
 
 # ALUX Trapez
 
-> ALUX Trapez - trapézový plech, konstrukce RAL 7016, trapéz dle vzorníku
+> ALUX Trapez - rovný rám, trapézový plech, rám RAL 7016 Axalta jemná struktura, plech v atypických barvách dle vzorníku
 
 ## Popis
 
-ALUX rovný rám - Trapez trapézový plech, konstrukce RAL 7016, trapéz dle vzorníku
+ALUX rovný rám – Trapez, střecha z trapézového plechu, rám RAL 7016 Axalta jemná struktura, plech v atypických barvách dle vzorníku.
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Trapéz dle vzorníku.
+Rám RAL 7016 Axalta jemná struktura. Trapézový plech v atypických barvách dle vzorníku.

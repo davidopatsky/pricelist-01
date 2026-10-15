@@ -1,6 +1,6 @@
 {
   "sku": "alux-bioclimatic",
-  "display_name_cs": "ALUX Bioclimatic - barva rámu RAL 7016, barva lamel RAL9006/7016 Axalta jemná struktura",
+  "display_name_cs": "ALUX Bioclimatic - rovný rám, rám RAL 7016, lamely RAL 9006 / 7016, vše Axalta jemná struktura",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -79,12 +79,12 @@
       "label_en": "Louvres",
       "options": [
         {
-          "cs": "RAL 9006 Axalta struktura",
+          "cs": "RAL 9006 Axalta jemná struktura",
           "en": "RAL 9006 Axalta structure"
         },
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

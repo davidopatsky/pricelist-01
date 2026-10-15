@@ -7,12 +7,8 @@ lang: en
 
 ## Description
 
-Strada Glass – sloped pergola, wall-plate mounting only, roof of laminated safety glass VSG 44.2, RAL 7016.
+Strada Glass – sloped pergola, wall-plate mounting only, roof of laminated safety glass VSG 44.2, frame RAL 7016 Axalta structure.
 
 ## Colors and finishes
 
-Frame RAL 7016. Glass roof of laminated safety glass VSG 44.2.
-
-## Specification
-
-- Mind the dimension limits!
+Frame RAL 7016 Axalta structure. Glass roof of laminated safety glass VSG 44.2.

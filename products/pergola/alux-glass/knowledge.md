@@ -2,14 +2,14 @@
 sku: alux-glass
 ---
 
-# ALUX Glass
+# ALUX Glass VSG 44.2
 
-> ALUX Glass - Sklo VSG 44.1, konstrukce RAL 7016, čiré sklo v ceně, mléčné příplatkové!
+> ALUX Glass - rovný rám, sklo VSG 44.2, rám RAL 7016 Axalta jemná struktura, čiré sklo v ceně, mléčné příplatkové
 
 ## Popis
 
-ALUX rovný rám - Sklo / plný polykarbonát 6 mm, konstrukce RAL 7016, polykarbonát plný 6 mm barevné varianty, Sklo VSG 44.
+ALUX rovný rám – střecha z vrstveného bezpečnostního skla VSG 44.2, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.
+Rám RAL 7016 Axalta jemná struktura. Sklo VSG 44.2 čiré v ceně, mléčné jako příplatek.

@@ -7,8 +7,8 @@ lang: en
 
 ## Description
 
-Simple Ancona – 120 × 120 frame with awning, without drainage and gutter. Frame RAL 7016.
+Simple Ancona – flat frame 120 × 120 mm with awning, without gutter and water drainage, frame RAL 7016 Axalta structure.
 
 ## Colors and finishes
 
-Frame RAL 7016. Fabrics according to the Lewens sample chart.
+Frame RAL 7016 Axalta structure. Fabrics according to the Lewens sample chart.

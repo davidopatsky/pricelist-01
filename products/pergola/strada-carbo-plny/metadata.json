@@ -1,6 +1,6 @@
 {
   "sku": "strada-carbo-plny",
-  "display_name_cs": "Strada Carbo 6 mm - pouze na pozednici, čirý, mléčný, antracit, vše v ceně",
+  "display_name_cs": "Strada Carbo 6 mm - šikmá pergola, montáž pouze na pozednici, rám RAL 7016 Axalta jemná struktura, plný polykarbonát 6 mm čirý, mléčný, antracit nebo jiné barvy, vše v ceně",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -64,8 +64,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

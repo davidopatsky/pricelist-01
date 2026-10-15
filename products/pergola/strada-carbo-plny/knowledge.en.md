@@ -7,8 +7,8 @@ lang: en
 
 ## Description
 
-Strada Carbo – sloped pergola, wall-plate mounting only, 6 mm solid polycarbonate in clear, opal, anthracite or other colors.
+Strada Carbo – sloped pergola, wall-plate mounting only, frame RAL 7016 Axalta structure, 6 mm solid polycarbonate in clear, opal, anthracite or other colors, all included in the price.
 
 ## Colors and finishes
 
-Frame RAL 7016. 6 mm solid polycarbonate in clear, opal, anthracite or other colors.
+Frame RAL 7016 Axalta structure. 6 mm solid polycarbonate in clear, opal, anthracite or other colors, all included in the price.

@@ -1,6 +1,6 @@
 {
   "sku": "alux-carbo-dutinkovy",
-  "display_name_cs": "ALUX Carbo 16 mm - dutinkový polykarbonát 16 mm 5X, konstrukce RAL 7016, čirý, antracit, mléčný a ostatní barvy v ceně",
+  "display_name_cs": "ALUX Carbo 16 mm - rovný rám, dutinkový polykarbonát 16 mm 5X, rám RAL 7016 Axalta jemná struktura, čirý, antracit, mléčný i ostatní barvy v ceně",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -31,8 +31,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }

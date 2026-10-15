@@ -1,6 +1,6 @@
 {
   "sku": "alux-trapez",
-  "display_name_cs": "ALUX Trapez - trapézový plech, konstrukce RAL 7016, trapéz dle vzorníku",
+  "display_name_cs": "ALUX Trapez - rovný rám, trapézový plech, rám RAL 7016 Axalta jemná struktura, plech v atypických barvách dle vzorníku",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -31,8 +31,8 @@
       "label_en": "Frame",
       "options": [
         {
-          "cs": "RAL 7016",
-          "en": "RAL 7016"
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
         }
       ]
     }
