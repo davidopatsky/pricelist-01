@@ -13,7 +13,3 @@ SIMPLE ANCONA - rám 120 x 120 + markýza, bez odvodnění a okapového žlabu. 
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Látky dle vzorníku Lewens.
-
-## Specifikace
-
-- rozměrové osy: Šířka × Hloubka/výsuv markýzy (mm)

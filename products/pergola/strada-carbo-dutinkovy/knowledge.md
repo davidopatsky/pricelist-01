@@ -13,7 +13,3 @@ Strada Carbo - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát duti
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

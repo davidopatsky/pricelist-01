@@ -15,5 +15,4 @@ Frame RAL 7016. Louvres RAL 9006 / RAL 7016 Axalta fine texture. Other frame col
 
 ## Specification
 
-- Dimension axes: width × depth (mm)
 - Number of louvres: 11–39 (29 variants)

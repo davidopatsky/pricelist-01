@@ -12,7 +12,3 @@ Simple Ancona – 120 × 120 frame with awning, without drainage and gutter. Fra
 ## Colors and finishes
 
 Frame RAL 7016. Fabrics according to the Lewens sample chart.
-
-## Specification
-
-- Dimension axes: width × depth / awning projection (mm)

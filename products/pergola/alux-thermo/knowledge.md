@@ -13,7 +13,3 @@ ALUX rovný rám - Thermo PUR PANEL - konstrukce RAL 7016, panely 7016/7016 nebo
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Panely 7016/7016 nebo 7016/9006 mat. Ostatní dle dostupnosti, ověřit na výrobě.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

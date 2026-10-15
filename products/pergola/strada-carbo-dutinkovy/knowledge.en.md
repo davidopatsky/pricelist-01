@@ -12,7 +12,3 @@ Strada Carbo – sloped pergola, wall-plate mounting only, RAL 7016, 16 mm multi
 ## Colors and finishes
 
 Frame RAL 7016. 16 mm multiwall polycarbonate (5X) in clear, anthracite or opal.
-
-## Specification
-
-- Dimension axes: width × depth (mm)

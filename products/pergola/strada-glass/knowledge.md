@@ -13,7 +13,3 @@ sku: strada-glass
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Skleněná střecha VSG 44.2.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

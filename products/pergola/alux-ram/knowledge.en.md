@@ -12,7 +12,3 @@ ALUX flat frame – rafters only, no roof, RAL 7016.
 ## Colors and finishes
 
 Frame RAL 7016.
-
-## Specification
-
-- Dimension axes: width × depth (mm)

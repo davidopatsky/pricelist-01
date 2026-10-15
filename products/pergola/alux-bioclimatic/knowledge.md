@@ -16,5 +16,4 @@ Konstrukce RAL 7016. Lamely RAL 9006 / RAL 7016 Axalta jemná struktura. Jiné b
 
 ## Specifikace
 
-- rozměrové osy: šířka × hloubka (mm)
 - počet lamel: 11–39 (29 variant)

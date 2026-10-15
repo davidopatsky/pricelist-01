@@ -13,7 +13,3 @@ ALUX rovný rám - Carbo dutinkový polykarbonát 16 mm, konstrukce RAL 7016, po
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný v ceně.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

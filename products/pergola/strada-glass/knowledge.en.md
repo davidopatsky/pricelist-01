@@ -15,5 +15,4 @@ Frame RAL 7016. Glass roof of laminated safety glass VSG 44.2.
 
 ## Specification
 
-- Dimension axes: width × depth (mm)
 - Mind the dimension limits!

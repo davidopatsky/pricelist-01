@@ -14,7 +14,3 @@ Surcharge for demanding installation: +2 % of the installation price!
 ## Colors and finishes
 
 Frame RAL 7016. Clear laminated glass included, opal glass at extra charge.
-
-## Specification
-
-- Dimension axes: width × depth (mm)

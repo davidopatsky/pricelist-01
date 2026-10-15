@@ -13,7 +13,3 @@ ALUX rovný rám - Trapez trapézový plech, konstrukce RAL 7016, trapéz dle vz
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Trapéz dle vzorníku.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

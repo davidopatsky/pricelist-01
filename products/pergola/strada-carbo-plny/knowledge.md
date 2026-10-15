@@ -13,7 +13,3 @@ sku: strada-carbo-plny
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)

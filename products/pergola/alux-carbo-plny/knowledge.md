@@ -13,7 +13,3 @@ ALUX rovný rám - Sklo / plný polykarbonát 6mm, konstrukce RAL 7016, polykarb
 ## Barvy a povrchy
 
 Konstrukce RAL 7016. Polykarbonát plný 6 mm barevné varianty v ceně. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.
-
-## Specifikace
-
-- rozměrové osy: šířka × hloubka (mm)
