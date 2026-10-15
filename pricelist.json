@@ -15,7 +15,9 @@
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Lamely RAL 9006 / RAL 7016 Axalta jemná struktura. Jiné barvy rámu na dotaz, jiné barvy lamel individuálně.",
     "description_en": "ALUX Bioclimatic – bioclimatic pergola with adjustable louvres. Frame RAL 7016, louvres RAL 9006 / 7016 Axalta fine texture.",
-    "color_summary_en": "Frame RAL 7016. Louvres RAL 9006 / RAL 7016 Axalta fine texture. Other frame colours on request, other louvre colours individually.",
+    "color_summary_en": "Frame RAL 7016. Louvres RAL 9006 / RAL 7016 Axalta fine texture. Other frame colors on request, other louvre colors individually.",
+    "standard_colors": "Rám: RAL 7016 Axalta jemná struktura\nLamely: RAL 9006 Axalta struktura, RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016 Axalta structure\nLouvres: RAL 9006 Axalta structure, RAL 7016",
     "raynet_description": "<p><b>MOTOR: </b>SOMFY IO</p>\n<p><b>BARVA RÁMU: </b>RAL 7016 jmn. str.</p>\n<p><b>BARVA LAMEL: </b>RAL 9006 jmn. str.</p>\n<p>\n<br>\n</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -36,6 +38,8 @@
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný v ceně.",
     "description_en": "ALUX flat frame – Carbo roof of 16 mm multiwall polycarbonate (5X), frame RAL 7016, polycarbonate clear, anthracite or opal.",
     "color_summary_en": "Frame RAL 7016. 16 mm multiwall polycarbonate (5X) in clear, anthracite or opal included in the price.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>",
     "raynet_cost": null
   },
@@ -54,8 +58,10 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm barevné varianty v ceně. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
-    "description_en": "ALUX flat frame – Carbo roof of 6 mm solid polycarbonate, frame RAL 7016, polycarbonate colour variants included.",
-    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate, colour variants included in the price.",
+    "description_en": "ALUX flat frame – Carbo roof of 6 mm solid polycarbonate, frame RAL 7016, polycarbonate color variants included.",
+    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate, color variants included in the price.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -76,6 +82,8 @@
     "color_summary": "Konstrukce RAL 7016. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
     "description_en": "ALUX flat frame – roof of laminated safety glass (VSG), frame RAL 7016.\n\nSurcharge for demanding installation: +2 % of the installation price!",
     "color_summary_en": "Frame RAL 7016. Clear laminated glass included, opal glass at extra charge.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -96,6 +104,8 @@
     "color_summary": "Konstrukce RAL 7016.",
     "description_en": "ALUX flat frame – rafters only, no roof, RAL 7016.",
     "color_summary_en": "Frame RAL 7016.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -114,8 +124,10 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Panely 7016/7016 nebo 9006/7016. Ostatní dle dostupnosti, ověřit na výrobě.",
-    "description_en": "ALUX flat frame – Thermo roof of PUR sandwich panels, frame RAL 7016, panels 7016/7016 or 9006/7016, other colours subject to availability.",
-    "color_summary_en": "Frame RAL 7016. Panels 7016/7016 or 9006/7016. Other colours subject to availability – to be confirmed by production.",
+    "description_en": "ALUX flat frame – Thermo roof of PUR sandwich panels, frame RAL 7016, panels 7016/7016 or 9006/7016, other colors subject to availability.",
+    "color_summary_en": "Frame RAL 7016. Panels 7016/7016 or 9006/7016. Other colors subject to availability – to be confirmed by production.",
+    "standard_colors": "Rám: RAL 7016\nPanel: 7016/7016, 7016/9006 mat, ostatní konzultovat individuálně",
+    "standard_colors_en": "Frame: RAL 7016\nPanel: 7016/7016, 7016/9006 matt, others on individual consultation",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva PUR panelu: </b>7016 / 7016</p>",
     "raynet_cost": null
   },
@@ -134,8 +146,10 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Trapéz dle vzorníku.",
-    "description_en": "ALUX flat frame – Trapez roof of trapezoidal sheet, frame RAL 7016, sheet colour according to the sample chart.",
+    "description_en": "ALUX flat frame – Trapez roof of trapezoidal sheet, frame RAL 7016, sheet color according to the sample chart.",
     "color_summary_en": "Frame RAL 7016. Trapezoidal sheet according to the sample chart.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016 jmn. str. AXALTA</p>\n<p><b>Barva trapézového plechu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -156,6 +170,8 @@
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný.",
     "description_en": "Strada Carbo – sloped pergola, wall-plate mounting only, RAL 7016, 16 mm multiwall polycarbonate (5X), clear, anthracite or opal.",
     "color_summary_en": "Frame RAL 7016. 16 mm multiwall polycarbonate (5X) in clear, anthracite or opal.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -174,8 +190,10 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.",
-    "description_en": "Strada Carbo – sloped pergola, wall-plate mounting only, 6 mm solid polycarbonate in clear, opal, anthracite or other colours.",
-    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate in clear, opal, anthracite or other colours.",
+    "description_en": "Strada Carbo – sloped pergola, wall-plate mounting only, 6 mm solid polycarbonate in clear, opal, anthracite or other colors.",
+    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate in clear, opal, anthracite or other colors.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -196,6 +214,8 @@
     "color_summary": "Konstrukce RAL 7016. Skleněná střecha VSG 44.2.",
     "description_en": "Strada Glass – sloped pergola, wall-plate mounting only, roof of laminated safety glass VSG 44.2, RAL 7016.",
     "color_summary_en": "Frame RAL 7016. Glass roof of laminated safety glass VSG 44.2.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>",
     "raynet_cost": null
   },
@@ -216,6 +236,8 @@
     "color_summary": "Konstrukce RAL 7016. Látky dle vzorníku Lewens.",
     "description_en": "Simple Ancona – 120 × 120 frame with awning, without drainage and gutter. Frame RAL 7016.",
     "color_summary_en": "Frame RAL 7016. Fabrics according to the Lewens sample chart.",
+    "standard_colors": "Rám: RAL 7016",
+    "standard_colors_en": "Frame: RAL 7016",
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -236,6 +258,8 @@
     "color_summary": "Kastlík 120 × 120 mm, RAL 7016 Axalta jemná struktura.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": "<p><b>Typ motoru:</b>\n<br>\nSomfy IO\n<br>\n<br>\n<b>Barva látky:</b>\n<br>\nSERGE 600 -</p>",
     "raynet_cost": null
   },
@@ -256,6 +280,8 @@
     "color_summary": "Konstrukce RAL 7016 Axalta jemná struktura. ESG 10 mm.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": "<p><b>TYP SKLA:</b> ESG 10 mm kalené</p>\n<p><b>POČET DÍLŮ:</b></p>\n<p><b>BARVA POJEZDŮ RAL: </b>7016</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -276,6 +302,8 @@
     "color_summary": "Konstrukce RAL 7016 Axalta jemná struktura. Sklo CONNEX 3.3.1.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": "<p><b>TYP SKLA: </b>CONNEX 3.3.1 bezpečnostní - 6 mm</p>\n<p><b>BARVA RÁMU RAL: </b>7016</p>\n<p><b>KOLEJNICE: </b>17 mm Interiérová</p>\n<p>\n<br>\n</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -296,6 +324,8 @@
     "color_summary": "Panely RAL 7016 / 7016 nebo RAL 9006 / 7016. Ostatní ověřit dostupnost individuálně.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -316,6 +346,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -336,6 +368,8 @@
     "color_summary": "RAL 7016 standard.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -356,6 +390,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -376,6 +412,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -396,6 +434,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": "Teplota světla:",
     "raynet_cost": null
   },
@@ -416,6 +456,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -436,6 +478,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -456,6 +500,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -476,6 +522,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -496,6 +544,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -516,6 +566,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -536,6 +588,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -543,7 +597,7 @@
     "sku": "extra-ral-lamely",
     "category": "priplatky",
     "name": "Příplatek za lakování lamel",
-    "name_en": "Louvre coating surcharge",
+    "name_en": "Louvre color surcharge",
     "description": null,
     "standard_price": 1200,
     "price_formula": "1300 czk  per m2 of pergola",
@@ -556,6 +610,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -563,7 +619,7 @@
     "sku": "extra-ral-ram",
     "category": "priplatky",
     "name": "Příplatek za lakování rámu",
-    "name_en": "Frame coating surcharge",
+    "name_en": "Frame color surcharge",
     "description": null,
     "standard_price": 1,
     "price_formula": "4% percent from price",
@@ -576,6 +632,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -596,6 +654,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -616,6 +676,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -636,6 +698,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -656,6 +720,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -676,6 +742,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -696,6 +764,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -716,6 +786,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -736,6 +808,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -756,6 +830,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -776,6 +852,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -796,6 +874,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -816,6 +896,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -836,6 +918,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -856,6 +940,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -876,6 +962,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -896,6 +984,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -916,6 +1006,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -936,6 +1028,8 @@
     "color_summary": "Vše s nástřikem. Základní RAL: RAL 7016 AXALTA struktura, RAL 8017 hnědá, RAL 9016 bílá. Ostatní odstíny = příplatkové RAL.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -956,6 +1050,8 @@
     "color_summary": "Konstrukce bílá RAL 9010 (skupina 1) nebo antracit jemná struktura mat RAL 7016 (skupina 2). Látky dle vzorníku Bohemiaflex CS.",
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -976,6 +1072,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -996,6 +1094,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -1016,6 +1116,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -1036,6 +1138,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -1056,6 +1160,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -1063,7 +1169,7 @@
     "sku": "extra-ral-screen",
     "category": "priplatky",
     "name": "Příplatek za lakování screenu na jinou RAL",
-    "name_en": "Screen coating surcharge – other RAL",
+    "name_en": "Screen color surcharge – other RAL",
     "description": null,
     "standard_price": 3000,
     "price_formula": null,
@@ -1076,6 +1182,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -1096,6 +1204,8 @@
     "color_summary": null,
     "description_en": null,
     "color_summary_en": null,
+    "standard_colors": null,
+    "standard_colors_en": null,
     "raynet_description": null,
     "raynet_cost": null
   }

@@ -11,7 +11,7 @@ ALUX flat frame – roof of laminated safety glass (VSG), frame RAL 7016.
 
 Surcharge for demanding installation: +2 % of the installation price!
 
-## Colours and finishes
+## Colors and finishes
 
 Frame RAL 7016. Clear laminated glass included, opal glass at extra charge.
 

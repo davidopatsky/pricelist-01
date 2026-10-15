@@ -9,7 +9,7 @@ lang: en
 
 ALUX flat frame – rafters only, no roof, RAL 7016.
 
-## Colours and finishes
+## Colors and finishes
 
 Frame RAL 7016.
 

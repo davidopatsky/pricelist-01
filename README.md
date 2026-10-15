@@ -76,6 +76,7 @@ git commit -m "update pricelist"
 Pro anglický ceník. Česká aplikace tato pole/soubory nepoužívá.
 
 - `pricelist.json`: `name_en`, `description_en`, `color_summary_en` (protějšky `name`, `description`, `color_summary`)
+- `pricelist.json`: `standard_colors` / `standard_colors_en` — standardní provedení barev (rám, u Bioclimatic lamely, u Thermo panely), každý díl na vlastním řádku
 - `products/pergola/<sku>/knowledge.en.md`: anglické technické údaje (protějšek `knowledge.md`, ten zůstává česky pro aplikaci)
 - `metadata.json`: `display_name_en`, `axes.*.label_en`, `horizontal_footer.label_en`, `support_zones[].popisek_en`
 

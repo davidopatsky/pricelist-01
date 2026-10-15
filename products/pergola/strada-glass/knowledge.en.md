@@ -9,7 +9,7 @@ lang: en
 
 Strada Glass – sloped pergola, wall-plate mounting only, roof of laminated safety glass VSG 44.2, RAL 7016.
 
-## Colours and finishes
+## Colors and finishes
 
 Frame RAL 7016. Glass roof of laminated safety glass VSG 44.2.
 

@@ -7,9 +7,9 @@ lang: en
 
 ## Description
 
-ALUX flat frame – Trapez roof of trapezoidal sheet, frame RAL 7016, sheet colour according to the sample chart.
+ALUX flat frame – Trapez roof of trapezoidal sheet, frame RAL 7016, sheet color according to the sample chart.
 
-## Colours and finishes
+## Colors and finishes
 
 Frame RAL 7016. Trapezoidal sheet according to the sample chart.
 
