@@ -14,6 +14,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Lamely RAL 9006 / RAL 7016 Axalta jemná struktura. Jiné barvy rámu na dotaz, jiné barvy lamel individuálně.",
+    "description_en": "ALUX Bioclimatic – bioclimatic pergola with adjustable louvres. Frame RAL 7016, louvres RAL 9006 / 7016 Axalta fine texture.",
+    "color_summary_en": "Frame RAL 7016. Louvres RAL 9006 / RAL 7016 Axalta fine texture. Other frame colours on request, other louvre colours individually.",
     "raynet_description": "<p><b>MOTOR: </b>SOMFY IO</p>\n<p><b>BARVA RÁMU: </b>RAL 7016 jmn. str.</p>\n<p><b>BARVA LAMEL: </b>RAL 9006 jmn. str.</p>\n<p>\n<br>\n</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -21,7 +23,7 @@
     "sku": "alux-carbo-dutinkovy",
     "category": "pergola",
     "name": "ALUX Carbo dutinkový polykarbonát",
-    "name_en": "ALUX Carbo dutinkový polykarbonát",
+    "name_en": "ALUX Carbo multiwall polycarbonate 16 mm",
     "description": "ALUX rovný rám - Carbo dutinkový polykarbonát 16 mm, konstrukce RAL 7016, polykarbonát dutinkový 16 mm 5X čirý, antracit",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -32,6 +34,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný v ceně.",
+    "description_en": "ALUX flat frame – Carbo roof of 16 mm multiwall polycarbonate (5X), frame RAL 7016, polycarbonate clear or anthracite.",
+    "color_summary_en": "Frame RAL 7016. 16 mm multiwall polycarbonate (5X) in clear, anthracite or opal included in the price.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b></p>",
     "raynet_cost": null
   },
@@ -39,7 +43,7 @@
     "sku": "alux-carbo-plny",
     "category": "pergola",
     "name": "ALUX Carbo plný polykarbonát",
-    "name_en": "ALUX Carbo plný polykarbonát",
+    "name_en": "ALUX Carbo solid polycarbonate 6 mm",
     "description": "ALUX rovný rám - Sklo / plný polykarbonát 6mm, konstrukce RAL 7016, polykarbonát plný 6mm barevné varianty, Sklo VSG 44.",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -50,6 +54,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm barevné varianty v ceně. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
+    "description_en": "ALUX flat frame – Carbo roof of 6 mm solid polycarbonate, frame RAL 7016, polycarbonate colour variants included.",
+    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate, colour variants included in the price.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -57,7 +63,7 @@
     "sku": "alux-glass",
     "category": "pergola",
     "name": "ALUX Glass VSG 44.2",
-    "name_en": "ALUX Glass",
+    "name_en": "ALUX Glass laminated glass VSG 44.2",
     "description": "ALUX rovný rám - Sklo / plný polykarbonát 6mm, konstrukce RAL 7016, polykarbonát plný 6mm barevné varianty, Sklo VSG 44.\n\nPříplatek za náročnou montáž: +2 % k ceně montáže!",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -68,6 +74,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Sklo VSG 44.1 čiré v ceně, mléčné jako příplatek.",
+    "description_en": "ALUX flat frame – roof of laminated safety glass (VSG), frame RAL 7016.\n\nSurcharge for demanding installation: +2 % of the installation price!",
+    "color_summary_en": "Frame RAL 7016. Clear laminated glass included, opal glass at extra charge.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -75,7 +83,7 @@
     "sku": "alux-ram",
     "category": "pergola",
     "name": "ALUX rám bez střechy",
-    "name_en": "ALUX rám bez střechy",
+    "name_en": "ALUX Frame without roof",
     "description": "ALUX rovný rám - pouze krokve, bez střechy, RAL 7016",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -86,6 +94,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016.",
+    "description_en": "ALUX flat frame – rafters only, no roof, RAL 7016.",
+    "color_summary_en": "Frame RAL 7016.",
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -104,6 +114,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Panely 7016/7016 nebo 9006/7016. Ostatní dle dostupnosti, ověřit na výrobě.",
+    "description_en": "ALUX flat frame – Thermo roof of PUR sandwich panels, frame RAL 7016, panels 7016/7016 or 9006/7016, other colours subject to availability.",
+    "color_summary_en": "Frame RAL 7016. Panels 7016/7016 or 9006/7016. Other colours subject to availability – to be confirmed by production.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva PUR panelu: </b>7016 / 7016</p>",
     "raynet_cost": null
   },
@@ -122,6 +134,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Trapéz dle vzorníku.",
+    "description_en": "ALUX flat frame – Trapez roof of trapezoidal sheet, frame RAL 7016, sheet colour according to the sample chart.",
+    "color_summary_en": "Frame RAL 7016. Trapezoidal sheet according to the sample chart.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016 jmn. str. AXALTA</p>\n<p><b>Barva trapézového plechu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -129,7 +143,7 @@
     "sku": "strada-carbo-dutinkovy",
     "category": "pergola",
     "name": "Strada carbo dutinkový polykarbonát 16mm",
-    "name_en": null,
+    "name_en": "Strada Carbo multiwall polycarbonate 16 mm",
     "description": "Strada Carbo - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát dutinkový 16 mm 5X, čirý, antracit, mléčný",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -140,6 +154,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát dutinkový 16 mm 5X čirý, antracit, mléčný.",
+    "description_en": "Strada Carbo – sloped pergola, wall-plate mounting only, RAL 7016, 16 mm multiwall polycarbonate (5X), clear, anthracite or opal.",
+    "color_summary_en": "Frame RAL 7016. 16 mm multiwall polycarbonate (5X) in clear, anthracite or opal.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -147,7 +163,7 @@
     "sku": "strada-carbo-plny",
     "category": "pergola",
     "name": "Strada carbo plný polykarbonát 6mm",
-    "name_en": null,
+    "name_en": "Strada Carbo solid polycarbonate 6 mm",
     "description": "ŠIKMÁ carbo 6mm - pouze na pozednici plný polykarbonát 6 mm čirý, mléčný, antracit, ostatní",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -158,6 +174,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Polykarbonát plný 6 mm čirý, mléčný, antracit, ostatní.",
+    "description_en": "Strada Carbo – sloped pergola, wall-plate mounting only, 6 mm solid polycarbonate in clear, opal, anthracite or other colours.",
+    "color_summary_en": "Frame RAL 7016. 6 mm solid polycarbonate in clear, opal, anthracite or other colours.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva polykarbonátu: </b>_____</p>",
     "raynet_cost": null
   },
@@ -165,7 +183,7 @@
     "sku": "strada-glass",
     "category": "pergola",
     "name": "Strada glass VSG 44.2",
-    "name_en": null,
+    "name_en": "Strada Glass laminated glass VSG 44.2",
     "description": "ŠIKMÁ STRADA GLASS - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -176,6 +194,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Skleněná střecha VSG 44.2.",
+    "description_en": "Strada Glass – sloped pergola, wall-plate mounting only, roof of laminated safety glass VSG 44.2, RAL 7016.",
+    "color_summary_en": "Frame RAL 7016. Glass roof of laminated safety glass VSG 44.2.",
     "raynet_description": "<p><b>Barva rámu: </b>RAL 7016</p>\n<p><b>Barva skla: </b>____</p>",
     "raynet_cost": null
   },
@@ -183,7 +203,7 @@
     "sku": "simple-ancona",
     "category": "pergola",
     "name": "Simple Ancona",
-    "name_en": null,
+    "name_en": "Simple Ancona",
     "description": "SIMPLE ANCONA - rám 120 x 120 + markýza, bez odvodnění a okapového žlabu. Konstrukce RAL 7016",
     "standard_price": 1,
     "price_formula": "matrix",
@@ -194,6 +214,8 @@
     "discount": "22-24%",
     "delivery_weeks": "8-10",
     "color_summary": "Konstrukce RAL 7016. Látky dle vzorníku Lewens.",
+    "description_en": "Simple Ancona – 120 × 120 frame with awning, without drainage and gutter. Frame RAL 7016.",
+    "color_summary_en": "Frame RAL 7016. Fabrics according to the Lewens sample chart.",
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -212,6 +234,8 @@
     "discount": "0-20%",
     "delivery_weeks": "8-9",
     "color_summary": "Kastlík 120 × 120 mm, RAL 7016 Axalta jemná struktura.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": "<p><b>Typ motoru:</b>\n<br>\nSomfy IO\n<br>\n<br>\n<b>Barva látky:</b>\n<br>\nSERGE 600 -</p>",
     "raynet_cost": null
   },
@@ -230,6 +254,8 @@
     "discount": "0-30%",
     "delivery_weeks": "8-9",
     "color_summary": "Konstrukce RAL 7016 Axalta jemná struktura. ESG 10 mm.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": "<p><b>TYP SKLA:</b> ESG 10 mm kalené</p>\n<p><b>POČET DÍLŮ:</b></p>\n<p><b>BARVA POJEZDŮ RAL: </b>7016</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -248,6 +274,8 @@
     "discount": "0-30%",
     "delivery_weeks": "8-9",
     "color_summary": "Konstrukce RAL 7016 Axalta jemná struktura. Sklo CONNEX 3.3.1.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": "<p><b>TYP SKLA: </b>CONNEX 3.3.1 bezpečnostní - 6 mm</p>\n<p><b>BARVA RÁMU RAL: </b>7016</p>\n<p><b>KOLEJNICE: </b>17 mm Interiérová</p>\n<p>\n<br>\n</p>\n<p>\n<br>\n</p>",
     "raynet_cost": null
   },
@@ -266,6 +294,8 @@
     "discount": "0%",
     "delivery_weeks": "8-9",
     "color_summary": "Panely RAL 7016 / 7016 nebo RAL 9006 / 7016. Ostatní ověřit dostupnost individuálně.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -284,6 +314,8 @@
     "discount": "20-30%",
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -302,6 +334,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": "RAL 7016 standard.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -320,6 +354,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -338,6 +374,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -356,6 +394,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": "Teplota světla:",
     "raynet_cost": null
   },
@@ -374,6 +414,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -392,6 +434,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -410,6 +454,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -428,6 +474,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -446,6 +494,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -464,6 +514,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -482,6 +534,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -500,6 +554,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -518,6 +574,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -536,6 +594,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -554,6 +614,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -572,6 +634,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -590,6 +654,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -608,6 +674,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -626,6 +694,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -644,6 +714,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -662,6 +734,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -680,6 +754,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -698,6 +774,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -716,6 +794,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -734,6 +814,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -752,6 +834,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -770,6 +854,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -788,6 +874,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -806,6 +894,8 @@
     "discount": "0-25%",
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -824,6 +914,8 @@
     "discount": null,
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -842,6 +934,8 @@
     "discount": "0-20%",
     "delivery_weeks": "4-5",
     "color_summary": "Vše s nástřikem. Základní RAL: RAL 7016 AXALTA struktura, RAL 8017 hnědá, RAL 9016 bílá. Ostatní odstíny = příplatkové RAL.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -860,6 +954,8 @@
     "discount": "0-25%",
     "delivery_weeks": "7",
     "color_summary": "Konstrukce bílá RAL 9010 (skupina 1) nebo antracit jemná struktura mat RAL 7016 (skupina 2). Látky dle vzorníku Bohemiaflex CS.",
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -878,6 +974,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -896,6 +994,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -914,6 +1014,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -932,6 +1034,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -950,6 +1054,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -968,6 +1074,8 @@
     "discount": null,
     "delivery_weeks": null,
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   },
@@ -986,6 +1094,8 @@
     "discount": "0-25%",
     "delivery_weeks": "8-9",
     "color_summary": null,
+    "description_en": null,
+    "color_summary_en": null,
     "raynet_description": null,
     "raynet_cost": null
   }

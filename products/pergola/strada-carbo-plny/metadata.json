@@ -4,11 +4,13 @@
   "axes": {
     "horizontal": {
       "label": "šířka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "width"
     },
     "vertical": {
       "label": "hloubka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "depth"
     }
   },
   "horizontal_footer": null,
@@ -19,33 +21,40 @@
       "stojny": 3,
       "pricky": true,
       "sirka_od": 5100,
-      "popisek": "3× stojna + výztuha"
+      "popisek": "3× stojna + výztuha",
+      "popisek_en": "3 posts + reinforcement"
     },
     {
       "stojny": 3,
       "pricky": true,
       "hloubka_od": 4600,
-      "popisek": "3× stojna + výztuha"
+      "popisek": "3× stojna + výztuha",
+      "popisek_en": "3 posts + reinforcement"
     },
     {
       "stojny": 3,
-      "sirka_od": 4100
+      "sirka_od": 4100,
+      "popisek_en": "3 posts"
     },
     {
       "stojny": 3,
-      "hloubka_od": 4100
+      "hloubka_od": 4100,
+      "popisek_en": "3 posts"
     },
     {
       "stojny": 2,
       "pricky": true,
       "sirka_od": 3100,
-      "popisek": "2× stojna + výztuha"
+      "popisek": "2× stojna + výztuha",
+      "popisek_en": "2 posts + reinforcement"
     },
     {
       "stojny": 2,
       "pricky": true,
       "hloubka_od": 3100,
-      "popisek": "2× stojna + výztuha"
+      "popisek": "2× stojna + výztuha",
+      "popisek_en": "2 posts + reinforcement"
     }
-  ]
+  ],
+  "display_name_en": "Strada Carbo solid polycarbonate 6 mm"
 }

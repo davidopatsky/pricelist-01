@@ -4,14 +4,17 @@
   "axes": {
     "horizontal": {
       "label": "šířka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "width"
     },
     "vertical": {
       "label": "hloubka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "depth"
     }
   },
   "horizontal_footer": null,
   "accessories_included": [],
-  "accessories_compatible": []
+  "accessories_compatible": [],
+  "display_name_en": "ALUX Frame without roof"
 }

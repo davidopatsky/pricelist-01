@@ -4,14 +4,17 @@
   "axes": {
     "horizontal": {
       "label": "Šířka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "Width"
     },
     "vertical": {
       "label": "Hloubka/výsuv markýzy",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "Depth / awning projection"
     }
   },
   "horizontal_footer": null,
   "accessories_included": [],
-  "accessories_compatible": []
+  "accessories_compatible": [],
+  "display_name_en": "Simple Ancona"
 }

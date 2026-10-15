@@ -4,11 +4,13 @@
   "axes": {
     "horizontal": {
       "label": "šířka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "width"
     },
     "vertical": {
       "label": "hloubka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "depth"
     }
   },
   "horizontal_footer": null,
@@ -17,7 +19,9 @@
   "support_zones": [
     {
       "stojny": 3,
-      "sirka_od": 6100
+      "sirka_od": 6100,
+      "popisek_en": "3 posts"
     }
-  ]
+  ],
+  "display_name_en": "ALUX Glass laminated glass VSG 44.2"
 }

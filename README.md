@@ -71,6 +71,14 @@ git commit -m "update pricelist"
 5. **SKU = název složky = `pricelist.json[*].sku`.** Žádné mapování.
 6. **Pricing matrix out of scope.** `prices.json` se nedotýká z žádného skriptu.
 
+## Angličtina (pergoly ALUX, Strada, Simple Ancona)
+
+Pro anglický ceník. Česká aplikace tato pole/soubory nepoužívá.
+
+- `pricelist.json`: `name_en`, `description_en`, `color_summary_en` (protějšky `name`, `description`, `color_summary`)
+- `products/pergola/<sku>/knowledge.en.md`: anglické technické údaje (protějšek `knowledge.md`, ten zůstává česky pro aplikaci)
+- `metadata.json`: `display_name_en`, `axes.*.label_en`, `horizontal_footer.label_en`, `support_zones[].popisek_en`
+
 ## B2B (partneři)
 
 `pricelist-b2b.json` — **úplný seznam** kusových položek a příplatků pro B2B partnery, v pořadí pro B2B ceník, každá s vlastní cenou. **Nečte ho aplikace obchodníků ani Raynet.**

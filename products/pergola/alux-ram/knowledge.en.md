@@ -1,0 +1,18 @@
+---
+sku: alux-ram
+lang: en
+---
+
+# ALUX Frame without roof
+
+## Description
+
+ALUX flat frame – rafters only, no roof, RAL 7016.
+
+## Colours and finishes
+
+Frame RAL 7016.
+
+## Specification
+
+- Dimension axes: width × depth (mm)
