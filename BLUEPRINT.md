@@ -82,7 +82,7 @@
 | 10 | `cost` | number \| null | – | `4250` | nákupní cena |
 | 11 | `cost_percent` | number \| null | – | `58` | marže nákladu jako % z prodejní |
 | 12 | `discount` | string | – | `"0%"` | obchodní sleva (text kvůli `%`) |
-| 13 | `delivery_weeks` | string | – | `"4-6"` | dodací lhůta jako text (rozsah) |
+| 13 | `delivery_weeks` | string | – | `"4-6"` | interní termín dodání pro český B2C obchod (rozsah týdnů); B2B ho nepřebírá |
 | 14 | `color_summary` | string | – | `RAL 7016 + RAL 9006` | textové shrnutí barevných variant |
 | 15 | `raynet_description` | string \| null | – | `<p>HTML popis…</p>` | HTML popis pro sync do Raynet CRM |
 | 16 | `raynet_cost` | number \| null | – | `1200` | náklad pro Raynet (override pokud se liší od `cost`) |

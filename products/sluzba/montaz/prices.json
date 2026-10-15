@@ -46,6 +46,17 @@
           "percent": 11,
           "note": "500 000 a více"
         }
+      ],
+      "adjustments": [
+        {
+          "applies_to_skus": [
+            "alux-glass"
+          ],
+          "add_percent": 2,
+          "label": "Příplatek za náročnou montáž",
+          "label_en": "Surcharge for demanding installation",
+          "note": "Přičítá se k procentu montáže z hladiny (např. 13 % + 2 % = 15 % z ceny pergoly). Jen pro výpočet B2C, do B2B ceníku se neuvádí."
+        }
       ]
     },
     {
