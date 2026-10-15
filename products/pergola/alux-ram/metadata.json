@@ -1,6 +1,6 @@
 {
   "sku": "alux-ram",
-  "display_name_cs": "ALUX ram - pouze krokve, bez střechy, RAL 7016",
+  "display_name_cs": "ALUX Rám - pouze krokve, bez střechy, RAL 7016",
   "axes": {
     "horizontal": {
       "label": "šířka",

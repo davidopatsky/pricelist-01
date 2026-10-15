@@ -8,7 +8,7 @@ sku: alux-bioclimatic
 
 ## Popis
 
-ALUX BIOCLIMATIC - bioclimatická pergola - barva rámu ,RAL 7016, barva lamel RAL9006/7016 Axalta jemná struktura
+ALUX BIOCLIMATIC - bioclimatická pergola - barva rámu RAL 7016, barva lamel RAL9006/7016 Axalta jemná struktura
 
 ## Barvy a povrchy
 

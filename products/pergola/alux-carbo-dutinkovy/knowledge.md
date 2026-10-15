@@ -4,7 +4,7 @@ sku: alux-carbo-dutinkovy
 
 # ALUX Carbo dutinkový polykarbonát
 
-> ALUX carbo 16mm - dutinkový polykarbonát 16 mm 5X, konstrukce RAL 7016, čirý, antracit, mléčný a ostatní barvy v ceně
+> ALUX Carbo 16 mm - dutinkový polykarbonát 16 mm 5X, konstrukce RAL 7016, čirý, antracit, mléčný a ostatní barvy v ceně
 
 ## Popis
 

@@ -2,9 +2,9 @@
 sku: strada-carbo-dutinkovy
 ---
 
-# Strada carbo 16mm
+# Strada Carbo 16 mm
 
-> Strada carbo 16mm - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát dutinkový 16 mm 5X, čirý, antracit, mléčný
+> Strada Carbo 16 mm - šikmá pergola, pouze na pozednici, RAL 7016, polykarbonát dutinkový 16 mm 5X, čirý, antracit, mléčný
 
 ## Popis
 

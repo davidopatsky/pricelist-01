@@ -2,9 +2,9 @@
 sku: strada-glass
 ---
 
-# Strada glass
+# Strada Glass
 
-> Strada glass - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016, pozor na rozměrové limity!
+> Strada Glass - pouze na pozednici, skleněná střecha VSG 44.2, RAL 7016, pozor na rozměrové limity!
 
 ## Popis
 

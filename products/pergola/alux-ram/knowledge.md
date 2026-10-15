@@ -2,9 +2,9 @@
 sku: alux-ram
 ---
 
-# ALUX rám bez střechy
+# ALUX Rám bez střechy
 
-> ALUX ram - pouze krokve, bez střechy, RAL 7016
+> ALUX Rám - pouze krokve, bez střechy, RAL 7016
 
 ## Popis
 

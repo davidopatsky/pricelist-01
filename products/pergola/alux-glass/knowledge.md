@@ -8,7 +8,7 @@ sku: alux-glass
 
 ## Popis
 
-ALUX rovný rám - Sklo / plný polykarbonát 6mm, konstrukce RAL 7016, polykarbonát plný 6mm barevné varianty, Sklo VSG 44.
+ALUX rovný rám - Sklo / plný polykarbonát 6 mm, konstrukce RAL 7016, polykarbonát plný 6 mm barevné varianty, Sklo VSG 44.
 
 ## Barvy a povrchy
 

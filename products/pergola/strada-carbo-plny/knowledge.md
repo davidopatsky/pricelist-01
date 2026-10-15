@@ -2,13 +2,13 @@
 sku: strada-carbo-plny
 ---
 
-# Strada carbo 6mm
+# Strada Carbo 6 mm
 
-> Strada carbo 6mm - pouze na pozednici, čirý, mléčný, antracit, vše v ceně
+> Strada Carbo 6 mm - pouze na pozednici, čirý, mléčný, antracit, vše v ceně
 
 ## Popis
 
-ŠIKMÁ carbo 6mm - pouze na pozednici plný polykarbonát 6 mm čirý, mléčný, antracit, ostatní
+ŠIKMÁ Carbo 6 mm - pouze na pozednici plný polykarbonát 6 mm čirý, mléčný, antracit, ostatní
 
 ## Barvy a povrchy
 
