@@ -1,0 +1,9 @@
+{
+  "note": "B2B úpravy pro partnery. Jen kusové položky a příplatky, které mají pro partnery jinou cenu. Každá položka přepisuje pouze uvedená pole položky se stejným sku v pricelist.json (B2B položka = {**pricelist[sku], **b2b[sku]}). Nová položka bez protějšku v pricelist.json musí mít všechna pole. Nečte aplikace obchodníků ani Raynet.",
+  "items": [
+    {
+      "sku": "extra-ral-ram",
+      "price_formula": "7% percent from price"
+    }
+  ]
+}

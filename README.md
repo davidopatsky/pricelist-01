@@ -71,6 +71,18 @@ git commit -m "update pricelist"
 5. **SKU = název složky = `pricelist.json[*].sku`.** Žádné mapování.
 6. **Pricing matrix out of scope.** `prices.json` se nedotýká z žádného skriptu.
 
+## B2B (partneři)
+
+`pricelist-b2b.json` — kusové položky a příplatky s jinou cenou pro B2B partnery. **Nečte ho aplikace obchodníků ani Raynet.**
+Obsahuje jen rozdíly: každá položka přepisuje uvedená pole položky se stejným `sku` v `pricelist.json`.
+
+```python
+base = {i["sku"]: i for i in json.load(open("pricelist.json"))}
+b2b  = [{**base.get(o["sku"], {}), **o} for o in json.load(open("pricelist-b2b.json"))["items"]]
+```
+
+Příklad: lakování rámu — obchodníci 4 %, B2B 7 %.
+
 ## Pricing convention (důležité pro app developery)
 
 `standard_price` a `price_formula` se čtou společně. **`standard_price = 1` je magic placeholder, ne reálná cena 1 CZK.**
