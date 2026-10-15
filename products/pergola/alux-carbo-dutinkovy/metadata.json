@@ -23,5 +23,18 @@
       "popisek_en": "3 posts"
     }
   ],
-  "display_name_en": "ALUX Carbo multiwall polycarbonate 16 mm"
+  "display_name_en": "ALUX Carbo multiwall polycarbonate 16 mm",
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016",
+          "en": "RAL 7016"
+        }
+      ]
+    }
+  ]
 }

@@ -58,5 +58,18 @@
       "popisek_en": "2 posts + reinforcement"
     }
   ],
-  "display_name_en": "Strada Glass laminated glass VSG 44.2"
+  "display_name_en": "Strada Glass laminated glass VSG 44.2",
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016",
+          "en": "RAL 7016"
+        }
+      ]
+    }
+  ]
 }

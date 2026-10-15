@@ -97,7 +97,7 @@ https://raw.githubusercontent.com/davidopatsky/pricelist-01/main/products/<categ
 
 ### `metadata.json` (volitelné, jen pro produkty se strukturovanými daty)
 
-Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`, u pergol `support_zones`, u markýz s dvojitým provedením `double_unit`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
+Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `accessories_compatible`, u pergol `support_zones` a `standard_colors`, u markýz s dvojitým provedením `double_unit`. Neexistuje pro jednoduché položky (např. `montaz`, `stojna-*`).
 
 **`support_zones`** (pergoly) — zóny stojen pro zvýraznění v matici. Pole pravidel, vyhodnocují se **shora dolů, platí první, které sedí**. Když nesedí žádné → 2 stojny (bez zvýraznění).
 
@@ -119,6 +119,23 @@ Chybějící mez = bez omezení.
 ```
 
 U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
+
+**`standard_colors`** (pergoly) — **jediný zdroj** standardního (bezpříplatkového) provedení barev, česky i anglicky. Pole dílů; každý díl má seznam variant.
+
+```json
+"standard_colors": [
+  { "part": "frame", "label": "Rám", "label_en": "Frame",
+    "options": [ { "cs": "RAL 7016 Axalta jemná struktura", "en": "RAL 7016 Axalta structure" } ] },
+  { "part": "louvres", "label": "Lamely", "label_en": "Louvres",
+    "options": [ { "cs": "RAL 9006 Axalta struktura", "en": "RAL 9006 Axalta structure" }, { "cs": "RAL 7016", "en": "RAL 7016" } ] }
+]
+```
+
+- `part` = strojový klíč dílu (`frame`, `louvres`, `panel`), `label` / `label_en` = text do ceníku.
+- `options` = standardní varianty (kterákoli z nich je bez příplatku); `cs` / `en` = text varianty.
+- volitelně `note` / `note_en` = doplněk k dílu (např. Thermo panel: „ostatní konzultovat individuálně“).
+- Zobrazení např. „Rám: RAL 7016 · Lamely: RAL 9006 Axalta struktura / RAL 7016“.
+- `color_summary` v `pricelist.json` je jen volný text (barvy výplní, příplatky…) — standardní barvy brát odtud.
 
 **`double_unit`** (markýzy, nyní Portofino ZIP) — od které šířky je markýza dvojitá (dvě markýzy vedle sebe). Slouží ke zvýraznění řádků v matici a k zobrazení počtu úchytů.
 

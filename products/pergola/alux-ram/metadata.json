@@ -16,5 +16,18 @@
   "horizontal_footer": null,
   "accessories_included": [],
   "accessories_compatible": [],
-  "display_name_en": "ALUX Frame without roof"
+  "display_name_en": "ALUX Frame without roof",
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016",
+          "en": "RAL 7016"
+        }
+      ]
+    }
+  ]
 }

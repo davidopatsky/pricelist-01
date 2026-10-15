@@ -4,15 +4,15 @@ sku: alux-thermo
 
 # ALUX Thermo
 
-> ALUX Thermo - PUR PANEL konstrukce RAL 7016, panely 7016/7016 nebo 9006/7016, ostatní dle dostupnosti ověřit na výrobě
+> ALUX Thermo - PUR PANEL konstrukce RAL 7016, panely 7016/7016 nebo 7016/9006 mat, ostatní dle dostupnosti ověřit na výrobě
 
 ## Popis
 
-ALUX rovný rám - Thermo PUR PANEL - konstrukce RAL 7016, panely 7016/7016 nebo 9006/7016, ostatní dle dostupnosti ověřit
+ALUX rovný rám - Thermo PUR PANEL - konstrukce RAL 7016, panely 7016/7016 nebo 7016/9006 mat, ostatní dle dostupnosti ověřit
 
 ## Barvy a povrchy
 
-Konstrukce RAL 7016. Panely 7016/7016 nebo 9006/7016. Ostatní dle dostupnosti, ověřit na výrobě.
+Konstrukce RAL 7016. Panely 7016/7016 nebo 7016/9006 mat. Ostatní dle dostupnosti, ověřit na výrobě.
 
 ## Specifikace
 

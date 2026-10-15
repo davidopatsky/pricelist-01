@@ -60,5 +60,33 @@
       "popisek_en": "3 posts"
     }
   ],
-  "display_name_en": "ALUX Bioclimatic"
+  "display_name_en": "ALUX Bioclimatic",
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ]
+    },
+    {
+      "part": "louvres",
+      "label": "Lamely",
+      "label_en": "Louvres",
+      "options": [
+        {
+          "cs": "RAL 9006 Axalta struktura",
+          "en": "RAL 9006 Axalta structure"
+        },
+        {
+          "cs": "RAL 7016",
+          "en": "RAL 7016"
+        }
+      ]
+    }
+  ]
 }
