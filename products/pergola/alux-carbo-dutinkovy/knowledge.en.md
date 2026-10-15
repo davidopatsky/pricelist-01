@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX flat frame – Carbo roof of 16 mm multiwall polycarbonate (5X), frame RAL 7016, polycarbonate clear or anthracite.
+ALUX flat frame – Carbo roof of 16 mm multiwall polycarbonate (5X), frame RAL 7016, polycarbonate clear, anthracite or opal.
 
 ## Colours and finishes
 
