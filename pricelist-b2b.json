@@ -1,9 +1,102 @@
 {
-  "note": "B2B úpravy pro partnery. Jen kusové položky a příplatky, které mají pro partnery jinou cenu. Každá položka přepisuje pouze uvedená pole položky se stejným sku v pricelist.json (B2B položka = {**pricelist[sku], **b2b[sku]}). Nová položka bez protějšku v pricelist.json musí mít všechna pole. Nečte aplikace obchodníků ani Raynet.",
+  "note": "B2B kusové položky a příplatky pro partnery — úplný seznam v pořadí pro B2B ceník. Každá položka má vlastní cenu (standard_price, nebo price_formula u procentních příplatků; standard_price 1 = cena z price_formula). Název, kategorie a ostatní pole se doplní z pricelist.json podle sku: položka = {**pricelist[sku], **b2b}. Co tu není, partnerům se neuvádí. Nečte aplikace obchodníků ani Raynet.",
   "items": [
     {
+      "sku": "stojna-120-3000",
+      "unit": "ks",
+      "standard_price": 5100
+    },
+    {
+      "sku": "stojna-120-3500",
+      "unit": "ks",
+      "standard_price": 6800
+    },
+    {
+      "sku": "roznaseci-bod",
+      "unit": "ks",
+      "standard_price": 4000
+    },
+    {
+      "sku": "chrlic",
+      "unit": "ks",
+      "standard_price": 0
+    },
+    {
+      "sku": "somfy-eolis-vetrne-cidlo",
+      "unit": "ks",
+      "standard_price": 3500
+    },
+    {
+      "sku": "led-osvetleni-krokev-lamela",
+      "unit": "ks",
+      "standard_price": 5000
+    },
+    {
+      "sku": "ovladac-somfy-16",
+      "unit": "ks",
+      "standard_price": 3890
+    },
+    {
+      "sku": "ovladac-somfy-5",
+      "unit": "ks",
+      "standard_price": 1890
+    },
+    {
+      "sku": "somfy-kamera-one",
+      "unit": "ks",
+      "standard_price": 7190
+    },
+    {
+      "sku": "ovladac-somfy-wallswitch-3",
+      "unit": "ks",
+      "standard_price": 1950
+    },
+    {
+      "sku": "ovladac-keygo",
+      "unit": "ks",
+      "standard_price": 790
+    },
+    {
+      "sku": "pohybove-cidlo",
+      "unit": "ks",
+      "standard_price": 930
+    },
+    {
+      "sku": "somfy-ondeis-destove-cidlo",
+      "unit": "ks",
+      "standard_price": 6790
+    },
+    {
+      "sku": "somfy-tahoma",
+      "unit": "ks",
+      "standard_price": 5490
+    },
+    {
+      "sku": "extra-ral-lamely",
+      "unit": "m2",
+      "standard_price": 1900,
+      "price_formula": null
+    },
+    {
       "sku": "extra-ral-ram",
+      "unit": "ks",
+      "standard_price": 1,
       "price_formula": "7% percent from price"
+    },
+    {
+      "sku": "mlecne-sklo-strecha-extra",
+      "unit": "m2",
+      "standard_price": 600
+    },
+    {
+      "sku": "revizni-otvor",
+      "unit": "ks",
+      "standard_price": 0
+    },
+    {
+      "sku": "extra-ral-screen",
+      "unit": "ks",
+      "standard_price": 3500
     }
   ]
 }

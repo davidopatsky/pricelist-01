@@ -73,12 +73,12 @@ git commit -m "update pricelist"
 
 ## B2B (partneři)
 
-`pricelist-b2b.json` — kusové položky a příplatky s jinou cenou pro B2B partnery. **Nečte ho aplikace obchodníků ani Raynet.**
-Obsahuje jen rozdíly: každá položka přepisuje uvedená pole položky se stejným `sku` v `pricelist.json`.
+`pricelist-b2b.json` — **úplný seznam** kusových položek a příplatků pro B2B partnery, v pořadí pro B2B ceník, každá s vlastní cenou. **Nečte ho aplikace obchodníků ani Raynet.**
+Název, kategorie a ostatní pole se doplní z `pricelist.json` podle `sku`. Co v souboru není, partnerům se neuvádí.
 
 ```python
 base = {i["sku"]: i for i in json.load(open("pricelist.json"))}
-b2b  = [{**base.get(o["sku"], {}), **o} for o in json.load(open("pricelist-b2b.json"))["items"]]
+b2b  = [{**base[o["sku"]], **o} for o in json.load(open("pricelist-b2b.json"))["items"]]
 ```
 
 Příklad: lakování rámu — obchodníci 4 %, B2B 7 %.
