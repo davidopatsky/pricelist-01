@@ -108,6 +108,11 @@ def main():
                 if para.strip():
                     P(f"{a}: odstavec navíc mimo knowledge („{para.strip()[:50]}…“)")
 
+    montaz = json.loads((ROOT / "products" / "sluzba" / "montaz" / "prices.json").read_text(encoding="utf-8"))
+    sec = {s["id"]: s for s in montaz["sections"]}
+    if "maxi" in sec and sec["maxi"]["tiers"] != sec["pergoly"]["tiers"]:
+        problems.append("montáž: sazby sekce maxi se liší od sekce pergoly")
+
     for p in problems:
         print(p)
     print(f"\n{len(problems)} problémů" if problems else "✓ bez problémů")

@@ -60,6 +60,44 @@
       ]
     },
     {
+      "id": "maxi",
+      "label": "ALUX MAXI",
+      "applies_to_category": "maxi",
+      "rate_type": "tiered_by_price",
+      "tier_note": "Sazby stejné jako u pergol (sekce pergoly) — měnit vždy obě; hlídá scripts/check_texts.py.",
+      "tiers": [
+        {
+          "price_up_to_czk": 100000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 150000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 200000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 250000,
+          "percent": 13
+        },
+        {
+          "price_up_to_czk": 300000,
+          "percent": 12
+        },
+        {
+          "price_up_to_czk": 400000,
+          "percent": 11
+        },
+        {
+          "price_up_to_czk": null,
+          "percent": 11,
+          "note": "500 000 a více"
+        }
+      ]
+    },
+    {
       "id": "zaskleni",
       "label": "Zasklení",
       "applies_to_skus": [
