@@ -1164,7 +1164,7 @@
     "category": "maxi",
     "name": "ALUX MAXI BIO",
     "name_en": "ALUX MAXI BIO",
-    "description": "ALUX MAXI BIO – bioklimatická pergola s naklápěcími lamelami v jednom neděleném poli, masivní obvodový profil 300 × 150 mm, rozpětí až 8 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.",
+    "description": "ALUX MAXI BIO – samostojná bioklimatická pergola s naklápěcími lamelami v jednom neděleném poli, masivní obvodový profil 300 × 150 mm, rozpětí až 8 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.",
     "standard_price": 1,
     "price_formula": "matrix",
     "currency": "CZK",
@@ -1173,9 +1173,9 @@
     "cost_percent": 58,
     "discount": "22-24%",
     "delivery_weeks": "8-10",
-    "color_summary": "Rám RAL 7016 Axalta jemná struktura.",
-    "description_en": "ALUX MAXI BIO – bioclimatic pergola with adjustable louvres in a single undivided field, massive perimeter profile 300 × 150 mm, span up to 8 m without a middle post, frame RAL 7016 Axalta structure.",
-    "color_summary_en": "Frame RAL 7016 Axalta structure.",
+    "color_summary": "Rám RAL 7016 Axalta jemná struktura. Lamely RAL 9006 nebo RAL 7016 Axalta jemná struktura. Jiné barvy rámu na dotaz, jiné barvy lamel individuálně.",
+    "description_en": "ALUX MAXI BIO – freestanding bioclimatic pergola with adjustable louvres in a single undivided field, massive perimeter profile 300 × 150 mm, span up to 8 m without a middle post, frame RAL 7016 Axalta structure.",
+    "color_summary_en": "Frame RAL 7016 Axalta structure. Louvres RAL 9006 or RAL 7016 Axalta structure. Other frame colors on request, other louvre colors individually.",
     "raynet_description": null,
     "raynet_cost": null
   }
