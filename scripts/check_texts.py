@@ -3,7 +3,7 @@
 
     python3 scripts/check_texts.py      # exit 1, když něco najde
 
-Kontroluje u každé pergoly (category == "pergola"):
+Kontroluje u každé pergoly (category "pergola" a "maxi"):
   1. v anglických textech nejsou česká písmena,
   2. česky i anglicky stejná fakta: typ skla (VSG …), RAL kódy, barvy výplně, typ konstrukce,
   3. žádný text ručně na dvou místech (description = knowledge Popis, color_summary = Barvy …).
@@ -57,9 +57,9 @@ def main():
     items = {i["sku"]: i for i in json.loads((ROOT / "pricelist.json").read_text(encoding="utf-8"))}
     problems = []
     for sku, it in items.items():
-        if it["category"] != "pergola":
+        if it["category"] not in ("pergola", "maxi"):
             continue
-        d = ROOT / "products" / "pergola" / sku
+        d = ROOT / "products" / it["category"] / sku
         meta = json.loads((d / "metadata.json").read_text(encoding="utf-8"))
         kcs = (d / "knowledge.md").read_text(encoding="utf-8")
         ken_path = d / "knowledge.en.md"

@@ -1,0 +1,44 @@
+{
+  "sku": "alux-maxi-bio",
+  "display_name_cs": "ALUX MAXI BIO - bioklimatická pergola, 1 pole bez dělicího profilu, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI BIO",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm",
+      "label_en": "width"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm",
+      "label_en": "depth"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": [
+    "stojna-150-3000",
+    "stojna-150-3500",
+    "led-osvetleni-obvodove"
+  ],
+  "support_zones": [
+    {
+      "stojny": 4,
+      "popisek": "4× stojna",
+      "popisek_en": "4 posts"
+    }
+  ],
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ]
+    }
+  ]
+}
