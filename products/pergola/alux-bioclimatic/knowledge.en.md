@@ -16,4 +16,4 @@ Frame RAL 7016 Axalta structure. Louvres RAL 9006 or RAL 7016 Axalta structure. 
 ## Specification
 
 - Number of louvres: 11–39 (29 variants)
-- Motor: Somfy IO (standard)
+- Motor: price includes the standard Somfy IO motor, can be replaced with Somfy WT

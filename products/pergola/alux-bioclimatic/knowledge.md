@@ -17,4 +17,4 @@ Rám RAL 7016 Axalta jemná struktura. Lamely RAL 9006 nebo RAL 7016 Axalta jemn
 ## Specifikace
 
 - počet lamel: 11–39 (29 variant)
-- motor: Somfy IO (ve standardu)
+- motor: cena je se standardním motorem Somfy IO, lze zaměnit za Somfy WT
