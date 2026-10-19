@@ -21,6 +21,8 @@
     │   └── <sku>/ …
     ├── prislusenstvi/
     │   └── <sku>/ …
+    ├── maxi/
+    │   └── <sku>/ …
     ├── elektro/
     │   └── <sku>/ …
     ├── priplatky/
@@ -71,7 +73,7 @@
 | # | klíč | typ | povinné | příklad | poznámka |
 |---|---|---|---|---|---|
 | 1 | `sku` | string | ✓ | `alux-bioclimatic` | join key, unique, beze změny napříč systémy |
-| 2 | `category` | enum | ✓ | `pergola` | jedna z: `pergola`, `vypln`, `prislusenstvi`, `elektro`, `priplatky`, `profily`, `sluzba` |
+| 2 | `category` | enum | ✓ | `pergola` | jedna z: `pergola`, `maxi`, `vypln`, `prislusenstvi`, `elektro`, `priplatky`, `profily`, `sluzba` |
 | 3 | `name` | string | ✓ | `ALUX Bioclimatic` | krátký název CZ |
 | 4 | `name_en` | string \| null | – | `ALUX Bioclimatic` | anglický název (volitelné) |
 | 5 | `description` | string | – | `Bioklimatická pergola…` | jedna věta CZ |
@@ -108,6 +110,7 @@ Proč `1` a ne `null` nebo `"matrix"` přímo v `standard_price`? Numbers/Excel 
 | slug | význam | typický obsah |
 |---|---|---|
 | `pergola` | hlavní produkty | bioclimatic, carbo, glass, ram, thermo, … |
+| `maxi` | řada ALUX MAXI — masivní profil 300 × 150 mm, rozpětí až 8 m | MAXI BIO, DUO, Fusion, Carport |
 | `vypln` | výplně do pergoly / okolo | screeny, zasklení, markýzy |
 | `prislusenstvi` | mechanické doplňky / kotvení | stojny, čidla, hilti / fischer kotvy, roznášecí body |
 | `elektro` | elektro doplňky | LED osvětlení, ovladače Somfy, kamery, pohybová čidla, zásuvky |
