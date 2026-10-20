@@ -8,7 +8,7 @@ sku: alux-maxi-fusion
 
 ## Popis
 
-ALUX MAXI FUSION – samostojná pergola s dělenou střechou: středový dělicí profil rozděluje střechu na 2 pole s různou krytinou – BIO / Glass, BIO / polykarbonát nebo Glass / Thermo; masivní obvodový profil 300 × 150 mm, rozpětí až 8 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI FUSION – samostojná pergola s dělenou střechou: středový dělicí profil rozděluje střechu na 2 pole s různou krytinou – BIO / Glass, BIO / polykarbonát nebo Glass / Thermo; masivní obvodový profil 300 × 150 mm, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
@@ -19,7 +19,7 @@ Rám RAL 7016 Axalta jemná struktura.
 - samostojná konstrukce na 4 stojnách, nad rozměr 7,5 × 4,5 m na 6 stojnách (3 na každé straně)
 - hlavní obvodový profil 300 × 150 mm (tloušťka stěny až 5 mm)
 - stojny 150 × 150 mm (tloušťka stěny až 4 mm)
-- rozpětí až 8 m bez středového sloupku
+- rozpětí až 7,5 m bez středového sloupku
 - max. rozměr 8,0 × 6,0 m
 - střecha: 2 pole oddělená středovým dělicím profilem, kombinace krytin BIO / Glass, BIO / polykarbonát, Glass / Thermo
 - zasklení: při rozpětí nad 7 m doporučeno bezrámové (provozní průhyb konstrukce 4–5 mm); spodní profil 150 mm umožňuje širší kolejnice
