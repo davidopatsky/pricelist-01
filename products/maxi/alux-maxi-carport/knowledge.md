@@ -16,7 +16,7 @@ Rám RAL 7016 Axalta jemná struktura.
 
 ## Specifikace
 
-- samostojná konstrukce na 4 stojnách
+- samostojná konstrukce na 4 stojnách, při šířce nad 7,5 m na 6 stojnách (3 na každé straně)
 - hlavní obvodový profil 300 × 150 mm (tloušťka stěny až 5 mm)
 - stojny 150 × 150 mm (tloušťka stěny až 4 mm)
 - rozpětí až 8 m bez středového sloupku

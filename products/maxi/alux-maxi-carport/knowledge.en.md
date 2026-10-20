@@ -15,7 +15,7 @@ Frame RAL 7016 Axalta structure.
 
 ## Specification
 
-- Freestanding structure on 4 posts
+- Freestanding structure on 4 posts, at a width above 7.5 m on 6 posts (3 on each side)
 - Main perimeter profile 300 × 150 mm (wall thickness up to 5 mm)
 - Posts 150 × 150 mm (wall thickness up to 4 mm)
 - Span up to 8 m without a middle post

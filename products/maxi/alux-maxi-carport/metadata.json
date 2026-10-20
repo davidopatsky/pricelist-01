@@ -21,7 +21,13 @@
     "stojna-150-3500",
     "led-osvetleni-obvodove"
   ],
-  "support_zones": [],
+  "support_zones": [
+    {
+      "stojny": 3,
+      "sirka_od": 7600,
+      "popisek_en": "3 posts"
+    }
+  ],
   "standard_colors": [
     {
       "part": "frame",
