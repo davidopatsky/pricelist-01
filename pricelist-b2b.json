@@ -111,9 +111,27 @@
       "currency": "CZK",
       "unit": "ks",
       "cost": 1,
-      "cost_percent": 58,
+      "cost_percent": 48.33,
       "discount": "0-42%",
-      "pricing_note": "náklad = nákupní cena × 1,20; prodejní cena = náklad / 0,58 (42 % marže) — při max. partnerské slevě 42 % vychází cena přesně na náklad"
+      "price_levels": [
+        {
+          "label": "Nákup ALUX",
+          "percent_of_list": 48.33,
+          "matrix": "prices_alux",
+          "internal": true
+        },
+        {
+          "label": "Nákup partner při 42% slevě",
+          "percent_of_list": 58,
+          "matrix": "prices_partner"
+        },
+        {
+          "label": "Prodejní bez slevy",
+          "percent_of_list": 100,
+          "matrix": "prices"
+        }
+      ],
+      "price_levels_note": "Nákup partner = nákup ALUX + 20 %; prodejní bez slevy = nákup partner / 0,58. Všechny tři matice v products/b2b/screen-a-b2b/prices.json; cost_percent = nákup ALUX (jako v pricelist.json). Nákup ALUX je interní — partnerům neuvádět."
     }
   ]
 }
