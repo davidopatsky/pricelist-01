@@ -1,0 +1,17 @@
+{
+  "sku": "screen-a",
+  "display_name_cs": "Screenové rolety A - kastlík š.120 x v. 125 mm - lakování pouze axalta jmn. str.",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm"
+    },
+    "vertical": {
+      "label": "výška",
+      "unit": "mm"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}

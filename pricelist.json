@@ -240,6 +240,26 @@
     "raynet_cost": null
   },
   {
+    "sku": "screen-a",
+    "category": "vypln",
+    "name": "Screenové rolety A",
+    "name_en": "Screen roller blinds A",
+    "description": "Screenové rolety A - kastlik 120 x 120 - barva RAL 7016 axalta jmn. str.",
+    "standard_price": 1,
+    "price_formula": "matrix",
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1,
+    "cost_percent": 50,
+    "discount": "0-20%",
+    "delivery_weeks": "8-9",
+    "color_summary": "Kastlík 120 × 120 mm, RAL 7016 Axalta jemná struktura.",
+    "description_en": null,
+    "color_summary_en": null,
+    "raynet_description": "<p><b>Typ motoru:</b>\n<br>\nSomfy IO\n<br>\n<br>\n<b>Barva látky:</b>\n<br>\nSERGE 600 -</p>",
+    "raynet_cost": null
+  },
+  {
     "sku": "alux-zaskleni-bezramove",
     "category": "vypln",
     "name": "ALUX Zasklení Bezrámové",
