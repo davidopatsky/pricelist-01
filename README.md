@@ -92,6 +92,10 @@ b2b  = [{**base[o["sku"]], **o} for o in json.load(open("pricelist-b2b.json"))["
 
 Příklad: lakování rámu — obchodníci 4 %, B2B 7 %.
 
+`pricelist-b2b.json` → `matrices` — B2B maticové produkty s vlastní maticí v `products/b2b/<sku>/` (`prices.json`, `metadata.json`). Ceny v matici = B2B ceník před partnerskou slevou; `cost_percent` jako v `pricelist.json`. Popis, technické údaje a barvy se berou z `base_sku` (`products/<category>/<base_sku>/knowledge.md`). Složka `products/b2b/` není v `pricelist.json` — aplikace obchodníků ani Raynet ji nevidí.
+
+Příklad: `screen-a-b2b` (Screenové rolety A B2B) — náklad = nákupní cena × 1,20, cena = náklad / 0,58; při max. partnerské slevě 42 % vychází cena přesně na náklad.
+
 ## Pricing convention (důležité pro app developery)
 
 `standard_price` a `price_formula` se čtou společně. **`standard_price = 1` je magic placeholder, ne reálná cena 1 CZK.**

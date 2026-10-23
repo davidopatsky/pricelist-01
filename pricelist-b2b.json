@@ -1,5 +1,5 @@
 {
-  "note": "B2B kusové položky a příplatky pro partnery — úplný seznam v pořadí pro B2B ceník. Každá položka má vlastní cenu (standard_price, nebo price_formula u procentních příplatků; standard_price 1 = cena z price_formula). Název, kategorie a ostatní pole se doplní z pricelist.json podle sku: položka = {**pricelist[sku], **b2b}. Co tu není, partnerům se neuvádí. Nečte aplikace obchodníků ani Raynet.",
+  "note": "B2B kusové položky a příplatky pro partnery — úplný seznam v pořadí pro B2B ceník. Každá položka má vlastní cenu (standard_price, nebo price_formula u procentních příplatků; standard_price 1 = cena z price_formula). Název, kategorie a ostatní pole se doplní z pricelist.json podle sku: položka = {**pricelist[sku], **b2b}. Co tu není, partnerům se neuvádí. Nečte aplikace obchodníků ani Raynet. matrices = B2B maticové produkty s vlastní maticí v products/b2b/<sku>/prices.json (ceny = B2B ceník před partnerskou slevou); popis, technické údaje a barvy se berou z base_sku (products/<category>/<base_sku>/).",
   "items": [
     {
       "sku": "stojna-120-3000",
@@ -97,6 +97,23 @@
       "sku": "extra-ral-screen",
       "unit": "ks",
       "standard_price": 3500
+    }
+  ],
+  "matrices": [
+    {
+      "sku": "screen-a-b2b",
+      "base_sku": "screen-a",
+      "category": "vypln",
+      "name": "Screenové rolety A B2B",
+      "name_en": "Screen roller blinds A B2B",
+      "standard_price": 1,
+      "price_formula": "matrix",
+      "currency": "CZK",
+      "unit": "ks",
+      "cost": 1,
+      "cost_percent": 58,
+      "discount": "0-42%",
+      "pricing_note": "náklad = nákupní cena × 1,20; prodejní cena = náklad / 0,58 (42 % marže) — při max. partnerské slevě 42 % vychází cena přesně na náklad"
     }
   ]
 }
