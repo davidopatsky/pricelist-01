@@ -4,11 +4,11 @@ sku: screen-a
 
 # Screenové rolety A
 
-> Screenové rolety A - kastlík š.120 x v. 125 mm - lakování pouze axalta jmn. str.
+> Screenové rolety A - hranatý hliníkový box 120, motor Somfy IO, standardní látky
 
 ## Popis
 
-Screenové rolety A - kastlik 120 x 120 - barva RAL 7016 axalta jmn. str.
+Screenové rolety A – hranatý box z extrudovaného hliníku. Krytky koncové lišty přesahují do vodicích lišt a tím nenarušují celkový vzhled screenové rolety. Ze spodní strany revizní klapky se nachází zpevňující lem. Díky speciálním látkám neztratíte vizuální kontakt s okolím.
 
 ## Barvy a povrchy
 
@@ -22,8 +22,12 @@ Standardní barvy screenů (VENYS) — bez příplatku:
 - **Antracit** — RAL 7016
 - **Antracit struktura** — RAL 7016S
 
-Příplatkové lakování na jinou RAL (mimo seznam): jednorázově **3 000 Kč**.
+Lakování na jinou RAL: příplatek podle rozměru – ceník „lakování RAL“.
 
 ## Specifikace
 
-- rozměrové osy: šířka × výška (mm)
+- box 120 – hranatý, z extrudovaného hliníku
+- motor: cena je se standardním motorem Somfy IO
+- látky v ceně: Soltis Horizon 86, Sergé 600, Sergé 3 %
+- rozměry: šířka 800–5 900 mm, výška 800–5 000 mm; při výšce 2 900–3 100 mm šířka max. 4 900 mm; při výšce 3 200–5 000 mm šířka + výška max. 8 000 mm
+- lakování na jinou RAL: příplatek podle rozměru (box, bočnice, vodicí lišty, koncová lišta) – ceník „lakování RAL“; speciální RAL (struktura, Tiger, perleť) na dotaz
