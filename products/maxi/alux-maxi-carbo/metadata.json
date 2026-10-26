@@ -24,19 +24,14 @@
   "support_zones": [
     {
       "stojny": 2,
-      "strecha": "uno",
-      "sirka_do": 8000,
-      "hloubka_do": 5000,
-      "popisek": "UNO - 2 stojny",
-      "popisek_en": "UNO - 2 posts"
+      "hloubka_od": 5100,
+      "popisek": "DUO - 2 stojny",
+      "popisek_en": "DUO - 2 posts"
     },
     {
       "stojny": 2,
-      "strecha": "duo",
-      "sirka_do": 8000,
-      "hloubka_do": 6000,
-      "popisek": "DUO - 2 stojny",
-      "popisek_en": "DUO - 2 posts"
+      "popisek": "UNO - 2 stojny",
+      "popisek_en": "UNO - 2 posts"
     }
   ],
   "standard_colors": [

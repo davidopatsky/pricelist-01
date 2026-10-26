@@ -23,28 +23,27 @@
   ],
   "support_zones": [
     {
-      "stojny": 2,
-      "strecha": "uno",
-      "sirka_do": 7000,
-      "hloubka_do": 4000,
-      "popisek": "UNO - 2 stojny",
-      "popisek_en": "UNO - 2 posts"
+      "stojny": 3,
+      "sirka_od": 7590,
+      "popisek": "DUO - 3 stojny",
+      "popisek_en": "DUO - 3 posts"
     },
     {
       "stojny": 2,
-      "strecha": "duo",
-      "sirka_do": 7500,
-      "hloubka_do": 5500,
+      "sirka_od": 7190,
       "popisek": "DUO - 2 stojny",
       "popisek_en": "DUO - 2 posts"
     },
     {
-      "stojny": 3,
-      "strecha": "duo",
-      "sirka_do": 8000,
-      "hloubka_do": 5500,
-      "popisek": "DUO - 3 stojny",
-      "popisek_en": "DUO - 3 posts"
+      "stojny": 2,
+      "hloubka_od": 4100,
+      "popisek": "DUO - 2 stojny",
+      "popisek_en": "DUO - 2 posts"
+    },
+    {
+      "stojny": 2,
+      "popisek": "UNO - 2 stojny",
+      "popisek_en": "UNO - 2 posts"
     }
   ],
   "standard_colors": [

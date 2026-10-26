@@ -103,9 +103,8 @@ Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `
 
 | Klíč | Typ | Význam |
 |---|---|---|
-| `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; u pergol 2 jen spolu s `pricky`, u `maxi` i samotné) |
+| `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; 2 jen spolu s `pricky` nebo s vlastním `popisek`) |
 | `pricky` | bool, nepovinné (výchozí `false`) | + výztuha |
-| `strecha` | `"uno"` / `"duo"`, nepovinné (jen kategorie `maxi`) | UNO = střecha bez středového nosníku (krokve rovnoběžně s hloubkou, spád dopředu); DUO = se středovým nosníkem (sedlový spád do boků, krokve rovnoběžně se šířkou) |
 | `sirka_od` / `sirka_do` | mm, včetně, nepovinné | šířka = vodorovná osa matice |
 | `hloubka_od` / `hloubka_do` | mm, včetně, nepovinné | hloubka = svislá osa matice |
 | `popisek` | text, nepovinné | vlastní text do legendy; jinak se složí sám, např. „3× stojna + výztuha“ |
@@ -121,15 +120,17 @@ Chybějící mez = bez omezení.
 
 U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
 
-**ALUX MAXI (`category: "maxi"`)** — zóny pokrývají **celou** matici a jsou zapsané horními mezemi (`sirka_do`, `hloubka_do`) od nejmenší: platí první, do které rozměr spadá, poslední zóna = max. rozměr. Každá zóna má `strecha` (UNO / DUO) a `popisek`; v legendě zobrazit i zónu se 2 stojnami (liší se UNO / DUO).
+**ALUX MAXI (`category: "maxi"`)** — zóny stejně jako u ostatních pergol (shora dolů, platí první, která sedí). Navíc mají pojmenovanou i základní zónu: poslední pravidlo bez mezí platí pro zbytek matice. Typ střechy (UNO / DUO) a počet stojen je jen v textu `popisek` — v legendě zobrazit popisek.
 
 ```json
 "support_zones": [
-  { "stojny": 2, "strecha": "uno", "sirka_do": 7500, "hloubka_do": 5000, "popisek": "UNO - 2 stojny" },
-  { "stojny": 2, "strecha": "duo", "sirka_do": 7500, "hloubka_do": 6000, "popisek": "DUO - 2 stojny" },
-  { "stojny": 3, "strecha": "duo", "sirka_do": 8000, "hloubka_do": 6000, "popisek": "DUO - 3 stojny" }
+  { "stojny": 3, "sirka_od": 7600,   "popisek": "DUO - 3 stojny", "popisek_en": "DUO - 3 posts" },
+  { "stojny": 2, "hloubka_od": 5100, "popisek": "DUO - 2 stojny", "popisek_en": "DUO - 2 posts" },
+  { "stojny": 2,                     "popisek": "UNO - 2 stojny", "popisek_en": "UNO - 2 posts" }
 ]
 ```
+
+UNO = střecha bez středového nosníku (krokve rovnoběžně s hloubkou, spád dopředu); DUO = se středovým nosníkem (sedlový spád do boků, krokve rovnoběžně se šířkou).
 
 MAXI Carbo je `multi-matrix` se 2 variantami (dutinkový / plný polykarbonát), zóny platí pro obě. MAXI Fusion je `multi-matrix` se 4 variantami (BIO / Glass, BIO / Carbo, Thermo / Glass, Thermo / Carbo) a ceny má zatím `null` (ještě nejsou stanoveny) — matice slouží jen k rozměrům a zónám.
 
