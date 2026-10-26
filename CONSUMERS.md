@@ -103,8 +103,9 @@ Obsahuje `axes`, `horizontal_footer` (např. počet lamel), `display_name_cs`, `
 
 | Klíč | Typ | Význam |
 |---|---|---|
-| `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; 2 jen spolu s `pricky`) |
+| `stojny` | číslo, povinné | počet stojen (2, 3 nebo 4; u pergol 2 jen spolu s `pricky`, u `maxi` i samotné) |
 | `pricky` | bool, nepovinné (výchozí `false`) | + výztuha |
+| `strecha` | `"uno"` / `"duo"`, nepovinné (jen kategorie `maxi`) | UNO = střecha bez středového nosníku (krokve rovnoběžně s hloubkou, spád dopředu); DUO = se středovým nosníkem (sedlový spád do boků, krokve rovnoběžně se šířkou) |
 | `sirka_od` / `sirka_do` | mm, včetně, nepovinné | šířka = vodorovná osa matice |
 | `hloubka_od` / `hloubka_do` | mm, včetně, nepovinné | hloubka = svislá osa matice |
 | `popisek` | text, nepovinné | vlastní text do legendy; jinak se složí sám, např. „3× stojna + výztuha“ |
@@ -119,6 +120,18 @@ Chybějící mez = bez omezení.
 ```
 
 U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
+
+**ALUX MAXI (`category: "maxi"`)** — zóny pokrývají **celou** matici a jsou zapsané horními mezemi (`sirka_do`, `hloubka_do`) od nejmenší: platí první, do které rozměr spadá, poslední zóna = max. rozměr. Každá zóna má `strecha` (UNO / DUO) a `popisek`; v legendě zobrazit i zónu se 2 stojnami (liší se UNO / DUO).
+
+```json
+"support_zones": [
+  { "stojny": 2, "strecha": "uno", "sirka_do": 7500, "hloubka_do": 5000, "popisek": "UNO, 2× stojna" },
+  { "stojny": 2, "strecha": "duo", "sirka_do": 7500, "hloubka_do": 6000, "popisek": "DUO, 2× stojna" },
+  { "stojny": 3, "strecha": "duo", "sirka_do": 8000, "hloubka_do": 6000, "popisek": "DUO, 3× stojna" }
+]
+```
+
+U MAXI Glass, Carbo a Fusion jsou ceny v matici zatím `null` (cena ještě není stanovena) — matice slouží jen k rozměrům a zónám. Fusion je `multi-matrix` se 4 variantami: BIO / Glass, BIO / Carbo, Thermo / Glass, Thermo / Carbo.
 
 **`standard_colors`** (pergoly) — **jediný zdroj** standardního (bezpříplatkového) provedení barev, česky i anglicky. Pole dílů; každý díl má seznam variant.
 

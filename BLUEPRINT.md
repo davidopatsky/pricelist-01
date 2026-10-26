@@ -110,7 +110,7 @@ Proč `1` a ne `null` nebo `"matrix"` přímo v `standard_price`? Numbers/Excel 
 | slug | význam | typický obsah |
 |---|---|---|
 | `pergola` | hlavní produkty | bioclimatic, carbo, glass, ram, thermo, … |
-| `maxi` | řada ALUX MAXI — masivní profil 300 × 150 mm, rozpětí až 8 m | MAXI BIO, DUO, Fusion, Carport |
+| `maxi` | řada ALUX MAXI — masivní profil 300 × 150 mm, provedení UNO / DUO podle rozměru | MAXI Thermo, Glass, Bioclimatic, Carbo, Fusion |
 | `vypln` | výplně do pergoly / okolo | screeny, zasklení, markýzy |
 | `prislusenstvi` | mechanické doplňky / kotvení | stojny, čidla, hilti / fischer kotvy, roznášecí body |
 | `elektro` | elektro doplňky | LED osvětlení, ovladače Somfy, kamery, pohybová čidla, zásuvky |

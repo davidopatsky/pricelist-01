@@ -1,7 +1,7 @@
 {
-  "sku": "alux-maxi-carport",
-  "display_name_cs": "ALUX MAXI CARPORT - samostojný přístřešek pro auta, sedlový spád střechy, termopanel 4 cm, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
-  "display_name_en": "ALUX MAXI CARPORT",
+  "sku": "alux-maxi-carbo",
+  "display_name_cs": "ALUX MAXI Carbo - samostojná pergola, polykarbonát dutinkový / plný, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Carbo",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -23,9 +23,20 @@
   ],
   "support_zones": [
     {
-      "stojny": 3,
-      "sirka_od": 7600,
-      "popisek_en": "3 posts"
+      "stojny": 2,
+      "strecha": "uno",
+      "sirka_do": 8000,
+      "hloubka_do": 5000,
+      "popisek": "UNO, 2× stojna",
+      "popisek_en": "UNO, 2 posts"
+    },
+    {
+      "stojny": 2,
+      "strecha": "duo",
+      "sirka_do": 8000,
+      "hloubka_do": 6000,
+      "popisek": "DUO, 2× stojna",
+      "popisek_en": "DUO, 2 posts"
     }
   ],
   "standard_colors": [

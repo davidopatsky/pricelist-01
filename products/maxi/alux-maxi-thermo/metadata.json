@@ -1,0 +1,63 @@
+{
+  "sku": "alux-maxi-thermo",
+  "display_name_cs": "ALUX MAXI Thermo - samostojná pergola, termopanel 4 cm, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Thermo",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm",
+      "label_en": "width"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm",
+      "label_en": "depth"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": [
+    "stojna-150-3000",
+    "stojna-150-3500",
+    "led-osvetleni-obvodove"
+  ],
+  "support_zones": [
+    {
+      "stojny": 2,
+      "strecha": "uno",
+      "sirka_do": 7500,
+      "hloubka_do": 5000,
+      "popisek": "UNO, 2× stojna",
+      "popisek_en": "UNO, 2 posts"
+    },
+    {
+      "stojny": 2,
+      "strecha": "duo",
+      "sirka_do": 7500,
+      "hloubka_do": 6000,
+      "popisek": "DUO, 2× stojna",
+      "popisek_en": "DUO, 2 posts"
+    },
+    {
+      "stojny": 3,
+      "strecha": "duo",
+      "sirka_do": 8000,
+      "hloubka_do": 6000,
+      "popisek": "DUO, 3× stojna",
+      "popisek_en": "DUO, 3 posts"
+    }
+  ],
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "sku": "alux-maxi-fusion",
-  "display_name_cs": "ALUX MAXI FUSION - samostojná pergola, střecha dělená na 2 pole s kombinací krytin, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
-  "display_name_en": "ALUX MAXI FUSION",
+  "display_name_cs": "ALUX MAXI Fusion - samostojná pergola, vždy DUO, 2 pole s různou krytinou, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Fusion",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -23,14 +23,20 @@
   ],
   "support_zones": [
     {
-      "stojny": 3,
-      "sirka_od": 7600,
-      "popisek_en": "3 posts"
+      "stojny": 2,
+      "strecha": "duo",
+      "sirka_do": 7500,
+      "hloubka_do": 4500,
+      "popisek": "DUO, 2× stojna",
+      "popisek_en": "DUO, 2 posts"
     },
     {
       "stojny": 3,
-      "hloubka_od": 4600,
-      "popisek_en": "3 posts"
+      "strecha": "duo",
+      "sirka_do": 8000,
+      "hloubka_do": 5000,
+      "popisek": "DUO, 3× stojna",
+      "popisek_en": "DUO, 3 posts"
     }
   ],
   "standard_colors": [
