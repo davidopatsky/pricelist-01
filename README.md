@@ -94,7 +94,7 @@ Příklad: lakování rámu — obchodníci 4 %, B2B 7 %.
 
 `pricelist-b2b.json` → `matrices` — B2B maticové produkty s vlastní maticí v `products/b2b/<sku>/` (`prices.json`, `metadata.json`). Ceny v matici = B2B ceník před partnerskou slevou; `cost_percent` jako v `pricelist.json`. Popis, technické údaje a barvy se berou z `base_sku` (`products/<category>/<base_sku>/knowledge.md`). Složka `products/b2b/` není v `pricelist.json` — aplikace obchodníků ani Raynet ji nevidí.
 
-Příklad: `screen-a-b2b` (Screenové rolety A B2B) má v `prices.json` tři označené matice (`price_levels`):
+Příklad: `screen-a-b2b` (Screenové rolety A B2B) je `multi-matrix` se 2 variantami (standardní barva, lakování RAL); každá varianta má tři označené matice (`price_levels`):
 
 | matice | úroveň | výpočet |
 |---|---|---|

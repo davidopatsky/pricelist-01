@@ -131,7 +131,7 @@
           "matrix": "prices"
         }
       ],
-      "price_levels_note": "Nákup partner = nákup ALUX + 20 %; prodejní bez slevy = nákup partner / 0,58. Všechny tři matice v products/b2b/screen-a-b2b/prices.json; cost_percent = nákup ALUX (jako v pricelist.json). Nákup ALUX je interní — partnerům neuvádět."
+      "price_levels_note": "Nákup partner = nákup ALUX + 20 %; prodejní bez slevy = nákup partner / 0,58. Ceník má 2 varianty (standardní barva, lakování RAL), každá má všechny tři matice v products/b2b/screen-a-b2b/prices.json; cost_percent = nákup ALUX (jako v pricelist.json). Nákup ALUX je interní — partnerům neuvádět."
     }
   ]
 }
