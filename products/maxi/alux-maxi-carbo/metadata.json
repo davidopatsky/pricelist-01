@@ -27,16 +27,16 @@
       "strecha": "uno",
       "sirka_do": 8000,
       "hloubka_do": 5000,
-      "popisek": "UNO, 2× stojna",
-      "popisek_en": "UNO, 2 posts"
+      "popisek": "UNO - 2 stojny",
+      "popisek_en": "UNO - 2 posts"
     },
     {
       "stojny": 2,
       "strecha": "duo",
       "sirka_do": 8000,
       "hloubka_do": 6000,
-      "popisek": "DUO, 2× stojna",
-      "popisek_en": "DUO, 2 posts"
+      "popisek": "DUO - 2 stojny",
+      "popisek_en": "DUO - 2 posts"
     }
   ],
   "standard_colors": [

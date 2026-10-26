@@ -17,7 +17,7 @@ Rám RAL 7016 Axalta jemná struktura.
 ## Specifikace
 
 - samostojná konstrukce
-- provedení podle rozměru: do 7 × 3,5 m UNO na 4 stojnách; do 7,5 × 5 m DUO na 4 stojnách; do 8 × 5 m DUO na 6 stojnách (3 na každé straně)
+- zóny podle rozměru: do 7 × 3,5 m UNO - 2 stojny; do 7,5 × 5 m DUO - 2 stojny; do 8 × 5 m DUO - 3 stojny
 - UNO – střecha bez středového nosníku, krokve rovnoběžně s hloubkou, spád dopředu
 - DUO – střecha se středovým nosníkem, sedlový spád do boků, krokve rovnoběžně se šířkou
 - hlavní obvodový profil 300 × 150 mm (tloušťka stěny až 5 mm)

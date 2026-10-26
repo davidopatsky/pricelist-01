@@ -16,7 +16,7 @@ Frame RAL 7016 Axalta structure.
 ## Specification
 
 - Freestanding structure
-- Version by size: up to 7 × 3.5 m UNO on 4 posts; up to 7.5 × 5 m DUO on 4 posts; up to 8 × 5 m DUO on 6 posts (3 on each side)
+- Zones by size: up to 7 × 3.5 m UNO - 2 posts; up to 7.5 × 5 m DUO - 2 posts; up to 8 × 5 m DUO - 3 posts
 - UNO – roof without a middle beam, rafters parallel to the depth, slope to the front
 - DUO – roof with a middle beam, saddle roof sloping to the sides, rafters parallel to the width
 - Main perimeter profile 300 × 150 mm (wall thickness up to 5 mm)

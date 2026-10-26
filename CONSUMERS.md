@@ -125,9 +125,9 @@ U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započten
 
 ```json
 "support_zones": [
-  { "stojny": 2, "strecha": "uno", "sirka_do": 7500, "hloubka_do": 5000, "popisek": "UNO, 2× stojna" },
-  { "stojny": 2, "strecha": "duo", "sirka_do": 7500, "hloubka_do": 6000, "popisek": "DUO, 2× stojna" },
-  { "stojny": 3, "strecha": "duo", "sirka_do": 8000, "hloubka_do": 6000, "popisek": "DUO, 3× stojna" }
+  { "stojny": 2, "strecha": "uno", "sirka_do": 7500, "hloubka_do": 5000, "popisek": "UNO - 2 stojny" },
+  { "stojny": 2, "strecha": "duo", "sirka_do": 7500, "hloubka_do": 6000, "popisek": "DUO - 2 stojny" },
+  { "stojny": 3, "strecha": "duo", "sirka_do": 8000, "hloubka_do": 6000, "popisek": "DUO - 3 stojny" }
 ]
 ```
 
