@@ -131,7 +131,7 @@ U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započten
 ]
 ```
 
-U MAXI Glass, Carbo a Fusion jsou ceny v matici zatím `null` (cena ještě není stanovena) — matice slouží jen k rozměrům a zónám. Fusion je `multi-matrix` se 4 variantami: BIO / Glass, BIO / Carbo, Thermo / Glass, Thermo / Carbo.
+MAXI Carbo je `multi-matrix` se 2 variantami (dutinkový / plný polykarbonát), zóny platí pro obě. MAXI Fusion je `multi-matrix` se 4 variantami (BIO / Glass, BIO / Carbo, Thermo / Glass, Thermo / Carbo) a ceny má zatím `null` (ještě nejsou stanoveny) — matice slouží jen k rozměrům a zónám.
 
 **`standard_colors`** (pergoly) — **jediný zdroj** standardního (bezpříplatkového) provedení barev, česky i anglicky. Pole dílů; každý díl má seznam variant.
 

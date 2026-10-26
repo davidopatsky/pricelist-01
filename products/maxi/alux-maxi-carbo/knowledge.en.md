@@ -23,5 +23,5 @@ Frame RAL 7016 Axalta structure.
 - Posts 150 × 150 mm (wall thickness up to 4 mm)
 - Span up to 8 m without a middle post
 - Max. size 8.0 × 6.0 m
-- Roofing: multiwall / solid polycarbonate
+- Roofing: multiwall / solid polycarbonate (2 price lists)
 - Glazing: for spans over 7 m frameless glazing is recommended (operating deflection of the structure 4–5 mm); the 150 mm bottom profile allows wider tracks
