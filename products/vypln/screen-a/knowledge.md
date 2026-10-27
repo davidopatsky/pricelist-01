@@ -22,7 +22,7 @@ Standardní barvy screenů (VENYS) — bez příplatku:
 - **Antracit** — RAL 7016
 - **Antracit struktura** — RAL 7016S
 
-Lakování na jinou RAL: příplatek podle rozměru – ceník „lakování RAL“.
+Lakování na jinou RAL: příplatek 3 000 Kč za box.
 
 ## Specifikace
 
@@ -30,4 +30,4 @@ Lakování na jinou RAL: příplatek podle rozměru – ceník „lakování RAL
 - motor: cena je se standardním motorem Somfy IO
 - látky v ceně: Soltis Horizon 86, Sergé 600, Sergé 3 %
 - rozměry: šířka 800–5 900 mm, výška 800–5 000 mm; při výšce 2 900–3 100 mm šířka max. 4 900 mm; při výšce 3 200–5 000 mm šířka + výška max. 8 000 mm
-- lakování na jinou RAL: příplatek podle rozměru (box, bočnice, vodicí lišty, koncová lišta) – ceník „lakování RAL“; speciální RAL (struktura, Tiger, perleť) na dotaz
+- lakování na jinou RAL: příplatek 3 000 Kč za box; speciální RAL (struktura, Tiger, perleť) na dotaz
