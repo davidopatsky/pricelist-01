@@ -12,6 +12,16 @@
       "standard_price": 6800
     },
     {
+      "sku": "stojna-120-3000-revize",
+      "unit": "ks",
+      "standard_price": 6600
+    },
+    {
+      "sku": "stojna-120-3500-revize",
+      "unit": "ks",
+      "standard_price": 8300
+    },
+    {
       "sku": "roznaseci-bod",
       "unit": "ks",
       "standard_price": 4000
@@ -87,11 +97,6 @@
       "sku": "mlecne-sklo-strecha-extra",
       "unit": "m2",
       "standard_price": 600
-    },
-    {
-      "sku": "revizni-otvor",
-      "unit": "ks",
-      "standard_price": 0
     },
     {
       "sku": "extra-ral-screen",
