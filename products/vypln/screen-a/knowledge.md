@@ -14,13 +14,9 @@ Screenové rolety A – hranatý box z extrudovaného hliníku. Krytky koncové 
 
 Kastlík 120 × 120 mm, RAL 7016 Axalta jemná struktura.
 
-Standardní barvy screenů (VENYS) — bez příplatku:
+Standardní barvy screenů (dodavatel A) — bez příplatku:
 
-- **Stříbrná** — RAL 9006
-- **Hnědá** — RAL 8014
-- **Ultra bílá** — RAL 9016
-- **Antracit** — RAL 7016
-- **Antracit struktura** — RAL 7016S
+- RAL 7016
 
 Lakování na jinou RAL: příplatek 3 000 Kč za box.
 

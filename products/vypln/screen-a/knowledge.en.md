@@ -13,13 +13,9 @@ Screen roller blinds A – square box made of extruded aluminium. The end bar ca
 
 Box 120 × 120 mm, RAL 7016 Axalta structure.
 
-Standard screen colors (VENYS) – no surcharge:
+Standard screen colors (supplier A) – no surcharge:
 
-- **Silver** – RAL 9006
-- **Brown** – RAL 8014
-- **Ultra white** – RAL 9016
-- **Anthracite** – RAL 7016
-- **Anthracite structure** – RAL 7016S
+- RAL 7016
 
 Coating in another RAL color: surcharge per box.
 
