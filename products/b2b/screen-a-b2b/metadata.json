@@ -4,11 +4,13 @@
   "axes": {
     "horizontal": {
       "label": "šířka",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "width"
     },
     "vertical": {
       "label": "výška",
-      "unit": "mm"
+      "unit": "mm",
+      "label_en": "height"
     }
   },
   "horizontal_footer": null,
