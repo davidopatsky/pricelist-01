@@ -1,5 +1,5 @@
 ---
-sku: alux-maxi-fusion
+sku: maxi-fusion
 lang: en
 ---
 

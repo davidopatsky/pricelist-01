@@ -1,5 +1,5 @@
 ---
-sku: alux-maxi-bioclimatic
+sku: maxi-bioclimatic
 lang: en
 ---
 

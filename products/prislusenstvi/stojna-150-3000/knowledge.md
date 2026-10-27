@@ -2,7 +2,7 @@
 sku: stojna-150-3000
 ---
 
-# stojna profil 150 x 150 - 3000 mm
+# stojna MAXI profil 150 x 150 - 3000 mm
 
 ## Popis
 

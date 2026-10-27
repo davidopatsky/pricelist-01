@@ -1,7 +1,7 @@
 {
-  "sku": "alux-maxi-bioclimatic",
-  "display_name_cs": "ALUX MAXI Bioclimatic - samostojná bioklimatická pergola, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
-  "display_name_en": "ALUX MAXI Bioclimatic",
+  "sku": "maxi-thermo",
+  "display_name_cs": "ALUX MAXI Thermo - samostojná pergola, termopanel 4 cm, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Thermo",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -24,19 +24,13 @@
   "support_zones": [
     {
       "stojny": 3,
-      "sirka_od": 7590,
+      "sirka_od": 7600,
       "popisek": "DUO - 3 stojny",
       "popisek_en": "DUO - 3 posts"
     },
     {
       "stojny": 2,
-      "sirka_od": 7190,
-      "popisek": "DUO - 2 stojny",
-      "popisek_en": "DUO - 2 posts"
-    },
-    {
-      "stojny": 2,
-      "hloubka_od": 4100,
+      "hloubka_od": 5100,
       "popisek": "DUO - 2 stojny",
       "popisek_en": "DUO - 2 posts"
     },
@@ -52,21 +46,6 @@
       "label": "Rám",
       "label_en": "Frame",
       "options": [
-        {
-          "cs": "RAL 7016 Axalta jemná struktura",
-          "en": "RAL 7016 Axalta structure"
-        }
-      ]
-    },
-    {
-      "part": "louvres",
-      "label": "Lamely",
-      "label_en": "Louvres",
-      "options": [
-        {
-          "cs": "RAL 9006 Axalta jemná struktura",
-          "en": "RAL 9006 Axalta structure"
-        },
         {
           "cs": "RAL 7016 Axalta jemná struktura",
           "en": "RAL 7016 Axalta structure"

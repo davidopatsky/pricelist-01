@@ -1,7 +1,7 @@
 {
-  "sku": "alux-maxi-carbo",
-  "display_name_cs": "ALUX MAXI Carbo - samostojná pergola, polykarbonát dutinkový / plný, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
-  "display_name_en": "ALUX MAXI Carbo",
+  "sku": "maxi-glass",
+  "display_name_cs": "ALUX MAXI Glass - samostojná pergola, skleněná střecha, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Glass",
   "axes": {
     "horizontal": {
       "label": "šířka",
@@ -23,8 +23,20 @@
   ],
   "support_zones": [
     {
+      "stojny": 3,
+      "sirka_od": 7600,
+      "popisek": "DUO - 3 stojny",
+      "popisek_en": "DUO - 3 posts"
+    },
+    {
       "stojny": 2,
-      "hloubka_od": 5100,
+      "sirka_od": 7100,
+      "popisek": "DUO - 2 stojny",
+      "popisek_en": "DUO - 2 posts"
+    },
+    {
+      "stojny": 2,
+      "hloubka_od": 3600,
       "popisek": "DUO - 2 stojny",
       "popisek_en": "DUO - 2 posts"
     },

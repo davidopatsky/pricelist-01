@@ -1142,14 +1142,14 @@
   {
     "sku": "stojna-150-3000",
     "category": "prislusenstvi",
-    "name": "stojna profil 150 x 150 - 3000 mm",
-    "name_en": "Post profile 150 × 150 – 3000 mm",
+    "name": "stojna MAXI profil 150 x 150 - 3000 mm",
+    "name_en": "MAXI post profile 150 × 150 – 3000 mm",
     "description": "Stojna profil 150 x 150 mm",
-    "standard_price": 6630,
+    "standard_price": 6120,
     "price_formula": null,
     "currency": "CZK",
     "unit": "ks",
-    "cost": 5200,
+    "cost": 4800,
     "cost_percent": null,
     "discount": null,
     "delivery_weeks": "8-9",
@@ -1162,14 +1162,14 @@
   {
     "sku": "stojna-150-3500",
     "category": "prislusenstvi",
-    "name": "stojna profil 150 x 150 - 3500 mm",
-    "name_en": "Post profile 150 × 150 – 3500 mm",
+    "name": "stojna MAXI profil 150 x 150 - 3500 mm",
+    "name_en": "MAXI post profile 150 × 150 – 3500 mm",
     "description": "Stojna profil 150 x 150 mm",
-    "standard_price": 8840,
+    "standard_price": 8160,
     "price_formula": null,
     "currency": "CZK",
     "unit": "ks",
-    "cost": 5980,
+    "cost": 5520,
     "cost_percent": null,
     "discount": null,
     "delivery_weeks": "8-9",
@@ -1200,7 +1200,7 @@
     "raynet_cost": null
   },
   {
-    "sku": "alux-maxi-thermo",
+    "sku": "maxi-thermo",
     "category": "maxi",
     "name": "ALUX MAXI Thermo",
     "name_en": "ALUX MAXI Thermo",
@@ -1220,7 +1220,7 @@
     "raynet_cost": null
   },
   {
-    "sku": "alux-maxi-glass",
+    "sku": "maxi-glass",
     "category": "maxi",
     "name": "ALUX MAXI Glass",
     "name_en": "ALUX MAXI Glass",
@@ -1240,7 +1240,7 @@
     "raynet_cost": null
   },
   {
-    "sku": "alux-maxi-bioclimatic",
+    "sku": "maxi-bioclimatic",
     "category": "maxi",
     "name": "ALUX MAXI Bioclimatic",
     "name_en": "ALUX MAXI Bioclimatic",
@@ -1260,7 +1260,7 @@
     "raynet_cost": null
   },
   {
-    "sku": "alux-maxi-carbo",
+    "sku": "maxi-carbo",
     "category": "maxi",
     "name": "ALUX MAXI Carbo",
     "name_en": "ALUX MAXI Carbo",
@@ -1280,7 +1280,7 @@
     "raynet_cost": null
   },
   {
-    "sku": "alux-maxi-fusion",
+    "sku": "maxi-fusion",
     "category": "maxi",
     "name": "ALUX MAXI Fusion",
     "name_en": "ALUX MAXI Fusion",

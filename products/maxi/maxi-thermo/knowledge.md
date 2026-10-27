@@ -1,5 +1,5 @@
 ---
-sku: alux-maxi-thermo
+sku: maxi-thermo
 ---
 
 # ALUX MAXI Thermo

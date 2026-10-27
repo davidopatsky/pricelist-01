@@ -1,5 +1,5 @@
 ---
-sku: alux-maxi-glass
+sku: maxi-glass
 ---
 
 # ALUX MAXI Glass

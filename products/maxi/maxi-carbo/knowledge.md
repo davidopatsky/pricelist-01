@@ -1,5 +1,5 @@
 ---
-sku: alux-maxi-carbo
+sku: maxi-carbo
 ---
 
 # ALUX MAXI Carbo
