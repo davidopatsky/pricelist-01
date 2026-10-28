@@ -1,5 +1,5 @@
 ---
-sku: stojna-120-3000-revize
+sku: stojna-120-3000-rev
 ---
 
 # stojna profil 120 x 120 - 3000 mm s revizním otvorem
