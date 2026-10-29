@@ -1,7 +1,7 @@
 {
   "sku": "maxi-bioclimatic-duo",
   "type": "matrix",
-  "note": "DUO. Prodejní cena = ALUX Bioclimatic × 1,2 × 1,05 (druhé pole, druhý motor, středový nosník), zaokrouhleno na celé Kč. Šířka → nejbližší vyšší šířka řady lamel BIO (8000 → 8190), hloubka → nahoru na 100 mm; mimo rozsah zdroje (šířka 8190, hloubky nad 4500 mm) průměrný krok posledních 3 kroků. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05, příplatek Fusion p = 0.04.",
+  "note": "DUO. Prodejní cena = ALUX Bioclimatic × 1,2 × 1,05 (druhé pole, druhý motor, středový nosník), zaokrouhleno na celé Kč. Šířka → nejbližší vyšší šířka řady lamel BIO (8000 → 8190), hloubka → nahoru na 100 mm; mimo rozsah zdroje (šířka 8190, hloubky nad 4500 mm) průměrný krok posledních 3 kroků. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05.",
   "horizontal_values": [
     2000,
     2100,

@@ -2,7 +2,7 @@
   "sku": "maxi-carbo",
   "type": "multi-matrix",
   "currency": "CZK",
-  "note": "Prodejní cena = ALUX Carbo dutinkový × 1,2, resp. ALUX Carbo plný × 1,2 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05, příplatek Fusion p = 0.04.",
+  "note": "Prodejní cena = ALUX Carbo dutinkový × 1,2, resp. ALUX Carbo plný × 1,2 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05.",
   "variants": [
     {
       "label": "dutinkový polykarbonát",

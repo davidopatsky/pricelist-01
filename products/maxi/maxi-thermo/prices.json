@@ -1,7 +1,7 @@
 {
   "sku": "maxi-thermo",
   "type": "matrix",
-  "note": "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem posledních 3 kroků zdroje (zvlášť pro každý sloupec). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05, příplatek Fusion p = 0.04.",
+  "note": "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem posledních 3 kroků zdroje (zvlášť pro každý sloupec). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05.",
   "horizontal_values": [
     2000,
     2100,

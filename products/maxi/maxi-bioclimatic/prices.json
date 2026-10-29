@@ -1,7 +1,7 @@
 {
   "sku": "maxi-bioclimatic",
   "type": "matrix",
-  "note": "UNO. Prodejní cena = ALUX Bioclimatic × 1,2 (zaokrouhleno na celé Kč). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05, příplatek Fusion p = 0.04.",
+  "note": "UNO. Prodejní cena = ALUX Bioclimatic × 1,2 (zaokrouhleno na celé Kč). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, příplatek DUO 1.05.",
   "horizontal_values": [
     2390,
     2590,
