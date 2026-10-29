@@ -120,7 +120,7 @@ Chybějící mez = bez omezení.
 
 U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započtena v cenách matice — nepřičítat znovu.
 
-**ALUX MAXI (`category: "maxi"`)** — zóny stejně jako u ostatních pergol (shora dolů, platí první, která sedí). Navíc mají pojmenovanou i základní zónu: poslední pravidlo bez mezí platí pro zbytek matice. Typ střechy (UNO / DUO) a počet stojen je jen v textu `popisek` — v legendě zobrazit popisek.
+**ALUX MAXI (`category: "maxi"`)** — zóny stejně jako u ostatních pergol (shora dolů, platí první, která sedí). Navíc mají pojmenovanou i základní zónu: poslední pravidlo bez mezí platí pro zbytek matice. Typ střechy (UNO / DUO) a počet stojen je jen v textu `popisek` — v legendě zobrazit popisek. **Zóny se rozlišují podle `popisek`, ne podle počtu stojen:** „UNO - 2 stojny“ a „DUO - 2 stojny“ mají obě `stojny: 2`, ale v matici i legendě musí být vidět zvlášť (jiná barva). U MAXI zvýraznit všechny zóny, i ty se 2 stojnami.
 
 ```json
 "support_zones": [
@@ -132,7 +132,7 @@ U Strad je cena příček (výztuhy) v zónách s `"pricky": true` už započten
 
 UNO = střecha bez středového nosníku (krokve rovnoběžně s hloubkou, spád dopředu); DUO = se středovým nosníkem (sedlový spád do boků, krokve rovnoběžně se šířkou).
 
-MAXI Carbo je `multi-matrix` se 2 variantami (dutinkový / plný polykarbonát), zóny platí pro obě. MAXI Fusion je `multi-matrix` se 4 variantami (BIO / Glass, BIO / Carbo, Thermo / Glass, Thermo / Carbo) a ceny má zatím `null` (ještě nejsou stanoveny) — matice slouží jen k rozměrům a zónám.
+MAXI Bioclimatic jsou 2 produkty: `maxi-bioclimatic` (UNO, šířky v řadě lamel po 200 mm 2390–7590, jedna zóna) a `maxi-bioclimatic-duo` (DUO, řada lamel po 200 mm je v **hloubce** 1990–5590, šířky po 100 mm). MAXI Carbo je `multi-matrix` se 2 variantami (dutinkový / plný polykarbonát), zóny platí pro obě. MAXI Fusion je `multi-matrix` se 6 variantami (Bio - Glass, Bio - Carbo 16 mm, Bio - Carbo 6 mm, Thermo - Glass, Thermo - Carbo 16 mm, Thermo - Carbo 6 mm); zóny platí pro všechny, ale **osy má každá varianta vlastní** (verze s Bio hloubky 1990–4990 po 200 mm, ostatní 2000–5000 po 100 mm) — `horizontal_values` / `vertical_values` číst z varianty.
 
 **`standard_colors`** (pergoly) — **jediný zdroj** standardního (bezpříplatkového) provedení barev, česky i anglicky. Pole dílů; každý díl má seznam variant.
 

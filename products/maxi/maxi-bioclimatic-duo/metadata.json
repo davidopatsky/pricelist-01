@@ -1,0 +1,71 @@
+{
+  "sku": "maxi-bioclimatic-duo",
+  "display_name_cs": "ALUX MAXI Bioclimatic DUO - samostojná bioklimatická pergola, provedení DUO (2 pole), profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_en": "ALUX MAXI Bioclimatic DUO",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm",
+      "label_en": "width"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm",
+      "label_en": "depth"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": [
+    "stojna-150-3000",
+    "stojna-150-3500",
+    "led-osvetleni-obvodove"
+  ],
+  "support_zones": [
+    {
+      "stojny": 3,
+      "sirka_od": 7600,
+      "popisek": "DUO - 3 stojny",
+      "popisek_en": "DUO - 3 posts"
+    },
+    {
+      "stojny": 3,
+      "hloubka_od": 5590,
+      "popisek": "DUO - 3 stojny",
+      "popisek_en": "DUO - 3 posts"
+    },
+    {
+      "stojny": 2,
+      "popisek": "DUO - 2 stojny",
+      "popisek_en": "DUO - 2 posts"
+    }
+  ],
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ]
+    },
+    {
+      "part": "louvres",
+      "label": "Lamely",
+      "label_en": "Louvres",
+      "options": [
+        {
+          "cs": "RAL 9006 Axalta jemná struktura",
+          "en": "RAL 9006 Axalta structure"
+        },
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ]
+    }
+  ]
+}

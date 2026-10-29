@@ -1,6 +1,6 @@
 {
   "sku": "maxi-fusion",
-  "display_name_cs": "ALUX MAXI Fusion - samostojná pergola, vždy DUO, 2 pole s různou krytinou, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
+  "display_name_cs": "ALUX MAXI Fusion - samostojná pergola, vždy DUO, 2 pole s různou krytinou (6 ceníků), profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura",
   "display_name_en": "ALUX MAXI Fusion",
   "axes": {
     "horizontal": {
@@ -30,7 +30,7 @@
     },
     {
       "stojny": 3,
-      "hloubka_od": 4600,
+      "hloubka_od": 4590,
       "popisek": "DUO - 3 stojny",
       "popisek_en": "DUO - 3 posts"
     },
