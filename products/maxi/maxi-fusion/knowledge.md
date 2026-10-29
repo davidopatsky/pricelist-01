@@ -25,5 +25,5 @@ Rám RAL 7016 Axalta jemná struktura.
 - max. rozměr 8,0 × 5,0 m
 - provedení: vždy DUO – středový nosník je vždy uprostřed
 - střecha: 2 pole s různou krytinou – Bio / Glass, Bio / Carbo 16 mm, Bio / Carbo 6 mm, Thermo / Glass, Thermo / Carbo 16 mm, Thermo / Carbo 6 mm (6 ceníků)
-- verze s Bio: rozměrová řada lamel po 200 mm v hloubce (1 990 – 4 990 mm), 2 stojny do 7,5 × 4,39 m
+- verze s Bio: rozměrová řada lamel po 200 mm v hloubce (1 990 – 4 990 mm), šířky 4 000 – 8 000 mm po 200 mm, 2 stojny do 7,5 × 4,39 m
 - zasklení: při rozpětí nad 7 m doporučeno bezrámové (provozní průhyb konstrukce 4–5 mm); spodní profil 150 mm umožňuje širší kolejnice

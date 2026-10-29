@@ -23,7 +23,7 @@ Rám RAL 7016 Axalta jemná struktura. Lamely RAL 9006 nebo RAL 7016 Axalta jemn
 - stojny 150 × 150 mm (tloušťka stěny až 4 mm)
 - rozpětí až 7,5 m bez středového sloupku
 - max. rozměr 8,0 × 5,59 m
-- rozměrová řada lamel po 200 mm v hloubce (1 990 – 5 590 mm)
+- rozměrová řada lamel po 200 mm v hloubce (1 990 – 5 590 mm), šířky 4 000 – 8 000 mm po 200 mm
 - střecha: naklápěcí lamely, 2 pole – lamely lze ovládat současně nebo každé pole zvlášť
 - motor: cena je se standardním motorem Somfy IO, lze zaměnit za Somfy WT
 - zasklení: při rozpětí nad 7 m doporučeno bezrámové (provozní průhyb konstrukce 4–5 mm); spodní profil 150 mm umožňuje širší kolejnice

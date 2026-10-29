@@ -1,17 +1,19 @@
 """Ceny ALUX MAXI ze zdrojových ALUX ceníků (revize 29. 10. 2026).
 
-1. anomálie ve zdrojových ALUX cenících (cena se šířkou / hloubkou neroste) → oprava v products/pergola/*/prices.json
+1. anomálie ve zdrojových ALUX cenících (cena se šířkou / hloubkou neroste) → oprava v products/pergola/*/prices.json:
+   malá anomálie = soused + rozdíl ze stejného místa o řádek (sloupec) výš, žádná interpolace přes schod
 2. MAXI = opravený zdroj × MAXI_MARKUP
-3. rozměry mimo zdroj: Glass 4600–5000 = Carbo plný, Thermo a Bioclimatic DUO průměrný krok posledních 3 kroků
-4. Bioclimatic DUO × DUO_SURCHARGE
+3. rozměry mimo zdroj: Glass 4600–5000 = Carbo plný, Thermo 5600–6000 krokem z celého známého rozsahu
+4. Bioclimatic DUO = 2 × MAXI UNO (šířka = H, hloubka = Š/2) × k; k = medián z překryvu UNO a DUO tak, aby DUO / UNO = DUO_UNO_RATIO
 5. Fusion = (MAXI A + MAXI B) / 2 — kalibrace: Fusion se stejnou krytinou v obou polích = čistá MAXI (jinak skript skončí)
-Kontroly: monotónnost, MAXI = ALUX × 1,2, Fusion mezi čistou MAXI A a B. Informativně: rozměry Fusion, které jsou v čisté MAXI v zóně UNO. Report (srovnání se stávajícími cenami, log, kontroly)
+Kontroly: monotónnost (nic se nezvedá o 1 Kč, porušení jen vypíše), MAXI = ALUX × 1,2, Fusion mezi čistou MAXI A a B, poměr DUO / UNO.
+Informativně: rozměry Fusion, které jsou v čisté MAXI v zóně UNO. Report (srovnání se stávajícími cenami, log, kontroly)
 → export/ALUX-MAXI-revize-<datum>.xlsx. pricelist.xlsx ani texty nemění.
 
     python3 scripts/build_maxi_prices.py
     python3 scripts/build_maxi_prices.py --baseline 5b51b5f   # v reportu i srovnání s cenami z git revize
 """
-import argparse, copy, datetime, json, subprocess
+import argparse, datetime, json, statistics, subprocess
 from decimal import Decimal, ROUND_HALF_UP
 from pathlib import Path
 from openpyxl import Workbook
@@ -20,7 +22,12 @@ from openpyxl.utils import get_column_letter
 
 # --- parametry -------------------------------------------------------------
 MAXI_MARKUP = 1.20     # MAXI = standardní ALUX × 1,20
-DUO_SURCHARGE = 1.05   # Bioclimatic DUO: druhé pole, druhý motor, středový nosník
+DUO_UNO_RATIO = 1.117  # cílový poměr DUO / UNO stejného rozměru (UNO 300 000 → DUO cca 335 000)
+K_RANGE = (0.85, 1.00) # koeficient úspory k mimo rozsah → skript skončí
+DUO_RATIO_OK = (1.05, 1.20)  # DUO / UNO mimo rozmezí → výpis
+CALIB_TOL = 2000       # kalibrace Fusion: tolerance v Kč
+# zadání: šířka 3000 (a 2900 mezi) v hloubkách od 5400 = šířka 2800 + rozdíl 2800 → 3000 z hloubky 5200
+REF_ROW = {s: {2900: 5200, 3000: 5200} for s in ('alux-thermo', 'alux-carbo-dutinkovy', 'alux-trapez')}
 
 ROOT = Path(__file__).resolve().parent.parent
 REPORT = ROOT / 'export' / f'ALUX-MAXI-revize-{datetime.date.today().isoformat()}.xlsx'
@@ -32,68 +39,42 @@ def rnd(x): return int(Decimal(str(x)).quantize(Decimal(1), rounding=ROUND_HALF_
 def rj(p): return json.loads(p.read_text(encoding='utf-8'))
 def wj(p, o): p.write_text(json.dumps(o, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
-RAISED = []  # dopočítané buňky zvednuté kvůli monotónnosti (šířka zdroje, hloubka zdroje)
 LOG = []  # (kategorie, tabulka, šířka, hloubka, stará, nová, poznámka)
 
 # --- krok 1: anomálie ve zdroji ---------------------------------------------
-def fix_line(vals, keep=0):
-    """Prvních keep buněk je pevných (zdroj u dopočítaných tabulek). Platné buňky = nejdelší rostoucí podposloupnost
-    (počáteční plochý úsek = min. rozměr, platí); neplatné: vnitřní → lineární interpolace mezi platnými sousedy,
-    okrajové → průměrný krok posledních 3 platných."""
-    n = len(vals)
-    if keep:
-        fixed, first, floor = set(range(keep)), keep, vals[keep - 1]
-    else:
-        lead = 0
-        while lead + 1 < n and vals[lead + 1] == vals[0]:
-            lead += 1
-        fixed, first, floor = set(range(lead)), lead, float('-inf')
-    idx = [x for x in range(first, n) if vals[x] > floor]
-    best = {x: 1 for x in idx}; prev = {x: None for x in idx}
-    for a, i in enumerate(idx):
-        for k in idx[:a]:
-            if vals[k] < vals[i] and best[k] + 1 > best[i]:
-                best[i], prev[i] = best[k] + 1, k
-    valid = set(fixed)
-    if idx:
-        i = max(idx, key=lambda x: (best[x], -x))
-        while i is not None:
-            valid.add(i); i = prev[i]
-    out = list(vals)
-    v = sorted(valid)
-    for i in range(n):
-        if i in valid:
-            continue
-        lo = max((k for k in v if k < i), default=None)
-        hi = min((k for k in v if k > i), default=None)
-        if lo is not None and hi is not None:
-            out[i] = rnd(vals[lo] + (vals[hi] - vals[lo]) * (i - lo) / (hi - lo))
-        else:
-            last = [k for k in v if k < i][-3:]
-            step = (vals[last[-1]] - vals[last[0]]) / (last[-1] - last[0])
-            out[i] = rnd(vals[last[-1]] + step * (i - last[-1]))
-    return out
-
 def anomalies(P):
     return sum(1 for r in P for j in range(1, len(r)) if r[j] <= r[j - 1]) + \
            sum(1 for i in range(1, len(P)) for j in range(len(P[0])) if P[i][j] <= P[i - 1][j])
 
-def fix_table(P, keep_rows=0):
-    """Krok 1 na celé tabulce: řádky (šířka) a sloupce (hloubka) střídavě, dokud cena všude roste.
-    Prvních keep_rows řádků (zdroj) se nemění."""
-    for _ in range(50):
-        if not anomalies(P):
-            return P
-        P = [r if i < keep_rows else fix_line(r) for i, r in enumerate(P)]
-        cols = [fix_line([P[i][j] for i in range(len(P))], keep_rows) for j in range(len(P[0]))]
-        P = [[cols[j][i] for j in range(len(P[0]))] for i in range(len(P))]
-    raise SystemExit('anomálie nejdou odstranit')
+def fix_table(P, W, D, ref_row=None):
+    """Krok 1: buňka, kde cena se šířkou (hloubkou) neroste, = soused vlevo (nad ní) + rozdíl ze stejného místa
+    v nejbližším platném řádku výš (sloupci vlevo); ref_row {šířka: hloubka} určí řádek pevně. Prochází se po řádcích,
+    takže navazující buňky se srovnávají už s opravenými. Plochý začátek řádku / sloupce = minimální rozměr, platí."""
+    P = [list(r) for r in P]
+    ref_row = ref_row or {}
+    for i in range(len(D)):
+        for j in range(len(W)):
+            cand = []
+            if j and P[i][j] <= P[i][j - 1] and any(P[i][k] != P[i][0] for k in range(j + 1)):
+                if W[j] in ref_row and D[i] > ref_row[W[j]]:
+                    r = D.index(ref_row[W[j]])
+                else:
+                    r = next((k for k in range(i - 1, -1, -1) if P[k][j] > P[k][j - 1]), None)
+                if r is not None:
+                    cand.append(P[i][j - 1] + P[r][j] - P[r][j - 1])
+            if i and P[i][j] <= P[i - 1][j] and any(P[k][j] != P[0][j] for k in range(i + 1)):
+                c = next((k for k in range(j - 1, -1, -1) if P[i][k] > P[i - 1][k]), None)
+                if c is not None:
+                    cand.append(P[i - 1][j] + P[i][c] - P[i - 1][c])
+            if cand:
+                P[i][j] = max(cand)
+    return P
 
 SRC, SRC_ORIG, SRC_CHANGED = {}, {}, []
 for s in SOURCES:
     p = rj(ROOT / 'products/pergola' / s / 'prices.json')
     W, D, P0 = p['horizontal_values'], p['vertical_values'], p['prices']
-    P = fix_table(copy.deepcopy(P0))
+    P = fix_table(P0, W, D, REF_ROW.get(s))
     for i, d in enumerate(D):
         for j, w in enumerate(W):
             if P[i][j] != P0[i][j]:
@@ -102,26 +83,13 @@ for s in SOURCES:
         SRC_CHANGED.append(s)
     SRC[s], SRC_ORIG[s] = (W, D, P), (W, D, P0)
 
-# --- rozšířené zdroje (extrapolace průměrným krokem posledních 3 kroků) --------
-def ext_cols(W, D, P, new_D, name):
-    """Přidá hloubky new_D: v každém sloupci průměrný krok posledních 3 kroků (na 100 mm)."""
-    rows = [list(r) for r in P]; D = list(D)
+# --- rozšířené zdroje (extrapolace krokem z celého známého rozsahu) -------------
+def ext_cols(W, D, P, new_D):
+    """Přidá hloubky new_D: v každém sloupci průměrný krok celého známého rozsahu hloubek."""
+    rows = [list(r) for r in P]
     for d in new_D:
-        rows.append([P[-1][j] + (P[-1][j] - P[-4][j]) / (D[-1] - D[-4]) * (d - D[len(P) - 1]) for j in range(len(W))])
-    # sloupce se prodlužují každý svým krokem → v dopočítané části by cena se šířkou mohla klesnout;
-    # tam se zvedne na souseda vlevo / nad ní + 1 Kč (nikdy se nesnižuje, buňky zdroje se nemění)
-    fixed = [list(r) for r in rows]
-    for i in range(len(P), len(fixed)):
-        for j in range(len(W)):
-            low = max(fixed[i - 1][j], fixed[i][j - 1] if j else float('-inf')) + 1
-            if fixed[i][j] < low:
-                RAISED.append((name, W[j], D[len(P) - 1] + 100 * (i - len(P) + 1), rnd(fixed[i][j]), rnd(low)))
-                fixed[i][j] = low
-    return list(D) + list(new_D), fixed
-
-def ext_width(W, P, new_w):
-    """Přidá šířku new_w: v každém řádku průměrný krok posledních 3 kroků."""
-    return list(W) + [new_w], [list(r) + [r[-1] + (r[-1] - r[-4]) / (W[-1] - W[-4]) * (new_w - W[-1])] for r in P]
+        rows.append([P[-1][j] + (P[-1][j] - P[0][j]) / (D[-1] - D[0]) * (d - D[-1]) for j in range(len(W))])
+    return list(D) + list(new_D), rows
 
 def lookup(W, D, P, w, d):
     return P[D.index(d)][W.index(w)]
@@ -143,7 +111,12 @@ def make(sku, label, W, D, f, extra=lambda w, d: False):
 
 # Thermo: hloubky 5600–6000 extrapolací ze zdroje Thermo
 TW, TD, TP = SRC['alux-thermo']
-TD2, TP2 = ext_cols(TW, TD, TP, grid(5600, 6000), 'ALUX Thermo')
+TD2, TP2 = ext_cols(TW, TD, TP, grid(5600, 6000))
+for d in grid(5600, 6000):  # zadání: i v dopočtu šířka 2900 / 3000 = soused vlevo + rozdíl z hloubky 5200
+    r, i = TD2.index(5200), TD2.index(d)
+    for w in (2900, 3000):
+        j = TW.index(w)
+        TP2[i][j] = TP2[i][j - 1] + TP2[r][j] - TP2[r][j - 1]
 make('maxi-thermo', '', grid(2000, 8000), grid(2000, 6000),
      lambda w, d: lookup(TW, TD2, TP2, w, d) * MAXI_MARKUP, lambda w, d: d > TD[-1])
 # Glass: hloubky 4600–5000 = Carbo plný
@@ -157,14 +130,32 @@ for lab, s in (('dutinkový polykarbonát', 'alux-carbo-dutinkovy'), ('plný pol
 # Bioclimatic UNO
 BW, BD, BP = SRC['alux-bioclimatic']
 make('maxi-bioclimatic', '', [w for w in BW if w <= 7590], grid(2000, 4200), lambda w, d: lookup(BW, BD, BP, w, d) * MAXI_MARKUP)
-# Bioclimatic DUO: šířka → nejbližší vyšší šířka řady BIO (8000 → 8190 extrapolace), hloubka → nahoru na 100 mm
-BW2, BP2 = ext_width(BW, BP, BW[-1] + 200)
-BD2, BP2 = ext_cols(BW2, BD, BP2, grid(4600, 5600), 'ALUX Bioclimatic')
-def bio_w(w): return next(x for x in BW2 if x >= w)
-def up100(d): return max(2000, -(-d // 100) * 100)
-make('maxi-bioclimatic-duo', '', grid(2000, 8000), list(range(1990, 5591, 200)),
-     lambda w, d: lookup(BW2, BD2, BP2, bio_w(w), up100(d)) * MAXI_MARKUP * DUO_SURCHARGE,
-     lambda w, d: bio_w(w) > BW[-1] or up100(d) > BD[-1])
+# Bioclimatic DUO = dvě pole UNO otočená o 90°: řada lamel UNO (šířka) = hloubka DUO, rozpětí pole = Š / 2
+UW, UD, UP = NEW[('maxi-bioclimatic', '')]
+def uno(w, d):
+    """MAXI UNO; šířka pod řadou (1990, 2190) průměrným krokem řady 2390 → 2990, mimo mřížku lineárně."""
+    def col(w):
+        if w < UW[0]:
+            return [r[0] - (r[3] - r[0]) / 3 * (UW[0] - w) / 200 for r in UP]
+        if w in UW:
+            return [r[UW.index(w)] for r in UP]
+        hi = next(k for k, x in enumerate(UW) if x > w)
+        t = (w - UW[hi - 1]) / (UW[hi] - UW[hi - 1])
+        return [r[hi - 1] + (r[hi] - r[hi - 1]) * t for r in UP]
+    c = col(w)
+    if d in UD:
+        return c[UD.index(d)]
+    hi = next(k for k, x in enumerate(UD) if x > d)
+    return c[hi - 1] + (c[hi] - c[hi - 1]) * (d - UD[hi - 1]) / (UD[hi] - UD[hi - 1])
+DUO_W, DUO_D = list(range(4000, 8001, 200)), list(range(1990, 5591, 200))
+def two_fields(w, d): return 2 * uno(d, w / 2)
+OVERLAP = [(w, d) for d in DUO_D for w in DUO_W if w <= UW[-1] and UW[0] <= d <= UD[-1]]
+K_CELLS = [(w, d, DUO_UNO_RATIO * uno(w, d) / two_fields(w, d)) for w, d in OVERLAP]
+K = statistics.median(k for *_, k in K_CELLS)
+if not K_RANGE[0] <= K <= K_RANGE[1]:
+    raise SystemExit(f'k = {K:.4f} mimo {K_RANGE}: DUO (2 pole) vs. UNO stejného rozměru neodpovídá zadání — '
+                     f'min {min(k for *_, k in K_CELLS):.4f}, max {max(k for *_, k in K_CELLS):.4f}')
+make('maxi-bioclimatic-duo', '', DUO_W, DUO_D, lambda w, d: two_fields(w, d) * K, lambda w, d: d < UW[0])
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
 ap.add_argument('--baseline', metavar='REF', help='git revize, se kterou se ceny MAXI v reportu ještě srovnají')
@@ -187,15 +178,15 @@ MAXI_OF = {'Bio': ('maxi-bioclimatic-duo', ''), 'Thermo': ('maxi-thermo', ''), '
 FUSION = ['Bio - Glass', 'Bio - Carbo 16 mm', 'Bio - Carbo 6 mm', 'Thermo - Glass', 'Thermo - Carbo 16 mm', 'Thermo - Carbo 6 mm']
 for lab in FUSION:
     a, b = (MAXI_OF[x] for x in lab.split(' - '))
-    D = list(range(1990, 4991, 200)) if lab.startswith('Bio') else grid(2000, 5000)
-    make('maxi-fusion', lab, grid(2000, 8000), D, lambda w, d, a=a, b=b: (interp(a, w, d) + interp(b, w, d)) / 2)
+    W, D = (DUO_W, list(range(1990, 4991, 200))) if lab.startswith('Bio') else (grid(2000, 8000), grid(2000, 5000))
+    make('maxi-fusion', lab, W, D, lambda w, d, a=a, b=b: (interp(a, w, d) + interp(b, w, d)) / 2)
 
-# kalibrace: hypotetická Fusion se stejnou krytinou v obou polích = čistá MAXI stejného rozměru (±1 Kč)
+# kalibrace: hypotetická Fusion se stejnou krytinou v obou polích = čistá MAXI stejného rozměru (± CALIB_TOL)
 CALIB = []  # (tabulka, buněk, max. odchylka)
 for x, key in MAXI_OF.items():
-    W, D = grid(2000, 8000), (list(range(1990, 4991, 200)) if x == 'Bio' else grid(2000, 5000))
+    W, D = (DUO_W, list(range(1990, 4991, 200))) if x == 'Bio' else (grid(2000, 8000), grid(2000, 5000))
     dev = [(w, d, rnd((interp(key, w, d) + interp(key, w, d)) / 2), interp(key, w, d)) for d in D for w in W]
-    bad = [r for r in dev if abs(r[2] - r[3]) > 1]
+    bad = [r for r in dev if abs(r[2] - r[3]) > CALIB_TOL]
     if bad:
         raise SystemExit(f'kalibrace {x} / {x} nesedí: ' + '; '.join(f'{w} × {d}: {h} ≠ {m}' for w, d, h, m in bad[:20]))
     CALIB.append((f'Fusion {x} / {x}', ' '.join(filter(None, key)), len(dev), max(abs(h - m) for _, _, h, m in dev)))
@@ -208,53 +199,57 @@ def title(key):
     if sku == 'maxi-carbo': return f"MAXI Carbo {lab.split()[0]}"
     if sku == 'maxi-fusion': return f"MAXI Fusion {lab}"
     return TITLES[sku]
-def old_matrix(key):
-    o = old(key[0])
+def cells(o, key):
+    """{(š, h): cena} matice produktu (u multi-matrix varianty key[1])."""
     if o['type'] == 'multi-matrix':
         o = next(v for v in o['variants'] if v['label'] == key[1])
-    return o['horizontal_values'], o['vertical_values'], o['prices']
-def base_matrix(key):
-    """Matice z git revize --baseline (stejná mřížka), jinak None."""
+    return {(w, d): o['prices'][i][j] for i, d in enumerate(o['vertical_values']) for j, w in enumerate(o['horizontal_values'])}
+def base_cells(key):
+    """Matice z git revize --baseline, jinak {}."""
     if not ARGS.baseline:
-        return None
+        return {}
     o = json.loads(subprocess.run(['git', '-C', str(ROOT), 'show', f'{ARGS.baseline}:products/maxi/{key[0]}/prices.json'],
                                   capture_output=True, text=True, check=True).stdout)
-    if o['type'] == 'multi-matrix':
-        o = next(v for v in o['variants'] if v['label'] == key[1])
-    return o['prices'] if (o['horizontal_values'], o['vertical_values']) == NEW[key][:2] else None
-COMPARE = []  # (tabulka, w, d, stará, nová, baseline)
+    return cells(o, key)
+COMPARE = []  # (tabulka, w, d, stará, nová, baseline) — jen rozměry, které byly i ve staré mřížce
 for key, (W, D, P) in NEW.items():
-    OW, OD, OP = old_matrix(key)
-    assert (OW, OD) == (W, D), key
-    BP_ = base_matrix(key)
+    OC, BC = cells(old(key[0]), key), base_cells(key)
     for i, d in enumerate(D):
         for j, w in enumerate(W):
-            o, n = OP[i][j], P[i][j]
-            COMPARE.append((title(key), w, d, o, n, BP_[i][j] if BP_ else None))
+            o, n = OC.get((w, d)), P[i][j]
+            if o is None:
+                continue
+            COMPARE.append((title(key), w, d, o, n, BC.get((w, d))))
             if key[0] == 'maxi-fusion':
                 cat = 'Fusion'
             elif (w, d) in EXTRA[key]:
                 cat = 'extrapolace'
             elif key[0] == 'maxi-bioclimatic-duo':
-                cat = 'DUO +5 %'
+                cat = 'DUO = 2 × UNO × k'
             elif key[0] == 'maxi-glass' and d > 4500:
                 cat = 'extrapolace'
             else:
                 cat = None if o == n else 'přepočet ze zdroje'
             if cat and o != n:
-                note = {'extrapolace': 'mimo rozsah zdroje', 'DUO +5 %': f'× {DUO_SURCHARGE}', 'Fusion': '(A + B) / 2',
+                note = {'extrapolace': 'mimo rozsah zdroje', 'DUO = 2 × UNO × k': f'k = {K:.4f}', 'Fusion': '(A + B) / 2',
                         'přepočet ze zdroje': 'opravený zdroj × 1,2'}[cat]
                 if key[0] == 'maxi-glass' and d > 4500: note = 'ALUX Carbo plný × 1,2'
                 LOG.append((cat, title(key), w, d, o, n, note))
 
 # --- kontroly ------------------------------------------------------------------
 CHECKS = []  # (pravidlo, tabulka, w, d, hodnota, detail)
-def lamella_flat(key, W, j):  # DUO: šířky zaokrouhlené na stejnou šířku řady lamel BIO (i minimální 2390) = záměrně stejná cena
-    return key[0] == 'maxi-bioclimatic-duo' and bio_w(W[j]) == bio_w(W[j - 1])
+for s_ in SOURCES:  # zbylé anomálie ve zdroji (pravidlo kroku 1 je neopravilo) → ruční kontrola
+    W, D, P = SRC[s_]
+    for i, d in enumerate(D):
+        for j, w in enumerate(W):
+            if j and P[i][j] <= P[i][j - 1] and any(P[i][k] != P[i][0] for k in range(j + 1)):
+                CHECKS.append(('0 zdroj ALUX (šířka)', NAMES[s_], w, d, P[i][j], f'≤ {P[i][j-1]} u šířky {W[j-1]}'))
+            if i and P[i][j] <= P[i - 1][j] and any(P[k][j] != P[0][j] for k in range(i + 1)):
+                CHECKS.append(('0 zdroj ALUX (hloubka)', NAMES[s_], w, d, P[i][j], f'≤ {P[i-1][j]} u hloubky {D[i-1]}'))
 for key, (W, D, P) in NEW.items():
     for i, d in enumerate(D):
         for j, w in enumerate(W):
-            if j and P[i][j] <= P[i][j - 1] and not lamella_flat(key, W, j):
+            if j and P[i][j] <= P[i][j - 1]:
                 CHECKS.append(('1 monotónnost (šířka)', title(key), w, d, P[i][j], f'≤ {P[i][j-1]} u šířky {W[j-1]}'))
             if i and P[i][j] <= P[i - 1][j]:
                 CHECKS.append(('1 monotónnost (hloubka)', title(key), w, d, P[i][j], f'≤ {P[i-1][j]} u hloubky {D[i-1]}'))
@@ -276,6 +271,15 @@ for lab in FUSION:
             if not min(va, vb) - 0.5 <= P[i][j] <= max(va, vb) + 0.5:
                 CHECKS.append(('3 Fusion mezi čistou MAXI A a B', f'MAXI Fusion {lab}', w, d, P[i][j], f'{rnd(min(va, vb))} – {rnd(max(va, vb))}'))
 
+# 5: poměr DUO / UNO stejného rozměru (překryv), přechod UNO 4200 → DUO 4390
+DUO_P = NEW[('maxi-bioclimatic-duo', '')]
+def duo(w, d): return DUO_P[2][DUO_P[1].index(d)][DUO_P[0].index(w)]
+RATIO = [(w, d, rnd(uno(w, d)), duo(w, d), duo(w, d) / uno(w, d)) for w, d in OVERLAP]
+for w, d, u, du, r in RATIO:
+    if not DUO_RATIO_OK[0] <= r <= DUO_RATIO_OK[1]:
+        CHECKS.append(('5 DUO / UNO mimo +5 až +20 %', 'MAXI Bioclimatic DUO', w, d, du, f'UNO {u} → {(r - 1) * 100:+.1f} %'))
+TRANSITION = [(w, rnd(uno(w, UD[-1])), duo(w, 4390), duo(w, 4390) / uno(w, UD[-1])) for w in DUO_W if w <= UW[-1]]
+
 # informativně: rozměry Fusion, které jsou v čisté MAXI (Thermo, Glass, Carbo) v zóně UNO — ceny se neupravují
 def zone_label_at(sku, w, d):
     for z in rj(ROOT / 'products/maxi' / sku / 'metadata.json')['support_zones']:
@@ -296,20 +300,20 @@ for s in SRC_CHANGED:
     p = rj(ROOT / 'products/pergola' / s / 'prices.json')
     p['prices'] = SRC[s][2]
     wj(ROOT / 'products/pergola' / s / 'prices.json', p)
-NOTE_TAIL = f"Náklad 58 % (cost_percent). Parametry: přirážka MAXI {MAXI_MARKUP:g}, příplatek DUO {DUO_SURCHARGE:g}."
+NOTE_TAIL = f"Náklad 58 % (cost_percent). Parametry: přirážka MAXI {MAXI_MARKUP:g}, poměr DUO / UNO {DUO_UNO_RATIO:g}, k = {K:.4f}."
 NOTES = {
-    'maxi-thermo': "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem posledních 3 kroků zdroje (zvlášť pro každý sloupec).",
+    'maxi-thermo': "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200.",
     'maxi-glass': "Prodejní cena = ALUX Glass × 1,2 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,2 (Glass = Carbo plný).",
     'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,2 (zaokrouhleno na celé Kč).",
-    'maxi-bioclimatic-duo': "DUO. Prodejní cena = ALUX Bioclimatic × 1,2 × 1,05 (druhé pole, druhý motor, středový nosník), zaokrouhleno na celé Kč. Šířka → nejbližší vyšší šířka řady lamel BIO (8000 → 8190), hloubka → nahoru na 100 mm; mimo rozsah zdroje (šířka 8190, hloubky nad 4500 mm) průměrný krok posledních 3 kroků.",
+    'maxi-bioclimatic-duo': "DUO = dvě pole UNO otočená o 90° se společným rámem a středovým nosníkem: prodejní cena = 2 × MAXI Bioclimatic UNO (šířka UNO = hloubka DUO, hloubka UNO = šířka DUO / 2) × k, zaokrouhleno na celé Kč. Koeficient úspory k = medián přes rozměry, kde existuje UNO i DUO, aby DUO stálo o 11,7 % víc než UNO stejného rozměru. Hloubky 1990 a 2190 (pod řadou UNO) průměrným krokem řady 2390 → 2990.",
     'maxi-carbo': "Prodejní cena = ALUX Carbo dutinkový × 1,2, resp. ALUX Carbo plný × 1,2 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky.",
-    'maxi-fusion': "Fusion = jedna konstrukce (společný rám a stojny, mezi poli středový nosník). Každé pole nese polovinu ceny své čisté MAXI: prodejní cena = (MAXI krytina A + MAXI krytina B) / 2 ve stejném rozměru, zaokrouhleno na celé Kč (kalibrace: stejná krytina v obou polích = čistá MAXI); Bio = MAXI Bioclimatic DUO, Glass = MAXI Glass, Carbo 16 mm = MAXI Carbo dutinkový, Carbo 6 mm = MAXI Carbo plný, Thermo = MAXI Thermo. Chybějící hloubky (1990 vs. 2000 apod.) lineárně mezi sousedy.",
+    'maxi-fusion': "Fusion = jedna konstrukce (společný rám a stojny, mezi poli středový nosník). Každé pole nese polovinu ceny své čisté MAXI: prodejní cena = (MAXI krytina A + MAXI krytina B) / 2 ve stejném rozměru, zaokrouhleno na celé Kč (kalibrace: stejná krytina v obou polích = čistá MAXI); Bio = MAXI Bioclimatic DUO (verze s Bio od šířky 4000 po 200 mm jako DUO), Glass = MAXI Glass, Carbo 16 mm = MAXI Carbo dutinkový, Carbo 6 mm = MAXI Carbo plný, Thermo = MAXI Thermo. Chybějící hloubky (1990 vs. 2000 apod.) lineárně mezi sousedy.",
 }
 for sku in TITLES:
     o = old(sku)
     o['note'] = NOTES[sku] + ' ' + NOTE_TAIL
     for m in (o['variants'] if o['type'] == 'multi-matrix' else [o]):
-        m['prices'] = NEW[(sku, m.get('label', ''))][2]
+        m['horizontal_values'], m['vertical_values'], m['prices'] = NEW[(sku, m.get('label', ''))]
     wj(ROOT / 'products/maxi' / sku / 'prices.json', o)
 
 # --- report ----------------------------------------------------------------------
@@ -342,7 +346,7 @@ ws = sheet('Souhrn', ['Tabulka', 'Buněk', 'Změněno', 'Průměrná změna', 'M
                       f'Průměr proti {ARGS.baseline}' if ARGS.baseline else ''],
            summ, [30, 8, 10, 15, 12, 12, 22, 12, 12, 12, 18], {'D': '0.0%', 'E': '0.0%', 'F': '0.0%', 'H': '#,##0', 'I': '#,##0', 'J': '#,##0', 'K': '0.0%'})
 r = ws.max_row + 2
-for txt in [f'Parametry: přirážka MAXI {MAXI_MARKUP:g} · příplatek DUO {DUO_SURCHARGE:g} · Fusion = (A + B) / 2',
+for txt in [f'Parametry: přirážka MAXI {MAXI_MARKUP:g} · poměr DUO / UNO {DUO_UNO_RATIO:g} · k = {K:.4f} · Fusion = (A + B) / 2',
             f'Opravené zdrojové ALUX tabulky: {", ".join(NAMES[s] for s in SRC_CHANGED) or "žádná"}',
             f'Kontroly: {len(CHECKS)} buněk nesplňuje pravidla (list Kontroly)']:
     ws.cell(r, 1, txt); r += 1
@@ -357,11 +361,18 @@ sheet('Srovnání', ['Tabulka', 'Šířka', 'Hloubka', 'Stará', 'Nová', 'Rozd�
        for t, w, d, o, n, b in COMPARE],
       [30, 8, 9, 11, 11, 11, 10, 13, 16, 16], {'D': '#,##0', 'E': '#,##0', 'F': '#,##0', 'G': '0.0%', 'H': '#,##0', 'I': '#,##0', 'J': '0.0%'})
 sheet('Kalibrace Fusion', ['Hypotetická Fusion', 'Musí se rovnat', 'Buněk', 'Max. odchylka Kč', 'Výsledek'],
-      [c + ('shoda (±1 Kč)',) for c in CALIB], [24, 34, 8, 16, 16])
+      [c + (f'shoda (±{CALIB_TOL} Kč)',) for c in CALIB], [24, 34, 8, 16, 16])
 sheet('Fusion v zóně UNO', ['Kombinace', 'Krytina (čistá MAXI)', 'UNO do šířky', 'UNO do hloubky', 'Buněk v UNO', 'Buněk celkem'],
       UNO_INFO, [28, 34, 13, 15, 13, 13])
-sheet('Dopočet zvednut', ['Zdroj', 'Šířka zdroje', 'Hloubka zdroje', 'Dopočet', 'Zvednuto na', 'Poznámka'],
-      [r + ('cena by se šířkou klesla → soused + 1 Kč (bez přirážky × 1,2)',) for r in RAISED], [20, 13, 15, 12, 12, 56], {'D': '#,##0', 'E': '#,##0'})
+ks = [k for *_, k in K_CELLS]
+ws = sheet('Koeficient k', ['Šířka DUO', 'Hloubka DUO', 'MAXI UNO (Š × H)', '2 × UNO (š = H, h = Š/2)', 'k buňky'],
+           [(w, d, rnd(uno(w, d)), rnd(two_fields(w, d)), k) for w, d, k in K_CELLS], [11, 12, 17, 24, 10],
+           {'C': '#,##0', 'D': '#,##0', 'E': '0.0000'})
+ws.cell(1, 7, f'k = medián {K:.4f} · min {min(ks):.4f} · max {max(ks):.4f} · buněk {len(ks)} · cílový poměr {DUO_UNO_RATIO:g}')
+sheet('Poměr DUO - UNO', ['Šířka', 'Hloubka', 'MAXI UNO', 'MAXI DUO', 'DUO / UNO'], RATIO, [9, 9, 12, 12, 11],
+      {'C': '#,##0', 'D': '#,##0', 'E': '0.0%'})
+sheet('Přechod UNO-DUO', ['Šířka', 'UNO hloubka 4200', 'DUO hloubka 4390', 'DUO / UNO'], TRANSITION, [9, 17, 17, 11],
+      {'B': '#,##0', 'C': '#,##0', 'D': '0.0%'})
 for s in SRC_CHANGED:  # opravené ALUX tabulky, změněné buňky zvýrazněné
     W, D, P = SRC[s]; _, _, P0 = SRC_ORIG[s]
     ws = wb.create_sheet(f'{NAMES[s]} opr.'[:31])
@@ -376,7 +387,8 @@ for s in SRC_CHANGED:  # opravené ALUX tabulky, změněné buňky zvýrazněné
 wb.save(REPORT)
 
 print('opravené zdroje:', SRC_CHANGED)
-print('zvednuto v dopočtu:', len(RAISED))
+print(f'k = {K:.4f} (min {min(ks):.4f}, max {max(ks):.4f}, {len(ks)} buněk)')
+print('přechod UNO 4200 → DUO 4390:', [(w, f'{(r - 1) * 100:+.1f} %') for w, _, _, r in TRANSITION])
 from collections import Counter
 print('log:', Counter(c for c, *_ in LOG))
 print('kalibrace:', CALIB)
