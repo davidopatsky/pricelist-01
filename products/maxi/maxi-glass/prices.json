@@ -1,7 +1,7 @@
 {
   "sku": "maxi-glass",
   "type": "matrix",
-  "note": "Prodejní cena = ALUX Glass × 1,2 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,2 (Glass = Carbo plný). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, poměr DUO / UNO 1.117, k = 0.9202.",
+  "note": "Prodejní cena = ALUX Glass × 1,2 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,2 (Glass = Carbo plný). Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, podíl DUO 0.5.",
   "horizontal_values": [
     2000,
     2100,

@@ -1,7 +1,7 @@
 {
   "sku": "maxi-thermo",
   "type": "matrix",
-  "note": "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, poměr DUO / UNO 1.117, k = 0.9202.",
+  "note": "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200. Náklad 58 % (cost_percent). Parametry: přirážka MAXI 1.2, podíl DUO 0.5.",
   "horizontal_values": [
     2000,
     2100,
