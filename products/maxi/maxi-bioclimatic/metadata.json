@@ -43,7 +43,9 @@
       34,
       35,
       36,
-      37
+      37,
+      38,
+      39
     ],
     "label_en": "number of louvres"
   },
@@ -54,6 +56,12 @@
     "led-osvetleni-obvodove"
   ],
   "support_zones": [
+    {
+      "stojny": 3,
+      "sirka_od": 7790,
+      "popisek": "UNO - 3 stojny",
+      "popisek_en": "UNO - 3 posts"
+    },
     {
       "stojny": 2,
       "popisek": "UNO - 2 stojny",

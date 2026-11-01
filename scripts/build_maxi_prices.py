@@ -6,7 +6,7 @@
 3. rozměry mimo zdroj: Glass 4600–5000 = Carbo plný, Thermo 5600–6000 krokem z celého známého rozsahu
 4. Bioclimatic DUO = 1 pole + DUO_SHARE × (2 samostatné pergoly − 1 pole), z ALUX Bioclimatic, × MAXI_MARKUP
 5. Fusion = (MAXI A + MAXI B) / 2 — kalibrace: Fusion se stejnou krytinou v obou polích = čistá MAXI (jinak skript skončí)
-Kontroly: monotónnost (nic se nezvedá o 1 Kč, porušení jen vypíše), MAXI = ALUX × 1,2, Fusion mezi čistou MAXI A a B.
+Kontroly: monotónnost (nic se nezvedá o 1 Kč, porušení jen vypíše), MAXI = ALUX × 1,3, Fusion mezi čistou MAXI A a B.
 Informativně: rozměry Fusion, které jsou v čisté MAXI v zóně UNO. Report (srovnání se stávajícími cenami, log, kontroly)
 → export/ALUX-MAXI-revize-<datum>.xlsx. pricelist.xlsx ani texty nemění.
 
@@ -21,7 +21,7 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
 # --- parametry -------------------------------------------------------------
-MAXI_MARKUP = 1.20     # MAXI = standardní ALUX × 1,20
+MAXI_MARKUP = 1.30     # MAXI = standardní ALUX × 1,30 (ceníková cena, obchodník dává slevu 0–20 %)
 DUO_SHARE = 0.5        # DUO = 1 pole + podíl z rozdílu (2 samostatné pergoly − 1 pole)
 CALIB_TOL = 2000       # kalibrace Fusion: tolerance v Kč
 # zadání: šířka 3000 (a 2900 mezi) v hloubkách od 5400 = šířka 2800 + rozdíl 2800 → 3000 z hloubky 5200
@@ -127,35 +127,43 @@ for lab, s in (('dutinkový polykarbonát', 'alux-carbo-dutinkovy'), ('plný pol
     make('maxi-carbo', lab, grid(2000, 8000), grid(2000, 6000), lambda w, d, W_=W_, D_=D_, P_=P_: lookup(W_, D_, P_, w, d) * MAXI_MARKUP)
 # Bioclimatic UNO
 BW, BD, BP = SRC['alux-bioclimatic']
-make('maxi-bioclimatic', '', [w for w in BW if w <= 7590], grid(2000, 4200), lambda w, d: lookup(BW, BD, BP, w, d) * MAXI_MARKUP)
+make('maxi-bioclimatic', '', BW, grid(2000, 4200),  # 2390–7990, od 7790 UNO - 3 stojny
+     lambda w, d: lookup(BW, BD, BP, w, d) * MAXI_MARKUP)
 # Bioclimatic DUO = cena mezi jedním velkým polem a dvěma samostatnými pergolami (z ALUX Bioclimatic):
 #   1 pole    = ALUX (šířka = Š v řadě lamel, hloubka = H)
 #   2 pergoly = 2 × ALUX (šířka = H v řadě lamel, hloubka = Š / 2) — pole DUO jsou otočená o 90°, lamely dlouhé Š / 2
-#   DUO = 1 pole + DUO_SHARE × (2 pergoly − 1 pole), × MAXI_MARKUP
+#   DUO = 2 pergoly − DUO_SHARE × (2 pergoly − 1 pole), × MAXI_MARKUP
+#   jen kde obě varianty v ALUX existují (hloubka DUO v řadě lamel ALUX a do hloubky ALUX); jinde se dopočítá
+#   přímo cena DUO průměrným krokem celé spočítané části (zvlášť pro každou šířku) — není s čím srovnat
 def alux_bio(w, d):
-    """ALUX Bioclimatic; šířka pod řadou (1990, 2190) průměrným krokem řady 2390 → 2990, mimo mřížku lineárně;
-    hloubka nad zdrojem krokem z celého rozsahu hloubek, pod 2000 krokem 2000 → 2100."""
-    if w < BW[0]:
-        c = [r[0] - (r[3] - r[0]) / 3 * (BW[0] - w) / 200 for r in BP]
-    elif w in BW:
+    """ALUX Bioclimatic, šířka v řadě lamel (mimo řadu lineárně), hloubka mimo mřížku lineárně."""
+    if w in BW:
         c = [r[BW.index(w)] for r in BP]
     else:
         hi = next(k for k, x in enumerate(BW) if x > w)
         c = [r[hi - 1] + (r[hi] - r[hi - 1]) * (w - BW[hi - 1]) / (BW[hi] - BW[hi - 1]) for r in BP]
-    if d > BD[-1]:
-        return c[-1] + (c[-1] - c[0]) / (BD[-1] - BD[0]) * (d - BD[-1])
-    if d < BD[0]:
-        return c[0] - (c[1] - c[0]) / (BD[1] - BD[0]) * (BD[0] - d)
     if d in BD:
         return c[BD.index(d)]
     hi = next(k for k, x in enumerate(BD) if x > d)
     return c[hi - 1] + (c[hi] - c[hi - 1]) * (d - BD[hi - 1]) / (BD[hi] - BD[hi - 1])
 DUO_W, DUO_D = list(range(4000, 8001, 200)), list(range(1990, 5591, 200))
+DUO_CALC = [d for d in DUO_D if BW[0] <= d <= BD[-1]]  # 2390–4390: obě varianty v ALUX
 def one_field(w, d): return alux_bio(min(BW, key=lambda x: abs(x - w)), d)
 def two_pergolas(w, d): return 2 * alux_bio(d, w / 2)
-def duo_alux(w, d): return one_field(w, d) + DUO_SHARE * (two_pergolas(w, d) - one_field(w, d))
-make('maxi-bioclimatic-duo', '', DUO_W, DUO_D, lambda w, d: duo_alux(w, d) * MAXI_MARKUP,
-     lambda w, d: d < BW[0] or d > BD[-1])
+def duo_calc(w, d): return two_pergolas(w, d) - DUO_SHARE * (two_pergolas(w, d) - one_field(w, d))
+def duo_alux(w, d):
+    if d in DUO_CALC:
+        return duo_calc(w, d)
+    a, b = duo_calc(w, DUO_CALC[0]), duo_calc(w, DUO_CALC[-1])
+    step = (b - a) / (DUO_CALC[-1] - DUO_CALC[0])
+    return b + step * (d - DUO_CALC[-1]) if d > DUO_CALC[-1] else a - step * (DUO_CALC[0] - d)
+make('maxi-bioclimatic-duo', '', DUO_W, DUO_D, lambda w, d: duo_alux(w, d) * MAXI_MARKUP, lambda w, d: d not in DUO_CALC)
+# zadání: anomálie v dopočtu — 5400 × 1990 = 5200 × 1990 + rozdíl 5200 → 5400 z hloubky 2190
+_W, _D, _P = NEW[('maxi-bioclimatic-duo', '')]
+_i, _r, _j = _D.index(1990), _D.index(2190), _W.index(5400)
+LOG.append(('oprava podle zadání', 'MAXI Bioclimatic DUO', 5400, 1990, _P[_i][_j],
+            _P[_i][_j - 1] + _P[_r][_j] - _P[_r][_j - 1], 'šířka 5200 + rozdíl 5200 → 5400 z hloubky 2190'))
+_P[_i][_j] = LOG[-1][5]
 
 ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
 ap.add_argument('--baseline', metavar='REF', help='git revize, se kterou se ceny MAXI v reportu ještě srovnají')
@@ -232,8 +240,8 @@ for key, (W, D, P) in NEW.items():
                 cat = None if o == n else 'přepočet ze zdroje'
             if cat and o != n:
                 note = {'extrapolace': 'mimo rozsah zdroje', 'DUO z ALUX Bioclimatic': f'1 pole + {DUO_SHARE:g} × rozdílu', 'Fusion': '(A + B) / 2',
-                        'přepočet ze zdroje': 'opravený zdroj × 1,2'}[cat]
-                if key[0] == 'maxi-glass' and d > 4500: note = 'ALUX Carbo plný × 1,2'
+                        'přepočet ze zdroje': 'opravený zdroj × 1,3'}[cat]
+                if key[0] == 'maxi-glass' and d > 4500: note = 'ALUX Carbo plný × 1,3'
                 LOG.append((cat, title(key), w, d, o, n, note))
 
 # --- kontroly ------------------------------------------------------------------
@@ -253,14 +261,14 @@ for key, (W, D, P) in NEW.items():
                 CHECKS.append(('1 monotónnost (šířka)', title(key), w, d, P[i][j], f'≤ {P[i][j-1]} u šířky {W[j-1]}'))
             if i and P[i][j] <= P[i - 1][j]:
                 CHECKS.append(('1 monotónnost (hloubka)', title(key), w, d, P[i][j], f'≤ {P[i-1][j]} u hloubky {D[i-1]}'))
-# 2: MAXI = opravený ALUX × 1,2 tam, kde zdroj existuje
+# 2: MAXI = opravený ALUX × 1,3 tam, kde zdroj existuje
 for key, s in ((('maxi-thermo', ''), 'alux-thermo'), (('maxi-glass', ''), 'alux-glass'), (('maxi-bioclimatic', ''), 'alux-bioclimatic'),
                (('maxi-carbo', 'dutinkový polykarbonát'), 'alux-carbo-dutinkovy'), (('maxi-carbo', 'plný polykarbonát'), 'alux-carbo-plny')):
     W, D, P = NEW[key]; SW, SD, SP = SRC[s]
     for i, d in enumerate(D):
         for j, w in enumerate(W):
             if d in SD and w in SW and P[i][j] != rnd(lookup(SW, SD, SP, w, d) * MAXI_MARKUP):
-                CHECKS.append(('2 MAXI = ALUX × 1,2', title(key), w, d, P[i][j], f'zdroj × 1,2 = {rnd(lookup(SW, SD, SP, w, d) * MAXI_MARKUP)}'))
+                CHECKS.append(('2 MAXI = ALUX × 1,3', title(key), w, d, P[i][j], f'zdroj × 1,3 = {rnd(lookup(SW, SD, SP, w, d) * MAXI_MARKUP)}'))
 # 3, 4: Fusion mezi čistými MAXI
 for lab in FUSION:
     W, D, P = NEW[('maxi-fusion', lab)]
@@ -275,6 +283,8 @@ for lab in FUSION:
 DUO_P = NEW[('maxi-bioclimatic-duo', '')]
 UW, UD, UP = NEW[('maxi-bioclimatic', '')]
 def duo(w, d): return DUO_P[2][DUO_P[1].index(d)][DUO_P[0].index(w)]
+UNO_DUO_EDGE = [(d, UP[UD.index(d)][-1], duo(8000, d - 10), duo(8000, d - 10) / UP[UD.index(d)][-1] - 1)
+                for d in range(2000, 4201, 200)]  # UNO 7990 × H vs. DUO 8000 × (H − 10)
 TRANSITION = [(w, UP[-1][UW.index(w - 10)], duo(w, 4390), duo(w, 4390) / UP[-1][UW.index(w - 10)]) for w in DUO_W if w - 10 in UW]
 
 # informativně: rozměry Fusion, které jsou v čisté MAXI (Thermo, Glass, Carbo) v zóně UNO — ceny se neupravují
@@ -299,11 +309,11 @@ for s in SRC_CHANGED:
     wj(ROOT / 'products/pergola' / s / 'prices.json', p)
 NOTE_TAIL = f"Náklad 58 % (cost_percent). Parametry: přirážka MAXI {MAXI_MARKUP:g}, podíl DUO {DUO_SHARE:g}."
 NOTES = {
-    'maxi-thermo': "Prodejní cena = ALUX Thermo × 1,2 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200.",
-    'maxi-glass': "Prodejní cena = ALUX Glass × 1,2 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,2 (Glass = Carbo plný).",
-    'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,2 (zaokrouhleno na celé Kč).",
-    'maxi-bioclimatic-duo': "DUO = jedna konstrukce se 2 poli (společný rám, středový nosník, 2 motory). Prodejní cena = [1 pole + 0,5 × (2 samostatné pergoly − 1 pole)] × 1,2 z ALUX Bioclimatic, zaokrouhleno na celé Kč: 1 pole = ALUX Bioclimatic šířka × hloubka; 2 pergoly = 2 × ALUX Bioclimatic (šířka = hloubka DUO v řadě lamel, hloubka = šířka DUO / 2), pole DUO jsou otočená o 90°. Mimo rozsah ALUX (hloubka 1 pole nad 4500 mm, řada lamel 1990 a 2190) krokem z celého rozsahu, resp. řady 2390 → 2990.",
-    'maxi-carbo': "Prodejní cena = ALUX Carbo dutinkový × 1,2, resp. ALUX Carbo plný × 1,2 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky.",
+    'maxi-thermo': "Prodejní cena = ALUX Thermo × 1,3 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200.",
+    'maxi-glass': "Prodejní cena = ALUX Glass × 1,3 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,3 (Glass = Carbo plný).",
+    'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,3 (zaokrouhleno na celé Kč).",
+    'maxi-bioclimatic-duo': "DUO = zdvojená střecha: 2 pole otočená o 90° se společným rámem, středovým nosníkem a 2 motory. Prodejní cena = [2 otočené pergoly − 0,5 × (2 otočené pergoly − 1 velká pergola stejného celkového rozměru)] × 1,3 z ALUX Bioclimatic, zaokrouhleno na celé Kč; 2 otočené pergoly = 2 × ALUX Bioclimatic (šířka = hloubka DUO v řadě lamel, hloubka = šířka DUO / 2). Hloubky 1990, 2190 a 4590–5590 mm (mimo rozsah ALUX, není s čím srovnat) dopočítány průměrným krokem spočítané části 2390–4390 mm, zvlášť pro každou šířku.",
+    'maxi-carbo': "Prodejní cena = ALUX Carbo dutinkový × 1,3, resp. ALUX Carbo plný × 1,3 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky.",
     'maxi-fusion': "Fusion = jedna konstrukce (společný rám a stojny, mezi poli středový nosník). Každé pole nese polovinu ceny své čisté MAXI: prodejní cena = (MAXI krytina A + MAXI krytina B) / 2 ve stejném rozměru, zaokrouhleno na celé Kč (kalibrace: stejná krytina v obou polích = čistá MAXI); Bio = MAXI Bioclimatic DUO (verze s Bio od šířky 4000 po 200 mm jako DUO), Glass = MAXI Glass, Carbo 16 mm = MAXI Carbo dutinkový, Carbo 6 mm = MAXI Carbo plný, Thermo = MAXI Thermo. Chybějící hloubky (1990 vs. 2000 apod.) lineárně mezi sousedy.",
 }
 for sku in TITLES:
@@ -361,10 +371,14 @@ sheet('Kalibrace Fusion', ['Hypotetická Fusion', 'Musí se rovnat', 'Buněk', '
       [c + (f'shoda (±{CALIB_TOL} Kč)',) for c in CALIB], [24, 34, 8, 16, 16])
 sheet('Fusion v zóně UNO', ['Kombinace', 'Krytina (čistá MAXI)', 'UNO do šířky', 'UNO do hloubky', 'Buněk v UNO', 'Buněk celkem'],
       UNO_INFO, [28, 34, 13, 15, 13, 13])
-sheet('DUO výpočet', ['Šířka DUO', 'Hloubka DUO', '2 pergoly ALUX', '1 pole ALUX', 'Rozdíl', 'Rozdíl %', 'DUO ALUX', 'MAXI DUO (× 1,2)'],
+sheet('DUO výpočet', ['Šířka DUO', 'Hloubka DUO', '2 pergoly ALUX', '1 pole ALUX', 'Rozdíl', 'Rozdíl %', 'DUO ALUX', 'MAXI DUO (× 1,3)'],
       [(w, d, rnd(two_pergolas(w, d)), rnd(one_field(w, d)), rnd(two_pergolas(w, d) - one_field(w, d)),
-        two_pergolas(w, d) / one_field(w, d) - 1, rnd(duo_alux(w, d)), duo(w, d)) for d in DUO_D for w in DUO_W],
+        two_pergolas(w, d) / one_field(w, d) - 1, rnd(duo_alux(w, d)), duo(w, d)) if d in DUO_CALC else
+       (w, d, None, None, None, None, rnd(duo_alux(w, d)), duo(w, d)) for d in DUO_D for w in DUO_W],
       [11, 12, 15, 13, 11, 10, 12, 16], {'C': '#,##0', 'D': '#,##0', 'E': '#,##0', 'F': '0.0%', 'G': '#,##0', 'H': '#,##0'})
+sheet('UNO 7990 vs DUO 8000', ['Hloubka UNO', 'UNO 7990 × H', 'DUO 8000 × (H − 10)', 'Rozdíl Kč', 'Rozdíl %', 'Mimo +5 až +20 %'],
+      [(d, u, du, du - u, r, '!' if not 0.05 <= r <= 0.20 else '') for d, u, du, r in UNO_DUO_EDGE], [12, 14, 20, 12, 10, 16],
+      {'B': '#,##0', 'C': '#,##0', 'D': '#,##0', 'E': '0.0%'})
 sheet('Přechod UNO-DUO', ['Šířka', 'UNO hloubka 4200', 'DUO hloubka 4390', 'DUO / UNO'], TRANSITION, [9, 17, 17, 11],
       {'B': '#,##0', 'C': '#,##0', 'D': '0.0%'})
 for s in SRC_CHANGED:  # opravené ALUX tabulky, změněné buňky zvýrazněné
@@ -381,6 +395,7 @@ for s in SRC_CHANGED:  # opravené ALUX tabulky, změněné buňky zvýrazněné
 wb.save(REPORT)
 
 print('opravené zdroje:', SRC_CHANGED)
+print('UNO 7990 vs DUO 8000:', [(d, u, du, f'{r * 100:+.1f} %') for d, u, du, r in UNO_DUO_EDGE])
 print('přechod UNO 4200 → DUO 4390:', [(w, f'{(r - 1) * 100:+.1f} %') for w, _, _, r in TRANSITION])
 from collections import Counter
 print('log:', Counter(c for c, *_ in LOG))
