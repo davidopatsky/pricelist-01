@@ -4,11 +4,11 @@ sku: maxi-glass
 
 # ALUX MAXI Glass
 
-> ALUX MAXI Glass - samostojná pergola, skleněná střecha, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
+> ALUX MAXI Glass - pergola, skleněná střecha, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
 
 ## Popis
 
-ALUX MAXI Glass – samostojná pergola se skleněnou střechou, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Glass – pergola se skleněnou střechou, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
@@ -16,7 +16,6 @@ Rám RAL 7016 Axalta jemná struktura.
 
 ## Specifikace
 
-- samostojná konstrukce
 - zóny podle rozměru: do 7 × 3,5 m UNO - 2 stojny; do 7,5 × 5 m DUO - 2 stojny; do 8 × 5 m DUO - 3 stojny
 - UNO – střecha bez středového nosníku, krokve rovnoběžně s hloubkou, spád dopředu
 - DUO – střecha se středovým nosníkem, sedlový spád do boků, krokve rovnoběžně se šířkou

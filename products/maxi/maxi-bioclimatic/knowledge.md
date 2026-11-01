@@ -4,11 +4,11 @@ sku: maxi-bioclimatic
 
 # ALUX MAXI Bioclimatic UNO
 
-> ALUX MAXI Bioclimatic UNO - samostojná bioklimatická pergola, provedení UNO (1 pole), profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
+> ALUX MAXI Bioclimatic UNO - bioklimatická pergola, provedení UNO (1 pole), profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
 
 ## Popis
 
-ALUX MAXI Bioclimatic UNO – samostojná bioklimatická pergola s naklápěcími lamelami v provedení UNO (1 pole), masivní obvodový profil 300 × 150 mm, 2 stojny, rozpětí až 7,59 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Bioclimatic UNO – bioklimatická pergola s naklápěcími lamelami v provedení UNO (1 pole), masivní obvodový profil 300 × 150 mm, 2 stojny, rozpětí až 7,59 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
@@ -16,7 +16,6 @@ Rám RAL 7016 Axalta jemná struktura. Lamely RAL 9006 nebo RAL 7016 Axalta jemn
 
 ## Specifikace
 
-- samostojná konstrukce
 - zóny podle rozměru: do 7,59 × 4,2 m UNO - 2 stojny; do 7,99 × 4,2 m UNO - 3 stojny
 - UNO – střecha bez středového nosníku, krokve rovnoběžně s hloubkou, spád dopředu
 - hlavní obvodový profil 300 × 150 mm (tloušťka stěny až 5 mm)

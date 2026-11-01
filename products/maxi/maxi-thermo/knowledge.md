@@ -4,11 +4,11 @@ sku: maxi-thermo
 
 # ALUX MAXI Thermo
 
-> ALUX MAXI Thermo - samostojná pergola, termopanel 4 cm, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
+> ALUX MAXI Thermo - pergola, termopanel 4 cm, UNO / DUO podle rozměru, profil 300 × 150 mm, rám RAL 7016 Axalta jemná struktura
 
 ## Popis
 
-ALUX MAXI Thermo – samostojná pergola se střechou z izolačního termopanelu 4 cm, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Thermo – pergola se střechou z izolačního termopanelu 4 cm, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
 
 ## Barvy a povrchy
 
@@ -16,7 +16,6 @@ Rám RAL 7016 Axalta jemná struktura.
 
 ## Specifikace
 
-- samostojná konstrukce
 - zóny podle rozměru: do 7,5 × 5 m UNO - 2 stojny; do 7,5 × 6 m DUO - 2 stojny; do 8 × 6 m DUO - 3 stojny
 - UNO – střecha bez středového nosníku, krokve rovnoběžně s hloubkou, spád dopředu
 - DUO – střecha se středovým nosníkem, sedlový spád do boků, krokve rovnoběžně se šířkou

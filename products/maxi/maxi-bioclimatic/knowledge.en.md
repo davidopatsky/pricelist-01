@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX MAXI Bioclimatic UNO – freestanding bioclimatic pergola with adjustable louvres in the UNO version (1 field), massive perimeter profile 300 × 150 mm, 2 posts, span up to 7.59 m without a middle post, frame RAL 7016 Axalta structure.
+ALUX MAXI Bioclimatic UNO – bioclimatic pergola with adjustable louvres in the UNO version (1 field), massive perimeter profile 300 × 150 mm, 2 posts, span up to 7.59 m without a middle post, frame RAL 7016 Axalta structure.
 
 ## Colors and finishes
 
@@ -15,7 +15,6 @@ Frame RAL 7016 Axalta structure. Louvres RAL 9006 or RAL 7016 Axalta structure. 
 
 ## Specification
 
-- Freestanding structure
 - Zones by size: up to 7.59 × 4.2 m UNO - 2 posts; up to 7.99 × 4.2 m UNO - 3 posts
 - UNO – roof without a middle beam, rafters parallel to the depth, slope to the front
 - Main perimeter profile 300 × 150 mm (wall thickness up to 5 mm)
