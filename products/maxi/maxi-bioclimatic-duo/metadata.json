@@ -15,6 +15,33 @@
     }
   },
   "horizontal_footer": null,
+  "vertical_footer": {
+    "label": "lamel",
+    "values": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "value_suffix": " × 2 pole",
+    "label_en": "louvres",
+    "value_suffix_en": " × 2 fields"
+  },
   "accessories_included": [],
   "accessories_compatible": [
     "stojna-150-3000",

@@ -17,6 +17,8 @@
   "horizontal_footer": {
     "label": "počet lamel",
     "values": [
+      9,
+      10,
       11,
       12,
       13,

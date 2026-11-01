@@ -127,8 +127,15 @@ for lab, s in (('dutinkový polykarbonát', 'alux-carbo-dutinkovy'), ('plný pol
     make('maxi-carbo', lab, grid(2000, 8000), grid(2000, 6000), lambda w, d, W_=W_, D_=D_, P_=P_: lookup(W_, D_, P_, w, d) * MAXI_MARKUP)
 # Bioclimatic UNO
 BW, BD, BP = SRC['alux-bioclimatic']
-make('maxi-bioclimatic', '', BW, grid(2000, 4200),  # 2390–7990, od 7790 UNO - 3 stojny
-     lambda w, d: lookup(BW, BD, BP, w, d) * MAXI_MARKUP)
+BIO_LOW_STEP = sum((r[3] - r[0]) / 3 for r in BP) / len(BP)  # průměrný krok řady 2390 → 2990 přes všechny hloubky
+def bio_below(w, d):
+    """ALUX Bioclimatic pod řadou lamel zdroje (1990, 2190): šířka 2390 − průměrný krok na lamelu (jeden pro celou
+    tabulku, aby cena s hloubkou rostla stejně jako u 2390)."""
+    return BP[BD.index(d)][0] - BIO_LOW_STEP * (BW[0] - w) / 200
+UNO_LOW = [1990, 2190]
+make('maxi-bioclimatic', '', UNO_LOW + BW, grid(2000, 4200),  # 1990–7990 (1990, 2190 dopočet), od 7790 UNO - 3 stojny
+     lambda w, d: (bio_below(w, d) if w < BW[0] else lookup(BW, BD, BP, w, d)) * MAXI_MARKUP,
+     lambda w, d: w < BW[0])
 # Bioclimatic DUO = cena mezi jedním velkým polem a dvěma samostatnými pergolami (z ALUX Bioclimatic):
 #   1 pole    = ALUX (šířka = Š v řadě lamel, hloubka = H)
 #   2 pergoly = 2 × ALUX (šířka = H v řadě lamel, hloubka = Š / 2) — pole DUO jsou otočená o 90°, lamely dlouhé Š / 2
@@ -311,7 +318,7 @@ NOTE_TAIL = f"Náklad 58 % (cost_percent). Parametry: přirážka MAXI {MAXI_MAR
 NOTES = {
     'maxi-thermo': "Prodejní cena = ALUX Thermo × 1,3 (zaokrouhleno na celé Kč). Hloubky 5600–6000 mm dopočítány průměrným krokem celého rozsahu hloubek zdroje (zvlášť pro každý sloupec); šířka 2900 / 3000 od hloubky 5400 = šířka 2800 + rozdíl z hloubky 5200.",
     'maxi-glass': "Prodejní cena = ALUX Glass × 1,3 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,3 (Glass = Carbo plný).",
-    'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,3 (zaokrouhleno na celé Kč).",
+    'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,3 (zaokrouhleno na celé Kč). Šířky 1990 a 2190 mm (pod řadou lamel ALUX) = šířka 2390 − průměrný krok řady 2390 → 2990 (průměr přes všechny hloubky) na lamelu.",
     'maxi-bioclimatic-duo': "DUO = zdvojená střecha: 2 pole otočená o 90° se společným rámem, středovým nosníkem a 2 motory. Prodejní cena = [2 otočené pergoly − 0,5 × (2 otočené pergoly − 1 velká pergola stejného celkového rozměru)] × 1,3 z ALUX Bioclimatic, zaokrouhleno na celé Kč; 2 otočené pergoly = 2 × ALUX Bioclimatic (šířka = hloubka DUO v řadě lamel, hloubka = šířka DUO / 2). Hloubky 1990, 2190 a 4590–5590 mm (mimo rozsah ALUX, není s čím srovnat) dopočítány průměrným krokem spočítané části 2390–4390 mm, zvlášť pro každou šířku.",
     'maxi-carbo': "Prodejní cena = ALUX Carbo dutinkový × 1,3, resp. ALUX Carbo plný × 1,3 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky.",
     'maxi-fusion': "Fusion = jedna konstrukce (společný rám a stojny, mezi poli středový nosník). Každé pole nese polovinu ceny své čisté MAXI: prodejní cena = (MAXI krytina A + MAXI krytina B) / 2 ve stejném rozměru, zaokrouhleno na celé Kč (kalibrace: stejná krytina v obou polích = čistá MAXI); Bio = MAXI Bioclimatic DUO (verze s Bio od šířky 4000 po 200 mm jako DUO), Glass = MAXI Glass, Carbo 16 mm = MAXI Carbo dutinkový, Carbo 6 mm = MAXI Carbo plný, Thermo = MAXI Thermo. Chybějící hloubky (1990 vs. 2000 apod.) lineárně mezi sousedy.",
