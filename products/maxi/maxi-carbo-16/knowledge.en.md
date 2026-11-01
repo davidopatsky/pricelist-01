@@ -1,13 +1,13 @@
 ---
-sku: maxi-carbo
+sku: maxi-carbo-16
 lang: en
 ---
 
-# ALUX MAXI Carbo
+# ALUX MAXI Carbo 16 mm
 
 ## Description
 
-ALUX MAXI Carbo – pergola with a roof of multiwall / solid polycarbonate, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 8 m without a middle post, frame RAL 7016 Axalta structure.
+ALUX MAXI Carbo 16 mm – pergola with a roof of 16 mm multiwall polycarbonate, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 8 m without a middle post, frame RAL 7016 Axalta structure.
 
 ## Colors and finishes
 
@@ -22,5 +22,5 @@ Frame RAL 7016 Axalta structure.
 - Posts 150 × 150 mm (wall thickness up to 4 mm)
 - Span up to 8 m without a middle post
 - Max. size 8.0 × 6.0 m
-- Roofing: multiwall / solid polycarbonate (2 price lists)
+- Roofing: multiwall polycarbonate 16 mm
 - Glazing: for spans over 7 m frameless glazing is recommended (operating deflection of the structure 4–5 mm); the 150 mm bottom profile allows wider tracks

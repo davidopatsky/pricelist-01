@@ -122,9 +122,9 @@ GW, GD, GP = SRC['alux-glass']; CPW, CPD, CPP = SRC['alux-carbo-plny']
 make('maxi-glass', '', grid(2000, 8000), grid(2000, 5000),
      lambda w, d: (lookup(GW, GD, GP, w, d) if d in GD else lookup(CPW, CPD, CPP, w, d)) * MAXI_MARKUP)
 # Carbo
-for lab, s in (('dutinkový polykarbonát', 'alux-carbo-dutinkovy'), ('plný polykarbonát', 'alux-carbo-plny')):
+for sku, s in (('maxi-carbo-16', 'alux-carbo-dutinkovy'), ('maxi-carbo-6', 'alux-carbo-plny')):
     W_, D_, P_ = SRC[s]
-    make('maxi-carbo', lab, grid(2000, 8000), grid(2000, 6000), lambda w, d, W_=W_, D_=D_, P_=P_: lookup(W_, D_, P_, w, d) * MAXI_MARKUP)
+    make(sku, '', grid(2000, 8000), grid(2000, 6000), lambda w, d, W_=W_, D_=D_, P_=P_: lookup(W_, D_, P_, w, d) * MAXI_MARKUP)
 # Bioclimatic UNO
 BW, BD, BP = SRC['alux-bioclimatic']
 BIO_LOW_STEP = sum((r[3] - r[0]) / 3 for r in BP) / len(BP)  # průměrný krok řady 2390 → 2990 přes všechny hloubky
@@ -194,7 +194,7 @@ def mval(key, w, d):
     row = lambda i: P[i][j0] + (P[i][j1] - P[i][j0]) * tj
     return row(i0) + (row(i1) - row(i0)) * ti
 MAXI_OF = {'Bio': ('maxi-bioclimatic-duo', ''), 'Thermo': ('maxi-thermo', ''), 'Glass': ('maxi-glass', ''),
-           'Carbo 16 mm': ('maxi-carbo', 'dutinkový polykarbonát'), 'Carbo 6 mm': ('maxi-carbo', 'plný polykarbonát')}
+           'Carbo 16 mm': ('maxi-carbo-16', ''), 'Carbo 6 mm': ('maxi-carbo-6', '')}
 def rotated(x, w, d):
     """1 otočená pergola krytiny x (šířka = hloubka DUO, hloubka = Š / 2); u Bio polovina MAXI DUO bez úspory nelze → None."""
     return mval(MAXI_OF[x], d, w / 2)
@@ -234,10 +234,10 @@ for x, key in MAXI_OF.items():
 
 # --- log MAXI změn -------------------------------------------------------------
 TITLES = {'maxi-thermo': 'MAXI Thermo', 'maxi-glass': 'MAXI Glass', 'maxi-bioclimatic': 'MAXI Bioclimatic UNO',
-          'maxi-bioclimatic-duo': 'MAXI Bioclimatic DUO', 'maxi-carbo': 'MAXI Carbo', 'maxi-fusion': 'MAXI Fusion'}
+          'maxi-bioclimatic-duo': 'MAXI Bioclimatic DUO', 'maxi-carbo-16': 'MAXI Carbo 16 mm', 'maxi-carbo-6': 'MAXI Carbo 6 mm',
+          'maxi-fusion': 'MAXI Fusion'}
 def title(key):
     sku, lab = key
-    if sku == 'maxi-carbo': return f"MAXI Carbo {lab.split()[0]}"
     if sku == 'maxi-fusion': return f"MAXI Fusion {lab}"
     return TITLES[sku]
 def cells(o, key):
@@ -296,7 +296,7 @@ for key, (W, D, P) in NEW.items():
                 CHECKS.append(('1 monotónnost (hloubka)', title(key), w, d, P[i][j], f'≤ {P[i-1][j]} u hloubky {D[i-1]}'))
 # 2: MAXI = opravený ALUX × 1,3 tam, kde zdroj existuje
 for key, s in ((('maxi-thermo', ''), 'alux-thermo'), (('maxi-glass', ''), 'alux-glass'), (('maxi-bioclimatic', ''), 'alux-bioclimatic'),
-               (('maxi-carbo', 'dutinkový polykarbonát'), 'alux-carbo-dutinkovy'), (('maxi-carbo', 'plný polykarbonát'), 'alux-carbo-plny')):
+               (('maxi-carbo-16', ''), 'alux-carbo-dutinkovy'), (('maxi-carbo-6', ''), 'alux-carbo-plny')):
     W, D, P = NEW[key]; SW, SD, SP = SRC[s]
     for i, d in enumerate(D):
         for j, w in enumerate(W):
@@ -348,7 +348,8 @@ NOTES = {
     'maxi-glass': "Prodejní cena = ALUX Glass × 1,3 (zaokrouhleno na celé Kč). Hloubky 4600–5000 mm = ALUX Carbo plný × 1,3 (Glass = Carbo plný).",
     'maxi-bioclimatic': "UNO. Prodejní cena = ALUX Bioclimatic × 1,3 (zaokrouhleno na celé Kč). Šířky 1990 a 2190 mm (pod řadou lamel ALUX) = šířka 2390 − průměrný krok řady 2390 → 2990 (průměr přes všechny hloubky) na lamelu.",
     'maxi-bioclimatic-duo': "DUO = zdvojená střecha: 2 pole otočená o 90° se společným rámem, středovým nosníkem a 2 motory. Prodejní cena = [2 otočené pergoly − 0,5 × (2 otočené pergoly − 1 velká pergola stejného celkového rozměru)] × 1,3 z ALUX Bioclimatic, zaokrouhleno na celé Kč; 2 otočené pergoly = 2 × ALUX Bioclimatic (šířka = hloubka DUO v řadě lamel, hloubka = šířka DUO / 2). Hloubky 1990 a 2190 mm: otočené pergoly šířky 1990 / 2190 jako MAXI Bioclimatic UNO. Hloubky 4590–5590 mm (1 velká pergola mimo rozsah ALUX, není s čím srovnat) dopočítány průměrným krokem spočítané části 2390–4390 mm, zvlášť pro každou šířku.",
-    'maxi-carbo': "Prodejní cena = ALUX Carbo dutinkový × 1,3, resp. ALUX Carbo plný × 1,3 (zaokrouhleno na celé Kč). Zóny stejné pro oba ceníky.",
+    'maxi-carbo-16': "Prodejní cena = ALUX Carbo dutinkový × 1,3 (zaokrouhleno na celé Kč).",
+    'maxi-carbo-6': "Prodejní cena = ALUX Carbo plný × 1,3 (zaokrouhleno na celé Kč).",
     'maxi-fusion': "Fusion = DUO se dvěma různými krytinami, počítá se stejně jako DUO: prodejní cena = 2 otočené pergoly (pole A + pole B) − 0,5 × (2 otočené pergoly − 1 velká pergola napůl A a napůl B), tedy (DUO A + DUO B) / 2, zaokrouhleno na celé Kč. DUO krytiny = 2 otočené pergoly − 0,5 × rozdíl proti 1 velké pergole z čisté MAXI tabulky (MAXI = ALUX × 1,3); Bio = MAXI Bioclimatic DUO. Kalibrace: stejná krytina v obou polích = DUO té krytiny. Šířky pod 4000 mm (pole užší než 2 m, není s čím srovnat) dopočítány průměrným krokem spočítané části 4000–8000 mm.",
 }
 for sku in TITLES:
