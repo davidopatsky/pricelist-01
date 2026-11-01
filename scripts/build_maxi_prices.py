@@ -214,7 +214,8 @@ def fusion(a, b, W):
         return flo - (fhi - flo) / (hi - lo) * (lo - w)
     return f
 FUSION = ['Bio - Glass', 'Bio - Carbo 16 mm', 'Bio - Carbo 6 mm', 'Thermo - Glass', 'Thermo - Carbo 16 mm', 'Thermo - Carbo 6 mm']
-FUSION_GRID = {True: (DUO_W, list(range(1990, 4991, 200))), False: (grid(2000, 8000), grid(2000, 5000))}
+# všech 6 kombinací stejná mřížka jako Bio DUO: šířky 4000–8000, hloubky 1990–4990 (řada lamel), obojí po 200 mm
+FUSION_GRID = {True: (DUO_W, list(range(1990, 4991, 200))), False: (DUO_W, list(range(1990, 4991, 200)))}
 for lab in FUSION:
     a, b = lab.split(' - ')
     W, D = FUSION_GRID[lab.startswith('Bio')]
@@ -350,7 +351,7 @@ NOTES = {
     'maxi-bioclimatic-duo': "DUO = zdvojená střecha: 2 pole otočená o 90° se společným rámem, středovým nosníkem a 2 motory. Prodejní cena = [2 otočené pergoly − 0,5 × (2 otočené pergoly − 1 velká pergola stejného celkového rozměru)] × 1,3 z ALUX Bioclimatic, zaokrouhleno na celé Kč; 2 otočené pergoly = 2 × ALUX Bioclimatic (šířka = hloubka DUO v řadě lamel, hloubka = šířka DUO / 2). Hloubky 1990 a 2190 mm: otočené pergoly šířky 1990 / 2190 jako MAXI Bioclimatic UNO. Hloubky 4590–5590 mm (1 velká pergola mimo rozsah ALUX, není s čím srovnat) dopočítány průměrným krokem spočítané části 2390–4390 mm, zvlášť pro každou šířku.",
     'maxi-carbo-16': "Prodejní cena = ALUX Carbo dutinkový × 1,3 (zaokrouhleno na celé Kč).",
     'maxi-carbo-6': "Prodejní cena = ALUX Carbo plný × 1,3 (zaokrouhleno na celé Kč).",
-    'maxi-fusion': "Fusion = DUO se dvěma různými krytinami, počítá se stejně jako DUO: prodejní cena = 2 otočené pergoly (pole A + pole B) − 0,5 × (2 otočené pergoly − 1 velká pergola napůl A a napůl B), tedy (DUO A + DUO B) / 2, zaokrouhleno na celé Kč. DUO krytiny = 2 otočené pergoly − 0,5 × rozdíl proti 1 velké pergole z čisté MAXI tabulky (MAXI = ALUX × 1,3); Bio = MAXI Bioclimatic DUO. Kalibrace: stejná krytina v obou polích = DUO té krytiny. Šířky pod 4000 mm (pole užší než 2 m, není s čím srovnat) dopočítány průměrným krokem spočítané části 4000–8000 mm.",
+    'maxi-fusion': "Fusion = DUO se dvěma různými krytinami, počítá se stejně jako DUO: prodejní cena = 2 otočené pergoly (pole A + pole B) − 0,5 × (2 otočené pergoly − 1 velká pergola napůl A a napůl B), tedy (DUO A + DUO B) / 2, zaokrouhleno na celé Kč. DUO krytiny = 2 otočené pergoly − 0,5 × rozdíl proti 1 velké pergole z čisté MAXI tabulky (MAXI = ALUX × 1,3); Bio = MAXI Bioclimatic DUO. Kalibrace: stejná krytina v obou polích = DUO té krytiny. Všech 6 kombinací má stejnou mřížku: šířky 4000–8000 mm, hloubky 1990–4990 mm, obojí po 200 mm.",
 }
 for sku in TITLES:
     o = old(sku)
