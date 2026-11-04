@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX MAXI Glass – pergola with a glass roof, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 7.5 m without a middle post, frame RAL 7016 Axalta structure.
+ALUX MAXI Glass – pergola with a glass roof, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 7.5 m without a middle post, frame RAL 7016 Axalta structure. The profiles have space for integrated perimeter LED lighting (optional surcharge).
 
 ## Colors and finishes
 

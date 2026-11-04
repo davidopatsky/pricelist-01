@@ -8,7 +8,7 @@ sku: maxi-fusion
 
 ## Popis
 
-ALUX MAXI Fusion – pergola vždy v provedení DUO: středový nosník uprostřed rozděluje střechu na 2 pole s různou krytinou – Bio / Glass, Bio / Carbo 16 mm, Bio / Carbo 6 mm, Thermo / Glass, Thermo / Carbo 16 mm, Thermo / Carbo 6 mm; masivní obvodový profil 300 × 150 mm, rozpětí až 7,5 m bez středového sloupku (do hloubky 4,5 m), rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Fusion – pergola vždy v provedení DUO: středový nosník uprostřed rozděluje střechu na 2 pole s různou krytinou – Bio / Glass, Bio / Carbo 16 mm, Bio / Carbo 6 mm, Thermo / Glass, Thermo / Carbo 16 mm, Thermo / Carbo 6 mm; masivní obvodový profil 300 × 150 mm, rozpětí až 7,5 m bez středového sloupku (do hloubky 4,5 m), rám RAL 7016 Axalta jemná struktura. Profily mají prostor pro integrované obvodové LED osvětlení (příplatková možnost).
 
 ## Barvy a povrchy
 

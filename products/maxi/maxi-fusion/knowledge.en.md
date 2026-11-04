@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX MAXI Fusion – pergola, always in the DUO version: the middle beam in the center divides the roof into 2 fields with different roofing – Bio / Glass, Bio / Carbo 16 mm, Bio / Carbo 6 mm, Thermo / Glass, Thermo / Carbo 16 mm, Thermo / Carbo 6 mm; massive perimeter profile 300 × 150 mm, span up to 7.5 m without a middle post (up to a depth of 4.5 m), frame RAL 7016 Axalta structure.
+ALUX MAXI Fusion – pergola, always in the DUO version: the middle beam in the center divides the roof into 2 fields with different roofing – Bio / Glass, Bio / Carbo 16 mm, Bio / Carbo 6 mm, Thermo / Glass, Thermo / Carbo 16 mm, Thermo / Carbo 6 mm; massive perimeter profile 300 × 150 mm, span up to 7.5 m without a middle post (up to a depth of 4.5 m), frame RAL 7016 Axalta structure. The profiles have space for integrated perimeter LED lighting (optional surcharge).
 
 ## Colors and finishes
 

@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX MAXI Bioclimatic DUO – bioclimatic pergola with adjustable louvres in the DUO version: the middle beam divides the roof into 2 fields, massive perimeter profile 300 × 150 mm, span up to 7.5 m without a middle post, frame RAL 7016 Axalta structure.
+ALUX MAXI Bioclimatic DUO – bioclimatic pergola with adjustable louvres in the DUO version: the middle beam divides the roof into 2 fields, massive perimeter profile 300 × 150 mm, span up to 7.5 m without a middle post, frame RAL 7016 Axalta structure. The profiles have space for integrated perimeter LED lighting (optional surcharge). The louvres run parallel to the house and both fields can be operated independently.
 
 ## Colors and finishes
 

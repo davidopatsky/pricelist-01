@@ -7,7 +7,7 @@ lang: en
 
 ## Description
 
-ALUX MAXI Carbo 6 mm – pergola with a roof of 6 mm solid polycarbonate, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 8 m without a middle post, frame RAL 7016 Axalta structure.
+ALUX MAXI Carbo 6 mm – pergola with a roof of 6 mm solid polycarbonate, massive perimeter profile 300 × 150 mm, UNO or DUO version depending on size, span up to 8 m without a middle post, frame RAL 7016 Axalta structure. The profiles have space for integrated perimeter LED lighting (optional surcharge).
 
 ## Colors and finishes
 

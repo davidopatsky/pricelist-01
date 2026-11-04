@@ -8,7 +8,7 @@ sku: maxi-bioclimatic-duo
 
 ## Popis
 
-ALUX MAXI Bioclimatic DUO – bioklimatická pergola s naklápěcími lamelami v provedení DUO: středový nosník dělí střechu na 2 pole, masivní obvodový profil 300 × 150 mm, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Bioclimatic DUO – bioklimatická pergola s naklápěcími lamelami v provedení DUO: středový nosník dělí střechu na 2 pole, masivní obvodový profil 300 × 150 mm, rozpětí až 7,5 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura. Profily mají prostor pro integrované obvodové LED osvětlení (příplatková možnost). Lamely jsou rovnoběžně s domem a obě pole lze ovládat nezávisle na sobě.
 
 ## Barvy a povrchy
 

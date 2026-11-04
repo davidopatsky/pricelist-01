@@ -18,13 +18,6 @@
   "accessories_compatible": [],
   "support_zones": [
     {
-      "stojny": 4,
-      "pricky": true,
-      "hloubka_od": 4100,
-      "popisek": "4× stojna + výztuha",
-      "popisek_en": "4 posts + reinforcement"
-    },
-    {
       "stojny": 3,
       "pricky": true,
       "sirka_od": 4600,

@@ -8,7 +8,7 @@ sku: maxi-carbo-6
 
 ## Popis
 
-ALUX MAXI Carbo 6 mm – pergola se střechou z plného polykarbonátu 6 mm, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 8 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura.
+ALUX MAXI Carbo 6 mm – pergola se střechou z plného polykarbonátu 6 mm, masivní obvodový profil 300 × 150 mm, provedení UNO nebo DUO podle rozměru, rozpětí až 8 m bez středového sloupku, rám RAL 7016 Axalta jemná struktura. Profily mají prostor pro integrované obvodové LED osvětlení (příplatková možnost).
 
 ## Barvy a povrchy
 
