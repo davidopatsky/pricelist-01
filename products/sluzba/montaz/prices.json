@@ -118,13 +118,15 @@
     },
     {
       "id": "slunolam",
-      "label": "Slunolam otočný (ALUX Blind SELT + VENYS)",
+      "label": "Slunolam otočný (ALUX Blind SELT, VENYS)",
       "applies_to_skus": [
         "alux-blind",
         "lamely-venys"
       ],
       "rate_type": "flat_fee",
-      "fee_czk": 2500
+      "fee_czk": 2500,
+      "label_en": "Rotating louvre screen (ALUX Blind SELT, VENYS)",
+      "note": "Paušál 2 500 Kč za kus bez ohledu na rozměr."
     },
     {
       "id": "slunolam-fix",
@@ -133,7 +135,9 @@
         "vypln-slunolam-fix"
       ],
       "rate_type": "flat_fee",
-      "fee_czk": 3500
+      "fee_czk": 3500,
+      "label_en": "Fixed louvre screen ZETA",
+      "note": "Paušál 3 500 Kč za kus bez ohledu na rozměr."
     },
     {
       "id": "vypln-pur-panel",
