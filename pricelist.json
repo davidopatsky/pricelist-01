@@ -331,7 +331,7 @@
     "unit": "ks",
     "cost": 1,
     "cost_percent": 50,
-    "discount": "20-30%",
+    "discount": "0-20%",
     "delivery_weeks": "8-9",
     "color_summary": null,
     "description_en": null,
