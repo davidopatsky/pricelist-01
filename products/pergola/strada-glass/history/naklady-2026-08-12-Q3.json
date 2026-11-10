@@ -1,0 +1,108 @@
+{
+  "sku": "strada-glass",
+  "date": "2026-08-12",
+  "source": "screenshoty výrobních nákladů (aktualizace Q3 2026, commit f46f2b1)",
+  "note": "Výrobní náklad v Kč bez výztuhy; šířka × hloubka v mm. Cena Q3 = náklad × 1,775 (1,25 × 1,42), u vyšší staré ceny + polovina rozdílu.",
+  "costs": [
+    {
+      "width": 2000,
+      "depth": 2000,
+      "cost": 29144
+    },
+    {
+      "width": 3000,
+      "depth": 2000,
+      "cost": 31983
+    },
+    {
+      "width": 4000,
+      "depth": 2000,
+      "cost": 34822
+    },
+    {
+      "width": 5000,
+      "depth": 2000,
+      "cost": 37661
+    },
+    {
+      "width": 6000,
+      "depth": 2000,
+      "cost": 40500
+    },
+    {
+      "width": 8000,
+      "depth": 2000,
+      "cost": 46178
+    },
+    {
+      "width": 2000,
+      "depth": 3000,
+      "cost": 37494
+    },
+    {
+      "width": 3000,
+      "depth": 3000,
+      "cost": 41133
+    },
+    {
+      "width": 4000,
+      "depth": 3000,
+      "cost": 44772
+    },
+    {
+      "width": 6000,
+      "depth": 3000,
+      "cost": 52050
+    },
+    {
+      "width": 8000,
+      "depth": 3000,
+      "cost": 59328
+    },
+    {
+      "width": 2000,
+      "depth": 4000,
+      "cost": 45845
+    },
+    {
+      "width": 3000,
+      "depth": 4000,
+      "cost": 50283
+    },
+    {
+      "width": 5000,
+      "depth": 4000,
+      "cost": 59161
+    },
+    {
+      "width": 8000,
+      "depth": 4000,
+      "cost": 72478
+    },
+    {
+      "width": 2000,
+      "depth": 5000,
+      "cost": 54195
+    },
+    {
+      "width": 3000,
+      "depth": 5000,
+      "cost": 59433
+    },
+    {
+      "width": 4000,
+      "depth": 5000,
+      "cost": 64672
+    },
+    {
+      "width": 6000,
+      "depth": 5000,
+      "cost": 75150
+    },
+    {
+      "width": 8000,
+      "depth": 5000,
+      "cost": 85628
+    }
+  ]
+}

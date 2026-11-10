@@ -1,0 +1,108 @@
+{
+  "sku": "strada-carbo-dutinkovy",
+  "date": "2026-08-12",
+  "source": "screenshoty výrobních nákladů (aktualizace Q3 2026, commit f46f2b1)",
+  "note": "Výrobní náklad v Kč bez výztuhy; šířka × hloubka v mm. Cena Q3 = náklad × 1,775 (1,25 × 1,42), u vyšší staré ceny + polovina rozdílu.",
+  "costs": [
+    {
+      "width": 2000,
+      "depth": 2000,
+      "cost": 16414
+    },
+    {
+      "width": 3000,
+      "depth": 2000,
+      "cost": 19267
+    },
+    {
+      "width": 4000,
+      "depth": 2000,
+      "cost": 22121
+    },
+    {
+      "width": 6000,
+      "depth": 2000,
+      "cost": 27828
+    },
+    {
+      "width": 8000,
+      "depth": 2000,
+      "cost": 33534
+    },
+    {
+      "width": 2000,
+      "depth": 3000,
+      "cost": 17985
+    },
+    {
+      "width": 3000,
+      "depth": 3000,
+      "cost": 21639
+    },
+    {
+      "width": 4000,
+      "depth": 3000,
+      "cost": 25292
+    },
+    {
+      "width": 6000,
+      "depth": 3000,
+      "cost": 32599
+    },
+    {
+      "width": 8000,
+      "depth": 3000,
+      "cost": 39906
+    },
+    {
+      "width": 2000,
+      "depth": 4000,
+      "cost": 19556
+    },
+    {
+      "width": 3000,
+      "depth": 4000,
+      "cost": 24010
+    },
+    {
+      "width": 4000,
+      "depth": 4000,
+      "cost": 28463
+    },
+    {
+      "width": 5000,
+      "depth": 4000,
+      "cost": 32917
+    },
+    {
+      "width": 6000,
+      "depth": 4000,
+      "cost": 37370
+    },
+    {
+      "width": 2000,
+      "depth": 5000,
+      "cost": 21128
+    },
+    {
+      "width": 4000,
+      "depth": 5000,
+      "cost": 31634
+    },
+    {
+      "width": 5000,
+      "depth": 5000,
+      "cost": 36888
+    },
+    {
+      "width": 6000,
+      "depth": 5000,
+      "cost": 42141
+    },
+    {
+      "width": 8000,
+      "depth": 5000,
+      "cost": 52648
+    }
+  ]
+}
