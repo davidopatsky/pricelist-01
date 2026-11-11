@@ -8,23 +8,24 @@ Ceny v Kč bez DPH, rozměr = šířka × hloubka. Zálohy matic jsou v `product
 
 ```
 obchodní náklad (nákup) = výrobní náklad × 1,15  (+ výztuha 3 500 Kč v zónách s "pricky": true)
-prodejní cena            = obchodní náklad / 0,58
+prodejní cena            = obchodní náklad / 0,58 × 1,20   (+20 % od 11. 11. 2026)
 ```
 
 - Výrobní náklad = buňka **S22** v kalkulaci `strada-carbo-dutinkovy/history/naklady-kalkulace-vse-2026-11-10.xlsx`, list **Strada Carbo** (mění se jen B2 šířka a D2 hloubka).
 - Počet krokví B11 = **(šířka − 240) / 600** (v listu Strada Carbo je B11 zapsané jako pevné číslo 6,2667 – pro přepočet vždy použít vzorec).
 - Stojny mají v kalkulaci cenu 0 Kč (záměr). Na hranicích zón (šířka 5 100, hloubka 4 100) proto cena klesá – zóna „2 stojny + výztuha“ přechází na „3 stojny“ bez výztuhy.
-- `cost_percent` v pricelistu = 58 % (= obchodní nákup).
-- Proti 9. 11. 2026: +7 až +31 %, medián +19 %.
+- `cost_percent` v pricelistu = 58 %. Po navýšení +20 % (11. 11. 2026) je skutečný obchodní nákup ≈ 48 % ceny (0,58 / 1,2).
+- Proti 9. 11. 2026 (vč. +20 %): +28 až +57 %, medián +42 %.
 
-| Rozměr | Výrobní náklad | Cena |
-|---|---:|---:|
-| 2 × 2 m | 17 259 | 34 221 |
-| 3 × 3 m | 23 917 | 47 421 |
-| 5 × 4 m | 38 595 | 82 558 |
-| 7 × 4 m | 50 073 | 105 318 |
-| 8 × 3 m | 46 910 | 99 046 |
-| 8 × 4 m | 55 813 | 116 697 |
+| Rozměr | Výrobní náklad | Cena 10. 11. | Cena od 11. 11. (+20 %) |
+|---|---:|---:|---:|
+| 2 × 2 m | 17 259 | 34 221 | 41 065 |
+| 3 × 3 m | 23 917 | 47 421 | 56 905 |
+| 5 × 4 m | 38 595 | 82 558 | 99 070 |
+| 6 × 4 m | 44 334 | 87 903 | 105 484 |
+| 7 × 4 m | 50 073 | 105 318 | 126 382 |
+| 8 × 3 m | 46 910 | 99 046 | 118 855 |
+| 8 × 4 m | 55 813 | 116 697 | 140 036 |
 
 ### Strada Carbo 6 mm (`strada-carbo-plny`) a Strada Glass (`strada-glass`)
 
@@ -44,9 +45,11 @@ prodejní cena            = obchodní náklad / 0,58
 | 4. 11. 2026 | Glass: max. hloubka 4 000 mm. |
 | 10. 11. 2026 | Dočasně všechny Strady plošně +30 % a +10 % (× 1,43) – nahrazeno. |
 | 10. 11. 2026 | **Carbo 16 mm z opravené kalkulace** (× 1,15 / 0,58). Carbo 6 mm a Glass vráceny na stav z 9. 11. 2026. |
+| 11. 11. 2026 | **Carbo 16 mm celá matice +20 %.** |
 
 ## Zálohy
 
 - `history/prices-2026-08-12-pre-Q3-update.json` – před Q3
 - `history/prices-2026-11-10-pre-30pct.json` – stav 9. 11. 2026 (před dnešními změnami)
 - `strada-carbo-dutinkovy/history/prices-2026-11-10-pre-kalkulace.json` – Carbo 16 × 1,43 (nepoužito)
+- `strada-carbo-dutinkovy/history/prices-2026-11-11-pre-20pct.json` – Carbo 16 z kalkulace před +20 %
