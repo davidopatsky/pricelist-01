@@ -229,7 +229,7 @@ async function priceFor(sku, width_mm, depth_mm) {
 `products/sluzba/montaz/prices.json` — sazby montáže pro aplikaci obchodníků (B2C). B2B ceník montáž neuvádí.
 
 - `sections[]` — produkt patří do sekce podle `applies_to_category` nebo `applies_to_skus`.
-- `rate_type`: `tiered_by_price` (procento podle hladiny ceny produktu, `tiers[].price_up_to_czk`), `flat_percent` (`percent` z ceny produktu), `flat_fee` (pevná částka `fee_czk`).
+- `rate_type`: `tiered_by_price` (procento podle hladiny ceny produktu, `tiers[].price_up_to_czk`), `flat_percent` (`percent` z ceny produktu), `flat_fee` (pevná částka `fee_czk`), `per_m2` (`fee_czk_per_m2` × plocha produktu v m² = šířka × výška; např. PUR panel 870 Kč/m²).
 - `adjustments[]` (u sekce, volitelné) — příplatek k procentu pro vybrané SKU: `add_percent` se **přičte** k procentu z hladiny. Příklad: ALUX Glass s cenou v hladině 13 % → montáž 13 % + 2 % = 15 % z ceny pergoly.
 
 ## 5c. Termín dodání

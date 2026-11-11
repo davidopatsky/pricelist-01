@@ -2,7 +2,7 @@
   "sku": "montaz",
   "type": "percent-tariff",
   "currency": "CZK",
-  "note": "Sazby za montáž. Procentuální sekce: cena montáže = procento × cena montovaného produktu. Sekce s rate_type \"flat_fee\": pevná částka fee_czk.",
+  "note": "Sazby za montáž. Procentuální sekce: cena montáže = procento × cena montovaného produktu. Sekce s rate_type \"flat_fee\": pevná částka fee_czk. Sekce s rate_type \"per_m2\": fee_czk_per_m2 × plocha produktu (šířka × výška v m²).",
   "installation_rates": [
     11,
     12,
@@ -142,11 +142,13 @@
     {
       "id": "vypln-pur-panel",
       "label": "PUR Panel boční výplň",
+      "label_en": "PUR panel side infill",
       "applies_to_skus": [
         "vypln-pur-panel"
       ],
-      "rate_type": "flat_percent",
-      "percent": 14
+      "rate_type": "per_m2",
+      "fee_czk_per_m2": 870,
+      "note": "870 Kč za m² plochy panelu (šířka × výška)."
     },
     {
       "id": "markyza-latin-40",
