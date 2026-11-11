@@ -13,7 +13,38 @@
       "label_en": "low side"
     }
   },
-  "horizontal_footer": null,
+  "horizontal_footer": {
+    "label": "výška vysoké strany (mm)",
+    "values": [
+      235,
+      262,
+      289,
+      316,
+      343,
+      370,
+      397,
+      424,
+      451,
+      478,
+      505,
+      532,
+      559,
+      586,
+      613,
+      640,
+      667,
+      694,
+      721,
+      748,
+      775,
+      802,
+      829,
+      856,
+      883,
+      910
+    ],
+    "label_en": "height of the high side (mm)"
+  },
   "accessories_included": [],
   "accessories_compatible": []
 }

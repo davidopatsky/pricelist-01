@@ -5,7 +5,7 @@
   "note": "Šikmina (trojúhelník) bočního zasklení CONNEX 3.3.1, RAL 7016. Vodorovná osa = hloubka pergoly (mm), nízká strana 100 mm, vysoká strana v zápatí. Prodejní cena = nákupní cena × 2 (náklad 50 %).",
   "variants": [
     {
-      "label": "S profilem 120 × 60 mm",
+      "label": "Verze 1 – včetně spodního profilu 120 × 60 mm",
       "horizontal_values": [
         1000,
         1200,
@@ -66,42 +66,10 @@
           43290,
           44824
         ]
-      ],
-      "horizontal_footer": {
-        "label": "vysoká strana (mm)",
-        "values": [
-          235,
-          262,
-          289,
-          316,
-          343,
-          370,
-          397,
-          424,
-          451,
-          478,
-          505,
-          532,
-          559,
-          586,
-          613,
-          640,
-          667,
-          694,
-          721,
-          748,
-          775,
-          802,
-          829,
-          856,
-          883,
-          910
-        ],
-        "label_en": "high side (mm)"
-      }
+      ]
     },
     {
-      "label": "Bez profilu",
+      "label": "Verze 2 – bez vodorovného profilu 120 × 60 mm",
       "horizontal_values": [
         1000,
         1200,
@@ -162,39 +130,7 @@
           31806,
           32944
         ]
-      ],
-      "horizontal_footer": {
-        "label": "vysoká strana (mm)",
-        "values": [
-          235,
-          262,
-          289,
-          316,
-          343,
-          370,
-          397,
-          424,
-          451,
-          478,
-          505,
-          532,
-          559,
-          586,
-          613,
-          640,
-          667,
-          694,
-          721,
-          748,
-          775,
-          802,
-          829,
-          856,
-          883,
-          910
-        ],
-        "label_en": "high side (mm)"
-      }
+      ]
     }
   ]
 }
