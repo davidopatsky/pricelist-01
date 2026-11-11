@@ -300,6 +300,26 @@
     "raynet_cost": null
   },
   {
+    "sku": "sikmina-connex",
+    "category": "vypln",
+    "name": "Šikmina boční zasklení CONNEX 3.3.1",
+    "name_en": null,
+    "description": "Šikmina boční zasklení CONNEX 3.3.1 RAL 7016, dvě verze: včetně spodního vodorovného profilu 120 × 60 mm, nebo bez vodorovného profilu 120 × 60 mm. Cena podle hloubky pergoly, nízká strana 100 mm.",
+    "standard_price": 1,
+    "price_formula": "matrix",
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1,
+    "cost_percent": 50,
+    "discount": "0-30%",
+    "delivery_weeks": null,
+    "color_summary": "RAL 7016. Sklo CONNEX 3.3.1.",
+    "description_en": null,
+    "color_summary_en": null,
+    "raynet_description": null,
+    "raynet_cost": null
+  },
+  {
     "sku": "vypln-pur-panel",
     "category": "vypln",
     "name": "PUR Panel boční výplň barva:",

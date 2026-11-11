@@ -1,0 +1,19 @@
+{
+  "sku": "sikmina-connex",
+  "display_name_cs": "Šikmina boční zasklení CONNEX 3.3.1 RAL 7016 – s vodorovným spodním profilem 120 × 60 mm nebo bez něj",
+  "axes": {
+    "horizontal": {
+      "label": "hloubka",
+      "unit": "mm",
+      "label_en": "depth"
+    },
+    "vertical": {
+      "label": "nízká strana",
+      "unit": "mm",
+      "label_en": "low side"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": []
+}
