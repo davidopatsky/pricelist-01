@@ -16,12 +16,12 @@ Rám RAL 7016 Axalta jemná struktura. Lamely RAL 9006 nebo RAL 7016 Axalta jemn
 
 ## Specifikace
 
-- zóny podle rozměru: do 7,59 × 4,2 m UNO - 2 stojny; do 7,99 × 4,2 m UNO - 3 stojny
+- zóny podle rozměru: do 7,59 × 4,5 m UNO - 2 stojny; do 7,99 × 4,5 m UNO - 3 stojny
 - UNO – střecha bez středového nosníku, krokve rovnoběžně s hloubkou, spád dopředu
 - hlavní obvodový profil 300 × 150 mm (tloušťka stěny až 5 mm)
 - stojny 150 × 150 mm (tloušťka stěny až 4 mm)
 - rozpětí až 7,59 m bez středového sloupku
-- max. rozměr 7,99 × 4,2 m
+- max. rozměr 7,99 × 4,5 m
 - rozměrová řada lamel po 200 mm v šířce (1 990 – 7 990 mm)
 - střecha: naklápěcí lamely, 1 pole s 1 motorem
 - motor: cena je se standardním motorem Somfy IO, lze zaměnit za Somfy WT
