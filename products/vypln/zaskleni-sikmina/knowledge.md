@@ -1,5 +1,5 @@
 ---
-sku: sikmina-connex
+sku: zaskleni-sikmina
 ---
 
 # Šikmina boční zasklení CONNEX 3.3.1

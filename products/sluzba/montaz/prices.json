@@ -108,6 +108,16 @@
       "percent": 12
     },
     {
+      "id": "zaskleni-sikmina",
+      "label": "Šikmina boční zasklení",
+      "label_en": "Side glazing gable",
+      "applies_to_skus": [
+        "zaskleni-sikmina"
+      ],
+      "rate_type": "flat_percent",
+      "percent": 14
+    },
+    {
       "id": "markyza-ancona",
       "label": "Markýza Ancona",
       "applies_to_skus": [
