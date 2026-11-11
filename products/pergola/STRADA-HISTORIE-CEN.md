@@ -7,26 +7,26 @@ Ceny v Kč bez DPH, rozměr = šířka × hloubka. Zálohy matic jsou v `product
 ### Strada Carbo 16 mm (`strada-carbo-dutinkovy`)
 
 ```
-obchodní náklad (nákup) = výrobní náklad × 1,20 × 1,15  (+ výztuha 3 500 Kč v zónách s "pricky": true)
+obchodní náklad (nákup) = výrobní náklad × 1,35  (+ výztuha 3 500 Kč v zónách s "pricky": true)
 prodejní cena            = obchodní náklad / 0,58
-(× 1,20 = výrobní náklad +20 % od 11. 11. 2026)
+(× 1,35 od 11. 11. 2026, předtím × 1,15)
 ```
 
 - Výrobní náklad = buňka **S22** v kalkulaci `strada-carbo-dutinkovy/history/naklady-kalkulace-vse-2026-11-10.xlsx`, list **Strada Carbo** (mění se jen B2 šířka a D2 hloubka).
 - Počet krokví B11 = **(šířka − 240) / 600** (v listu Strada Carbo je B11 zapsané jako pevné číslo 6,2667 – pro přepočet vždy použít vzorec).
 - Stojny mají v kalkulaci cenu 0 Kč (záměr). Na hranicích zón (šířka 5 100, hloubka 4 100) proto cena klesá – zóna „2 stojny + výztuha“ přechází na „3 stojny“ bez výztuhy.
 - `cost_percent` v pricelistu = 58 % (= obchodní nákup).
-- Proti 9. 11. 2026 (vč. +20 %): +26 až +57 %, medián +41 %.
+- Proti 9. 11. 2026 (× 1,35): +24 až +54 %, medián +38 %.
 
-| Rozměr | Výrobní náklad (kalkulace) | Cena 10. 11. | Cena od 11. 11. (výrobní +20 %) |
+| Rozměr | Výrobní náklad (kalkulace) | Cena 10. 11. (× 1,15) | Cena od 11. 11. (× 1,35) |
 |---|---:|---:|---:|
-| 2 × 2 m | 17 259 | 34 221 | 41 066 |
-| 3 × 3 m | 23 917 | 47 421 | 56 905 |
-| 5 × 4 m | 38 595 | 82 558 | 97 863 |
-| 6 × 4 m | 44 334 | 87 903 | 105 484 |
-| 7 × 4 m | 50 073 | 105 318 | 125 174 |
-| 8 × 3 m | 46 910 | 99 046 | 117 649 |
-| 8 × 4 m | 55 813 | 116 697 | 138 830 |
+| 2 × 2 m | 17 259 | 34 221 | 40 173 |
+| 3 × 3 m | 23 917 | 47 421 | 55 668 |
+| 5 × 4 m | 38 595 | 82 558 | 95 867 |
+| 6 × 4 m | 44 334 | 87 903 | 103 191 |
+| 7 × 4 m | 50 073 | 105 318 | 122 584 |
+| 8 × 3 m | 46 910 | 99 046 | 115 222 |
+| 8 × 4 m | 55 813 | 116 697 | 135 943 |
 
 ### Strada Carbo 6 mm (`strada-carbo-plny`) a Strada Glass (`strada-glass`)
 
@@ -46,7 +46,7 @@ prodejní cena            = obchodní náklad / 0,58
 | 4. 11. 2026 | Glass: max. hloubka 4 000 mm. |
 | 10. 11. 2026 | Dočasně všechny Strady plošně +30 % a +10 % (× 1,43) – nahrazeno. |
 | 10. 11. 2026 | **Carbo 16 mm z opravené kalkulace** (× 1,15 / 0,58). Carbo 6 mm a Glass vráceny na stav z 9. 11. 2026. |
-| 11. 11. 2026 | **Carbo 16 mm: výrobní náklad z kalkulace +20 %**, z toho obchodní náklad (× 1,15) a cena (58 %). |
+| 11. 11. 2026 | **Carbo 16 mm: obchodní náklad = výrobní × 1,35** (místo × 1,15), cena = obchodní / 0,58. |
 
 ## Zálohy
 
