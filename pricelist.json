@@ -201,7 +201,7 @@
   },
   {
     "sku": "simple-ancona",
-    "category": "pergola",
+    "category": "simple",
     "name": "Simple Ancona",
     "name_en": "Simple Ancona",
     "description": "Simple Ancona – rovný rám 120 × 120 mm s markýzou, bez okapu a odvodu vody, rám RAL 7016 Axalta jemná struktura.",
@@ -221,7 +221,7 @@
   },
   {
     "sku": "simple-ram",
-    "category": "pergola",
+    "category": "simple",
     "name": "Simple rám profily 120 × 120 mm bez integrovaného odtoku",
     "name_en": "Simple Frame 120 × 120 mm without integrated drainage",
     "description": "Jednoduchý rám z profilu 120 × 120 mm. Nutno dodržet pravidlo max. 6 m mezi stojnami.",

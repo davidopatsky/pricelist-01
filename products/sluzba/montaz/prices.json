@@ -60,6 +60,55 @@
       ]
     },
     {
+      "id": "simple",
+      "label": "Simple pergoly",
+      "applies_to_category": "simple",
+      "rate_type": "tiered_by_price",
+      "tier_note": "Procento se určuje podle prodejní ceny pergoly (CZK). Hladina = horní hranice pásma.",
+      "tiers": [
+        {
+          "price_up_to_czk": 100000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 150000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 200000,
+          "percent": 14
+        },
+        {
+          "price_up_to_czk": 250000,
+          "percent": 13
+        },
+        {
+          "price_up_to_czk": 300000,
+          "percent": 12
+        },
+        {
+          "price_up_to_czk": 400000,
+          "percent": 11
+        },
+        {
+          "price_up_to_czk": null,
+          "percent": 11,
+          "note": "500 000 a více"
+        }
+      ],
+      "adjustments": [
+        {
+          "applies_to_skus": [
+            "alux-glass"
+          ],
+          "add_percent": 2,
+          "label": "Příplatek za náročnou montáž",
+          "label_en": "Surcharge for demanding installation",
+          "note": "Přičítá se k procentu montáže z hladiny (např. 13 % + 2 % = 15 % z ceny pergoly). Jen pro výpočet B2C, do B2B ceníku se neuvádí."
+        }
+      ]
+    },
+    {
       "id": "maxi",
       "label": "ALUX MAXI",
       "applies_to_category": "maxi",
