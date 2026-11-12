@@ -157,8 +157,8 @@
         "vypln-pur-panel"
       ],
       "rate_type": "per_m2",
-      "fee_czk_per_m2": 870,
-      "note": "870 Kč za m² plochy panelu (šířka × výška)."
+      "fee_czk_per_m2": 1000,
+      "note": "1 000 Kč za m² plochy panelu (šířka × výška). Náklad = prodej, bez slevy a bez zisku."
     },
     {
       "id": "markyza-latin-40",
