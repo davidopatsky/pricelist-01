@@ -1,0 +1,33 @@
+{
+  "sku": "simple-ram",
+  "display_name_cs": "Simple rám profily 120 × 120 mm bez integrovaného odtoku",
+  "axes": {
+    "horizontal": {
+      "label": "šířka",
+      "unit": "mm",
+      "label_en": "width"
+    },
+    "vertical": {
+      "label": "hloubka",
+      "unit": "mm",
+      "label_en": "depth"
+    }
+  },
+  "horizontal_footer": null,
+  "accessories_included": [],
+  "accessories_compatible": [],
+  "display_name_en": "Simple Frame 120 × 120 mm without integrated drainage",
+  "standard_colors": [
+    {
+      "part": "frame",
+      "label": "Rám",
+      "label_en": "Frame",
+      "options": [
+        {
+          "cs": "RAL 7016",
+          "en": "RAL 7016"
+        }
+      ]
+    }
+  ]
+}

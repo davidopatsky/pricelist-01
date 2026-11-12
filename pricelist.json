@@ -220,6 +220,26 @@
     "raynet_cost": null
   },
   {
+    "sku": "simple-ram",
+    "category": "pergola",
+    "name": "Simple rám profily 120 × 120 mm bez integrovaného odtoku",
+    "name_en": "Simple Frame 120 × 120 mm without integrated drainage",
+    "description": "Jednoduchý rám z profilu 120 × 120 mm. Nutno dodržet pravidlo max. 6 m mezi stojnami.",
+    "standard_price": 1,
+    "price_formula": "matrix",
+    "currency": "CZK",
+    "unit": "ks",
+    "cost": 1,
+    "cost_percent": 58,
+    "discount": "0-20%",
+    "delivery_weeks": "8-10",
+    "color_summary": "Standardní lakování RAL 7016. Ostatní lakování za příplatek.",
+    "description_en": "Simple frame made of 120 × 120 mm profiles. Maximum 6 m between posts must be observed.",
+    "color_summary_en": "Standard powder coating RAL 7016. Other colours at extra charge.",
+    "raynet_description": null,
+    "raynet_cost": null
+  },
+  {
     "sku": "alux-screen",
     "category": "vypln",
     "name": "ALUX screen",
