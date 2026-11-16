@@ -2,7 +2,7 @@
   "sku": "vypln-pur-panel",
   "type": "matrix",
   "currency": "CZK",
-  "note": "Cena = 3 125 Kč / m² × plocha (šířka × výška), bez profilů (spodní profily 120 × 60 nebo 120 × 120 mm se připočítávají zvlášť). Sleva 0–20 % (po slevě min. 2 500 Kč / m²). Obchodní náklad 1 660 Kč / m² (profily 830 + zisk firmy 830) = 53 % z ceníkové ceny.",
+  "note": "Cena = 3 125 Kč / m² × plocha (šířka × výška), bez profilů (spodní profily 120 × 60 nebo 120 × 120 mm se připočítávají zvlášť). Sleva 0–20 % (po slevě min. 2 500 Kč / m²). Obchodní náklad 900 Kč / m² = 28,8 % z ceníkové ceny.",
   "horizontal_values": [
     1000,
     1200,
