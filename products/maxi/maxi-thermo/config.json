@@ -1,0 +1,47 @@
+{
+  "sku": "maxi-thermo",
+  "frame_color": {
+    "standard": {
+      "cs": "RAL 7016 Axalta jemná struktura",
+      "en": "RAL 7016 Axalta structure"
+    },
+    "other_colors": "surcharge"
+  },
+  "roof_type": {
+    "cs": "PUR panel (izolační termopanel 4 cm)",
+    "en": "PUR panel (insulated thermo panel 4 cm)"
+  },
+  "roof_color": {
+    "options": [
+      {
+        "cs": "7016 / 7016",
+        "en": "7016 / 7016",
+        "bottom": "RAL 7016",
+        "top": "RAL 7016"
+      },
+      {
+        "cs": "7016 dole / 9006 nahoře",
+        "en": "7016 bottom / 9006 top",
+        "bottom": "RAL 7016",
+        "top": "RAL 9006"
+      },
+      {
+        "cs": "9006 dole / 7016 nahoře",
+        "en": "9006 bottom / 7016 top",
+        "bottom": "RAL 9006",
+        "top": "RAL 7016"
+      }
+    ],
+    "custom_allowed": true,
+    "custom_note": {
+      "cs": "Atypické barvy je možné zadat ručně.",
+      "en": "Atypical colours can be entered manually."
+    }
+  },
+  "led_rafters": null,
+  "led_perimeter": true,
+  "led_perimeter_note": {
+    "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+    "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+  }
+}

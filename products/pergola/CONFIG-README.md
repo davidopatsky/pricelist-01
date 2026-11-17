@@ -12,7 +12,9 @@ Soubor `products/pergola/<sku>/config.json` (ALUX a Strada). Slouží jako konfi
 | `led_rafters` | LED lamely / krokve: `true` = ano, `false` = ne, `null` = zatím nevyplněno |
 | `led_perimeter` | LED obvod: `true` / `false` / `null` |
 
-Barvy a typ střechy jsou převzaté z popisů v ceníku. **LED zatím nikde v datech u ALUX ani Strady není, proto je `null`** – doplnit podle skutečnosti. MAXI a Simple config zatím nemají.
+Barvy a typ střechy jsou převzaté z popisů v ceníku. **LED zatím nikde v datech u ALUX ani Strady není, proto je `null`** – doplnit podle skutečnosti. Simple config zatím nemá. MAXI: `products/maxi/<sku>/config.json`, hodnoty převzaté z odpovídajících ALUX typů; `led_perimeter: true` + `led_perimeter_note` = obvodové LED jako příplatek. **MAXI Fusion** má místo `roof_type`/`roof_color` pole `roof_combination.options` (6 kombinací, `variant` = ceník v prices.json, `field_1`/`field_2` = klíč do `roof_fields`) a `roof_fields` (bio, thermo, glass, carbo-16, carbo-6 – typ a barvy střechy pole).
+
+Přehled všech pergol: `konfiguracni-soubor/` – generuje `python3 scripts/build_konfiguracni_soubor.py`.
 
 **ALUX Thermo:** `roof_color.options` mají `bottom` (spodní strana panelu) a `top` (horní); `custom_allowed: true` = atypické barvy lze zadat ručně.
 

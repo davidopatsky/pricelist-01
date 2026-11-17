@@ -411,5 +411,469 @@
     },
     "led_rafters": null,
     "led_perimeter": false
+  },
+  "maxi-bioclimatic-duo": {
+    "sku": "maxi-bioclimatic-duo",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Bioklimatické naklápěcí lamely",
+      "en": "Bioclimatic tilting louvres"
+    },
+    "louvre_color": {
+      "standard": [
+        {
+          "cs": "RAL 9006 Axalta jemná struktura",
+          "en": "RAL 9006 Axalta structure"
+        },
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ],
+      "other_colors": "surcharge"
+    },
+    "motor_type": {
+      "options": [
+        {
+          "cs": "Somfy IO",
+          "en": "Somfy IO"
+        },
+        {
+          "cs": "Somfy WT",
+          "en": "Somfy WT"
+        }
+      ],
+      "standard": "Somfy IO"
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-bioclimatic": {
+    "sku": "maxi-bioclimatic",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Bioklimatické naklápěcí lamely",
+      "en": "Bioclimatic tilting louvres"
+    },
+    "louvre_color": {
+      "standard": [
+        {
+          "cs": "RAL 9006 Axalta jemná struktura",
+          "en": "RAL 9006 Axalta structure"
+        },
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ],
+      "other_colors": "surcharge"
+    },
+    "motor_type": {
+      "options": [
+        {
+          "cs": "Somfy IO",
+          "en": "Somfy IO"
+        },
+        {
+          "cs": "Somfy WT",
+          "en": "Somfy WT"
+        }
+      ],
+      "standard": "Somfy IO"
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-carbo-16": {
+    "sku": "maxi-carbo-16",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Dutinkový polykarbonát 16 mm 5X",
+      "en": "Multiwall polycarbonate 16 mm 5X"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "note": {
+        "cs": "Ostatní barvy v ceně.",
+        "en": "Other colours included in the price."
+      },
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-carbo-6": {
+    "sku": "maxi-carbo-6",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Plný polykarbonát 6 mm s UV ochranou",
+      "en": "Solid polycarbonate 6 mm with UV protection"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "note": {
+        "cs": "Barevné varianty polykarbonátu v ceně.",
+        "en": "Polycarbonate colour variants included in the price."
+      },
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-fusion": {
+    "sku": "maxi-fusion",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_combination": {
+      "note": {
+        "cs": "Vždy DUO – středový nosník dělí střechu na 2 pole s různou krytinou. `variant` = název ceníku v prices.json.",
+        "en": "Always DUO – the centre beam divides the roof into 2 fields with different roofing. `variant` = price table label in prices.json."
+      },
+      "options": [
+        {
+          "variant": "Bio - Glass",
+          "field_1": "bio",
+          "field_2": "glass"
+        },
+        {
+          "variant": "Bio - Carbo 16 mm",
+          "field_1": "bio",
+          "field_2": "carbo-16"
+        },
+        {
+          "variant": "Bio - Carbo 6 mm",
+          "field_1": "bio",
+          "field_2": "carbo-6"
+        },
+        {
+          "variant": "Thermo - Glass",
+          "field_1": "thermo",
+          "field_2": "glass"
+        },
+        {
+          "variant": "Thermo - Carbo 16 mm",
+          "field_1": "thermo",
+          "field_2": "carbo-16"
+        },
+        {
+          "variant": "Thermo - Carbo 6 mm",
+          "field_1": "thermo",
+          "field_2": "carbo-6"
+        }
+      ]
+    },
+    "roof_fields": {
+      "bio": {
+        "roof_type": {
+          "cs": "Bioklimatické naklápěcí lamely",
+          "en": "Bioclimatic tilting louvres"
+        },
+        "louvre_color": {
+          "standard": [
+            {
+              "cs": "RAL 9006 Axalta jemná struktura",
+              "en": "RAL 9006 Axalta structure"
+            },
+            {
+              "cs": "RAL 7016 Axalta jemná struktura",
+              "en": "RAL 7016 Axalta structure"
+            }
+          ],
+          "other_colors": "surcharge"
+        },
+        "motor_type": {
+          "options": [
+            {
+              "cs": "Somfy IO",
+              "en": "Somfy IO"
+            },
+            {
+              "cs": "Somfy WT",
+              "en": "Somfy WT"
+            }
+          ],
+          "standard": "Somfy IO"
+        }
+      },
+      "thermo": {
+        "roof_type": {
+          "cs": "PUR panel (izolační termopanel 4 cm)",
+          "en": "PUR panel (insulated thermo panel 4 cm)"
+        },
+        "roof_color": {
+          "options": [
+            {
+              "cs": "7016 / 7016",
+              "en": "7016 / 7016",
+              "bottom": "RAL 7016",
+              "top": "RAL 7016"
+            },
+            {
+              "cs": "7016 dole / 9006 nahoře",
+              "en": "7016 bottom / 9006 top",
+              "bottom": "RAL 7016",
+              "top": "RAL 9006"
+            },
+            {
+              "cs": "9006 dole / 7016 nahoře",
+              "en": "9006 bottom / 7016 top",
+              "bottom": "RAL 9006",
+              "top": "RAL 7016"
+            }
+          ],
+          "custom_allowed": true,
+          "custom_note": {
+            "cs": "Atypické barvy je možné zadat ručně.",
+            "en": "Atypical colours can be entered manually."
+          }
+        }
+      },
+      "glass": {
+        "roof_type": {
+          "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
+          "en": "Laminated safety glass VSG 44.2"
+        },
+        "roof_color": {
+          "options": [
+            {
+              "cs": "čiré sklo",
+              "en": "clear glass"
+            },
+            {
+              "cs": "mléčné sklo",
+              "en": "opal glass",
+              "surcharge": true
+            }
+          ]
+        }
+      },
+      "carbo-16": {
+        "roof_type": {
+          "cs": "Dutinkový polykarbonát 16 mm 5X",
+          "en": "Multiwall polycarbonate 16 mm 5X"
+        },
+        "roof_color": {
+          "options": [
+            {
+              "cs": "čirý",
+              "en": "clear"
+            },
+            {
+              "cs": "antracit",
+              "en": "anthracite"
+            },
+            {
+              "cs": "mléčný",
+              "en": "opal"
+            },
+            {
+              "cs": "bronzový",
+              "en": "bronze"
+            }
+          ],
+          "note": {
+            "cs": "Ostatní barvy v ceně.",
+            "en": "Other colours included in the price."
+          },
+          "custom_allowed": true
+        }
+      },
+      "carbo-6": {
+        "roof_type": {
+          "cs": "Plný polykarbonát 6 mm s UV ochranou",
+          "en": "Solid polycarbonate 6 mm with UV protection"
+        },
+        "roof_color": {
+          "options": [
+            {
+              "cs": "čirý",
+              "en": "clear"
+            },
+            {
+              "cs": "antracit",
+              "en": "anthracite"
+            },
+            {
+              "cs": "mléčný",
+              "en": "opal"
+            },
+            {
+              "cs": "bronzový",
+              "en": "bronze"
+            }
+          ],
+          "note": {
+            "cs": "Barevné varianty polykarbonátu v ceně.",
+            "en": "Polycarbonate colour variants included in the price."
+          },
+          "custom_allowed": true
+        }
+      }
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-glass": {
+    "sku": "maxi-glass",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
+      "en": "Laminated safety glass VSG 44.2"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čiré sklo",
+          "en": "clear glass"
+        },
+        {
+          "cs": "mléčné sklo",
+          "en": "opal glass",
+          "surcharge": true
+        }
+      ]
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
+  },
+  "maxi-thermo": {
+    "sku": "maxi-thermo",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "PUR panel (izolační termopanel 4 cm)",
+      "en": "PUR panel (insulated thermo panel 4 cm)"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "7016 / 7016",
+          "en": "7016 / 7016",
+          "bottom": "RAL 7016",
+          "top": "RAL 7016"
+        },
+        {
+          "cs": "7016 dole / 9006 nahoře",
+          "en": "7016 bottom / 9006 top",
+          "bottom": "RAL 7016",
+          "top": "RAL 9006"
+        },
+        {
+          "cs": "9006 dole / 7016 nahoře",
+          "en": "9006 bottom / 7016 top",
+          "bottom": "RAL 9006",
+          "top": "RAL 7016"
+        }
+      ],
+      "custom_allowed": true,
+      "custom_note": {
+        "cs": "Atypické barvy je možné zadat ručně.",
+        "en": "Atypical colours can be entered manually."
+      }
+    },
+    "led_rafters": null,
+    "led_perimeter": true,
+    "led_perimeter_note": {
+      "cs": "Profily mají prostor pro integrované obvodové LED osvětlení – příplatková možnost.",
+      "en": "Profiles have space for integrated perimeter LED lighting – optional at extra charge."
+    }
   }
 }
