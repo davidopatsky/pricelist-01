@@ -1,0 +1,16 @@
+{
+  "sku": "strada-glass",
+  "frame_color": {
+    "cs": "RAL 7016 Axalta jemná struktura",
+    "en": "RAL 7016 Axalta structure"
+  },
+  "roof_type": {
+    "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
+    "en": "Laminated safety glass VSG 44.2"
+  },
+  "roof_color": {
+    "options": []
+  },
+  "led_rafters": null,
+  "led_perimeter": null
+}

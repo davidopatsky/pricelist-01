@@ -1,0 +1,29 @@
+{
+  "sku": "alux-bioclimatic",
+  "frame_color": {
+    "cs": "RAL 7016 Axalta jemná struktura",
+    "en": "RAL 7016 Axalta structure"
+  },
+  "roof_type": {
+    "cs": "Bioklimatické naklápěcí lamely",
+    "en": "Bioclimatic tilting louvres"
+  },
+  "roof_color": {
+    "options": [
+      {
+        "cs": "RAL 9006 Axalta jemná struktura",
+        "en": "RAL 9006 Axalta structure"
+      },
+      {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      }
+    ],
+    "note": {
+      "cs": "Jiné barvy lamel individuálně.",
+      "en": "Other louvre colours individually."
+    }
+  },
+  "led_rafters": null,
+  "led_perimeter": null
+}

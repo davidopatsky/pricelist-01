@@ -1,0 +1,20 @@
+{
+  "sku": "alux-trapez",
+  "frame_color": {
+    "cs": "RAL 7016 Axalta jemná struktura",
+    "en": "RAL 7016 Axalta structure"
+  },
+  "roof_type": {
+    "cs": "Trapézový plech",
+    "en": "Trapezoidal sheet"
+  },
+  "roof_color": {
+    "options": [],
+    "note": {
+      "cs": "Plech v atypických barvách dle vzorníku.",
+      "en": "Sheet in atypical colours according to the sample chart."
+    }
+  },
+  "led_rafters": null,
+  "led_perimeter": null
+}

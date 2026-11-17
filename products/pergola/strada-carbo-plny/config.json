@@ -1,0 +1,33 @@
+{
+  "sku": "strada-carbo-plny",
+  "frame_color": {
+    "cs": "RAL 7016 Axalta jemná struktura",
+    "en": "RAL 7016 Axalta structure"
+  },
+  "roof_type": {
+    "cs": "Plný polykarbonát 6 mm",
+    "en": "Solid polycarbonate 6 mm"
+  },
+  "roof_color": {
+    "options": [
+      {
+        "cs": "čirý",
+        "en": "clear"
+      },
+      {
+        "cs": "mléčný",
+        "en": "opal"
+      },
+      {
+        "cs": "antracit",
+        "en": "anthracite"
+      }
+    ],
+    "note": {
+      "cs": "Jiné barvy, vše v ceně.",
+      "en": "Other colours, all included in the price."
+    }
+  },
+  "led_rafters": null,
+  "led_perimeter": null
+}
