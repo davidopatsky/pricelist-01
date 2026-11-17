@@ -1,0 +1,415 @@
+{
+  "alux-bioclimatic": {
+    "sku": "alux-bioclimatic",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Bioklimatické naklápěcí lamely",
+      "en": "Bioclimatic tilting louvres"
+    },
+    "louvre_color": {
+      "standard": [
+        {
+          "cs": "RAL 9006 Axalta jemná struktura",
+          "en": "RAL 9006 Axalta structure"
+        },
+        {
+          "cs": "RAL 7016 Axalta jemná struktura",
+          "en": "RAL 7016 Axalta structure"
+        }
+      ],
+      "other_colors": "surcharge"
+    },
+    "motor_type": {
+      "options": [
+        {
+          "cs": "Somfy IO",
+          "en": "Somfy IO"
+        },
+        {
+          "cs": "Somfy WT",
+          "en": "Somfy WT"
+        }
+      ],
+      "standard": "Somfy IO"
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-carbo-dutinkovy": {
+    "sku": "alux-carbo-dutinkovy",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Dutinkový polykarbonát 16 mm 5X",
+      "en": "Multiwall polycarbonate 16 mm 5X"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "note": {
+        "cs": "Ostatní barvy v ceně.",
+        "en": "Other colours included in the price."
+      },
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-carbo-plny": {
+    "sku": "alux-carbo-plny",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Plný polykarbonát 6 mm s UV ochranou",
+      "en": "Solid polycarbonate 6 mm with UV protection"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "note": {
+        "cs": "Barevné varianty polykarbonátu v ceně.",
+        "en": "Polycarbonate colour variants included in the price."
+      },
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-glass": {
+    "sku": "alux-glass",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
+      "en": "Laminated safety glass VSG 44.2"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čiré sklo",
+          "en": "clear glass"
+        },
+        {
+          "cs": "mléčné sklo",
+          "en": "opal glass",
+          "surcharge": true
+        }
+      ]
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-ram": {
+    "sku": "alux-ram",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Bez střechy (pouze krokve)",
+      "en": "No roof (rafters only)"
+    },
+    "roof_color": {
+      "options": []
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-thermo": {
+    "sku": "alux-thermo",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "PUR panel",
+      "en": "PUR panel"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "7016 / 7016",
+          "en": "7016 / 7016",
+          "bottom": "RAL 7016",
+          "top": "RAL 7016"
+        },
+        {
+          "cs": "7016 dole / 9006 nahoře",
+          "en": "7016 bottom / 9006 top",
+          "bottom": "RAL 7016",
+          "top": "RAL 9006"
+        },
+        {
+          "cs": "9006 dole / 7016 nahoře",
+          "en": "9006 bottom / 7016 top",
+          "bottom": "RAL 9006",
+          "top": "RAL 7016"
+        }
+      ],
+      "custom_allowed": true,
+      "custom_note": {
+        "cs": "Atypické barvy je možné zadat ručně.",
+        "en": "Atypical colours can be entered manually."
+      }
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "alux-trapez": {
+    "sku": "alux-trapez",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Trapézový plech",
+      "en": "Trapezoidal sheet"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "RAL 3009 – oxidovaná červená",
+          "en": "RAL 3009 – oxide red"
+        },
+        {
+          "cs": "RAL 3011 – červenohnědá",
+          "en": "RAL 3011 – brown red"
+        },
+        {
+          "cs": "RAL 3016 – korálová červená",
+          "en": "RAL 3016 – coral red"
+        },
+        {
+          "cs": "RAL 5010 – modrá",
+          "en": "RAL 5010 – gentian blue"
+        },
+        {
+          "cs": "RAL 6020 – chromová zelená",
+          "en": "RAL 6020 – chrome green"
+        },
+        {
+          "cs": "RAL 7001 – stříbrošedá",
+          "en": "RAL 7001 – silver grey"
+        },
+        {
+          "cs": "RAL 7016 – antracitová šedá",
+          "en": "RAL 7016 – anthracite grey"
+        },
+        {
+          "cs": "RAL 7017 – bílý hliník nemetalická",
+          "en": "RAL 7017 – white aluminium non-metallic"
+        },
+        {
+          "cs": "RAL 7024 – grafitová šedá",
+          "en": "RAL 7024 – graphite grey"
+        },
+        {
+          "cs": "RAL 8004 – měděná hnědá",
+          "en": "RAL 8004 – copper brown"
+        },
+        {
+          "cs": "RAL 8011 – oříšková hnědá",
+          "en": "RAL 8011 – nut brown"
+        },
+        {
+          "cs": "RAL 8017 – čokoládová hnědá",
+          "en": "RAL 8017 – chocolate brown"
+        },
+        {
+          "cs": "RAL 8019 – šedohnědá",
+          "en": "RAL 8019 – grey brown"
+        },
+        {
+          "cs": "RAL 9005 – černá",
+          "en": "RAL 9005 – black"
+        },
+        {
+          "cs": "RAL 9006 – bílý hliník",
+          "en": "RAL 9006 – white aluminium"
+        },
+        {
+          "cs": "RAL 9007 – šedý hliník",
+          "en": "RAL 9007 – grey aluminium"
+        },
+        {
+          "cs": "RAL 9010 Lesk – lesk čistě bílá",
+          "en": "RAL 9010 Lesk – gloss pure white"
+        },
+        {
+          "cs": "Přírodní – nelakovaný",
+          "en": "Natural – unpainted"
+        }
+      ]
+    },
+    "led_rafters": null,
+    "led_perimeter": null
+  },
+  "strada-carbo-dutinkovy": {
+    "sku": "strada-carbo-dutinkovy",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Dutinkový polykarbonát 16 mm 5X",
+      "en": "Multiwall polycarbonate 16 mm 5X"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": false
+  },
+  "strada-carbo-plny": {
+    "sku": "strada-carbo-plny",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Plný polykarbonát 6 mm",
+      "en": "Solid polycarbonate 6 mm"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čirý",
+          "en": "clear"
+        },
+        {
+          "cs": "antracit",
+          "en": "anthracite"
+        },
+        {
+          "cs": "mléčný",
+          "en": "opal"
+        },
+        {
+          "cs": "bronzový",
+          "en": "bronze"
+        }
+      ],
+      "note": {
+        "cs": "Jiné barvy, vše v ceně.",
+        "en": "Other colours, all included in the price."
+      },
+      "custom_allowed": true
+    },
+    "led_rafters": null,
+    "led_perimeter": false
+  },
+  "strada-glass": {
+    "sku": "strada-glass",
+    "frame_color": {
+      "standard": {
+        "cs": "RAL 7016 Axalta jemná struktura",
+        "en": "RAL 7016 Axalta structure"
+      },
+      "other_colors": "surcharge"
+    },
+    "roof_type": {
+      "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
+      "en": "Laminated safety glass VSG 44.2"
+    },
+    "roof_color": {
+      "options": [
+        {
+          "cs": "čiré sklo",
+          "en": "clear glass"
+        },
+        {
+          "cs": "mléčné sklo",
+          "en": "opal glass"
+        }
+      ]
+    },
+    "led_rafters": null,
+    "led_perimeter": false
+  }
+}
