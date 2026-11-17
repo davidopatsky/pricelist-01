@@ -14,12 +14,13 @@
   "roof_color": {
     "options": [
       {
-        "cs": "čiré (v ceně)",
-        "en": "clear (included)"
+        "cs": "čiré sklo",
+        "en": "clear glass"
       },
       {
-        "cs": "mléčné (příplatek)",
-        "en": "opal (surcharge)"
+        "cs": "mléčné sklo",
+        "en": "opal glass",
+        "surcharge": true
       }
     ]
   },
