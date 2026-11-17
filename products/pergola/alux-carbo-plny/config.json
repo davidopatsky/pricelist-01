@@ -12,11 +12,29 @@
     "en": "Solid polycarbonate 6 mm with UV protection"
   },
   "roof_color": {
-    "options": [],
+    "options": [
+      {
+        "cs": "čirý",
+        "en": "clear"
+      },
+      {
+        "cs": "antracit",
+        "en": "anthracite"
+      },
+      {
+        "cs": "mléčný",
+        "en": "opal"
+      },
+      {
+        "cs": "bronzový",
+        "en": "bronze"
+      }
+    ],
     "note": {
       "cs": "Barevné varianty polykarbonátu v ceně.",
       "en": "Polycarbonate colour variants included in the price."
-    }
+    },
+    "custom_allowed": true
   },
   "led_rafters": null,
   "led_perimeter": null

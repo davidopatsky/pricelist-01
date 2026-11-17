@@ -24,9 +24,14 @@
       {
         "cs": "mléčný",
         "en": "opal"
+      },
+      {
+        "cs": "bronzový",
+        "en": "bronze"
       }
-    ]
+    ],
+    "custom_allowed": true
   },
   "led_rafters": null,
-  "led_perimeter": null
+  "led_perimeter": false
 }

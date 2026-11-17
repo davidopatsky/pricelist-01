@@ -15,5 +15,5 @@
     "options": []
   },
   "led_rafters": null,
-  "led_perimeter": null
+  "led_perimeter": false
 }

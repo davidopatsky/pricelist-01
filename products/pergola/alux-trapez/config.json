@@ -12,11 +12,80 @@
     "en": "Trapezoidal sheet"
   },
   "roof_color": {
-    "options": [],
-    "note": {
-      "cs": "Plech v atypických barvách dle vzorníku.",
-      "en": "Sheet in atypical colours according to the sample chart."
-    }
+    "options": [
+      {
+        "cs": "RAL 3009 – oxidovaná červená",
+        "en": "RAL 3009 – oxide red"
+      },
+      {
+        "cs": "RAL 3011 – červenohnědá",
+        "en": "RAL 3011 – brown red"
+      },
+      {
+        "cs": "RAL 3016 – korálová červená",
+        "en": "RAL 3016 – coral red"
+      },
+      {
+        "cs": "RAL 5010 – modrá",
+        "en": "RAL 5010 – gentian blue"
+      },
+      {
+        "cs": "RAL 6020 – chromová zelená",
+        "en": "RAL 6020 – chrome green"
+      },
+      {
+        "cs": "RAL 7001 – stříbrošedá",
+        "en": "RAL 7001 – silver grey"
+      },
+      {
+        "cs": "RAL 7016 – antracitová šedá",
+        "en": "RAL 7016 – anthracite grey"
+      },
+      {
+        "cs": "RAL 7017 – bílý hliník nemetalická",
+        "en": "RAL 7017 – white aluminium non-metallic"
+      },
+      {
+        "cs": "RAL 7024 – grafitová šedá",
+        "en": "RAL 7024 – graphite grey"
+      },
+      {
+        "cs": "RAL 8004 – měděná hnědá",
+        "en": "RAL 8004 – copper brown"
+      },
+      {
+        "cs": "RAL 8011 – oříšková hnědá",
+        "en": "RAL 8011 – nut brown"
+      },
+      {
+        "cs": "RAL 8017 – čokoládová hnědá",
+        "en": "RAL 8017 – chocolate brown"
+      },
+      {
+        "cs": "RAL 8019 – šedohnědá",
+        "en": "RAL 8019 – grey brown"
+      },
+      {
+        "cs": "RAL 9005 – černá",
+        "en": "RAL 9005 – black"
+      },
+      {
+        "cs": "RAL 9006 – bílý hliník",
+        "en": "RAL 9006 – white aluminium"
+      },
+      {
+        "cs": "RAL 9007 – šedý hliník",
+        "en": "RAL 9007 – grey aluminium"
+      },
+      {
+        "cs": "RAL 9010 Lesk – lesk čistě bílá",
+        "en": "RAL 9010 Lesk – gloss pure white"
+      },
+      {
+        "cs": "Přírodní – nelakovaný",
+        "en": "Natural – unpainted"
+      }
+    ]
   },
   "led_rafters": null,
   "led_perimeter": null

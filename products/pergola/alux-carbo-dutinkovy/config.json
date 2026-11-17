@@ -24,12 +24,17 @@
       {
         "cs": "mléčný",
         "en": "opal"
+      },
+      {
+        "cs": "bronzový",
+        "en": "bronze"
       }
     ],
     "note": {
       "cs": "Ostatní barvy v ceně.",
       "en": "Other colours included in the price."
-    }
+    },
+    "custom_allowed": true
   },
   "led_rafters": null,
   "led_perimeter": null

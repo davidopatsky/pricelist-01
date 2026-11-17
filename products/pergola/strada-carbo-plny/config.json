@@ -18,19 +18,24 @@
         "en": "clear"
       },
       {
+        "cs": "antracit",
+        "en": "anthracite"
+      },
+      {
         "cs": "mléčný",
         "en": "opal"
       },
       {
-        "cs": "antracit",
-        "en": "anthracite"
+        "cs": "bronzový",
+        "en": "bronze"
       }
     ],
     "note": {
       "cs": "Jiné barvy, vše v ceně.",
       "en": "Other colours, all included in the price."
-    }
+    },
+    "custom_allowed": true
   },
   "led_rafters": null,
-  "led_perimeter": null
+  "led_perimeter": false
 }
