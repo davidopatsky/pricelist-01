@@ -2,7 +2,7 @@
 sku: profil-120-40-bm
 ---
 
-# profil 120 x 40 - cena za metr
+# Profil 120 x 40 mm - cena za metr
 
 ## Popis
 

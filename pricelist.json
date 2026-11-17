@@ -980,9 +980,9 @@
     "raynet_cost": null
   },
   {
-    "sku": "profil-40-20-bm",
+    "sku": "l-profil-40-20-bm",
     "category": "profily",
-    "name": "profil 40x20 - cena za metr",
+    "name": "L profil 40x20 - cena za metr",
     "name_en": null,
     "description": null,
     "standard_price": 250,
@@ -1000,9 +1000,9 @@
     "raynet_cost": null
   },
   {
-    "sku": "profil-60-80-bm",
+    "sku": "l-profil-60-80-bm",
     "category": "profily",
-    "name": "profil 60x80 - cena za metr",
+    "name": "L profil 60x80 - cena za metr",
     "name_en": null,
     "description": null,
     "standard_price": 850,
@@ -1022,7 +1022,7 @@
   {
     "sku": "profil-120-40-bm",
     "category": "profily",
-    "name": "profil 120 x 40 - cena za metr",
+    "name": "Profil 120 x 40 mm - cena za metr",
     "name_en": null,
     "description": null,
     "standard_price": 1000,
@@ -1042,7 +1042,7 @@
   {
     "sku": "profil-120-60-bm",
     "category": "profily",
-    "name": "profil 120 x 60 - cena za metr",
+    "name": "Profil 120 x 60 mm - cena za metr",
     "name_en": null,
     "description": null,
     "standard_price": 1700,
