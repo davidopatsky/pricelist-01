@@ -1,8 +1,11 @@
 {
   "sku": "strada-glass",
   "frame_color": {
-    "cs": "RAL 7016 Axalta jemná struktura",
-    "en": "RAL 7016 Axalta structure"
+    "standard": {
+      "cs": "RAL 7016 Axalta jemná struktura",
+      "en": "RAL 7016 Axalta structure"
+    },
+    "other_colors": "surcharge"
   },
   "roof_type": {
     "cs": "Vrstvené bezpečnostní sklo VSG 44.2",
