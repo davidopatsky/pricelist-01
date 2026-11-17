@@ -13,3 +13,5 @@ Soubor `products/pergola/<sku>/config.json` (ALUX a Strada). Slouží jako konfi
 | `led_perimeter` | LED obvod: `true` / `false` / `null` |
 
 Barvy a typ střechy jsou převzaté z popisů v ceníku. **LED zatím nikde v datech u ALUX ani Strady není, proto je `null`** – doplnit podle skutečnosti. MAXI a Simple config zatím nemají.
+
+**ALUX Thermo:** `roof_color.options` mají `bottom` (spodní strana panelu) a `top` (horní); `custom_allowed: true` = atypické barvy lze zadat ručně.

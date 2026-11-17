@@ -8,23 +8,34 @@
     "other_colors": "surcharge"
   },
   "roof_type": {
-    "cs": "PUR panely",
-    "en": "PUR panels"
+    "cs": "PUR panel",
+    "en": "PUR panel"
   },
   "roof_color": {
     "options": [
       {
-        "cs": "7016/7016",
-        "en": "7016/7016"
+        "cs": "7016 / 7016",
+        "en": "7016 / 7016",
+        "bottom": "RAL 7016",
+        "top": "RAL 7016"
       },
       {
-        "cs": "7016/9006 mat",
-        "en": "7016/9006 matt"
+        "cs": "7016 dole / 9006 nahoře",
+        "en": "7016 bottom / 9006 top",
+        "bottom": "RAL 7016",
+        "top": "RAL 9006"
+      },
+      {
+        "cs": "9006 dole / 7016 nahoře",
+        "en": "9006 bottom / 7016 top",
+        "bottom": "RAL 9006",
+        "top": "RAL 7016"
       }
     ],
-    "note": {
-      "cs": "Ostatní dle dostupnosti, ověřit na výrobě.",
-      "en": "Others subject to availability, to be confirmed by production."
+    "custom_allowed": true,
+    "custom_note": {
+      "cs": "Atypické barvy je možné zadat ručně.",
+      "en": "Atypical colours can be entered manually."
     }
   },
   "led_rafters": null,
