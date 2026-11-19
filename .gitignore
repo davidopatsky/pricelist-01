@@ -9,3 +9,8 @@ __pycache__/
 *~
 ~$*.xlsx
 .~lock.*#
+
+# Konfigurační data – jen lokálně, nikdy nepushovat (aplikace je nesmí vidět)
+products/**/config.json
+products/pergola/CONFIG-README.md
+konfiguracni-soubor/
