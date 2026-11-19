@@ -2,7 +2,9 @@
 
 Ceny v Kč bez DPH, rozměr = šířka × hloubka. Zálohy matic jsou v `products/pergola/<sku>/history/`.
 
-## Platná logika (od 10. 11. 2026)
+## Platná logika (od 10. 11. 2026, + plošně +20 % od 19. 11. 2026)
+
+> **19. 11. 2026: všechny tři Strady (Carbo 16 mm, Carbo 6 mm, Glass) – celá matice +20 %.** Náklad v Kč se nemění → `cost_percent` 58 → 48,3. Ceny níže v tabulce jsou před tímto navýšením (× 1,2 = platná cena).
 
 ### Strada Carbo 16 mm (`strada-carbo-dutinkovy`)
 
@@ -47,6 +49,7 @@ prodejní cena            = obchodní náklad / 0,58
 | 10. 11. 2026 | Dočasně všechny Strady plošně +30 % a +10 % (× 1,43) – nahrazeno. |
 | 10. 11. 2026 | **Carbo 16 mm z opravené kalkulace** (× 1,15 / 0,58). Carbo 6 mm a Glass vráceny na stav z 9. 11. 2026. |
 | 11. 11. 2026 | **Carbo 16 mm: obchodní náklad = výrobní × 1,35** (místo × 1,15), cena = obchodní / 0,58. |
+| 19. 11. 2026 | **Všechny Strady +20 %** (prodejní cena; náklad v Kč beze změny, `cost_percent` 48,3). Např. Carbo 16 mm 6 × 4 m 103 191 → 123 829, 8 × 4 m 135 943 → 163 132. |
 
 ## Zálohy
 
@@ -54,3 +57,4 @@ prodejní cena            = obchodní náklad / 0,58
 - `history/prices-2026-11-10-pre-30pct.json` – stav 9. 11. 2026 (před dnešními změnami)
 - `strada-carbo-dutinkovy/history/prices-2026-11-10-pre-kalkulace.json` – Carbo 16 × 1,43 (nepoužito)
 - `strada-carbo-dutinkovy/history/prices-2026-11-11-pre-20pct.json` – Carbo 16 z kalkulace před +20 %
+- `history/prices-2026-11-19-pre-20pct.json` (u všech tří) – stav před plošným +20 % z 19. 11. 2026
