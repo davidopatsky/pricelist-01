@@ -207,7 +207,7 @@
       ],
       "rate_type": "per_m2",
       "fee_czk_per_m2": 900,
-      "note": "900 Kč za m² plochy panelu (šířka × výška). Náklad = prodej, bez slevy a bez zisku."
+      "note": "900 Kč za m² plochy panelu (šířka × výška). Náklad 900 Kč / m² = prodej, bez slevy a bez zisku."
     },
     {
       "id": "markyza-latin-40",
